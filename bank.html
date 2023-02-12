@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="scss/style.min.css" />
+    <link rel="stylesheet" href="css/hover-min.css" />
+    <!-- ? Main CSS -->
+
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- ? Custom CSS -->
+
+    <!-- ? Main JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+
+    <!-- ? Custom JavaScript -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Bank Degla</title>
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <div class="nav-top navbar-expand">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavTop"
+          aria-controls="navbarNavTop"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavTop">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >الأفراد</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">الشركات والمؤسسات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">المشروعات الصغيرة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="library.html">الخزينة</a>
+            </li>
+          </ul>
+          <div class="buttons">
+            <a href="#" class="btn login_btn"
+              >دخول <i class="fa-solid fa-user"></i
+            ></a>
+            <div class="lang_section">
+              <a class="lang lang_en" href="#">En</a>
+              <a class="lang lang_ar active" href="#">عربي</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="media/image/logo.png" alt="logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >الأفراد</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">الشركات والمؤسسات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">المشروعات الصغيرة</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="library.html">الخزينة</a>
+            </li>
+          </ul>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              الانترنت البنكي
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">الانترنت البنكي</a></li>
+              <li><a class="dropdown-item" href="#">الانترنت البنكي</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start hero section -->
+    <section class="hero_section">
+      <img src="./media/image/header_bank.jpg" alt="contact" />
+    </section>
+    <!-- Start hero section -->
+
+    <!-- Start bank history -->
+    <section class="bank_history">
+      <div class="container">
+        <div class="d-flex align-items-start">
+          <div
+            class="nav flex-column nav-pills"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <!-- Start History bank Tab -->
+            <button
+              class="nav-link active"
+              id="v-pills-history-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-history"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-history"
+              aria-selected="true"
+            >
+              تاريخ البنك
+            </button>
+            <!-- End History bank Tab -->
+
+            <!-- Start About bank Tab -->
+            <button
+              class="nav-link"
+              id="v-pills-about-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-about"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-about"
+              aria-selected="false"
+            >
+              نبذة عن البنك
+            </button>
+            <!-- End About bank Tab -->
+
+            <!-- Start Directors bank Tab -->
+            <button
+              class="nav-link"
+              id="v-pills-directors-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-directors"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-directors"
+              aria-selected="false"
+            >
+              مجلس الادارة
+            </button>
+            <!-- End Directors bank Tab -->
+
+            <!-- Start Speech Directors bank Tab -->
+            <button
+              class="nav-link"
+              id="v-pills-speech-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-speech"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-speech"
+              aria-selected="false"
+            >
+              كلمة رئيس مجلس الادراة
+            </button>
+            <!-- End Speech Directors bank Tab -->
+
+            <!-- Start Team bank Tab -->
+            <button
+              class="nav-link"
+              id="v-pills-team-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-team"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-team"
+              aria-selected="false"
+            >
+              فريق الادراة
+            </button>
+            <!-- End Team bank Tab -->
+
+            <!-- Start report bank Tab -->
+            <button
+              class="nav-link"
+              id="v-pills-report-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-report"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-report"
+              aria-selected="false"
+            >
+              التقرير السنوي
+            </button>
+            <!-- End report bank Tab -->
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <!-- Start History bank Content -->
+            <div
+              class="tab-pane fade show active"
+              id="v-pills-history"
+              role="tabpanel"
+              aria-labelledby="v-pills-history-tab"
+              tabindex="0"
+            >
+              <h2 class="title_bank">تاريخ البنك</h2>
+              <p class="text_bank">
+                يعد بنك دجلة أقدم وأعرق البنوك التجارية المصرية ، حيث أنشئ في 25
+                يونيو 1898 برأسمال مليون جنيه إسترليني ، وقد تطورت وظائف البنك
+                وأعماله بشكل مستمر عبر تاريخه وفقاً للتطورات الاقتصادية
+                والسياسية التي مرت بها البلاد ، ففي الخمسينات من القرن الماضي
+                تولى البنك القيام بوظائف البنوك المركزية ثم تفرغ بعد تأميمه في
+                الستينات لأعمال البنوك التجارية مع استمرار قيامه بوظائف البنك
+                المركزي في المناطق التي لا يوجد للأخير فروع بها ، فضلاً عن
+                الاضطلاع منذ منتصف الستينات من القرن الماضي بإصدار وإدارة شهادات
+                الاستثمار لحساب الدولة.وتمكن البنك خلال الفترة من 1 يوليو 2020
+                إلى 31 ديسمبر 2021 (18 شهراً) من تحقيق نتائج أداء غير مسبوقة،
+                حيث بلغ إجمالي المركز المالي نحو 3.3 تريليون جنيه في نهاية
+                ديسمبر2021 بمعدل نمو 60.2% عن نهاية يونيو 2020، لتصل نسبة إجمالي
+                أصول البنك إلى نحو 37.5% من إجمالي أصول الجهاز المصرفي المصري،
+                واستمر المركز المالي للبنك في الارتفاع ليصل إلى نحو 3.6 تريليون
+                جنيه في نهاية يونيو 2022.وبلغت أرصدة الودائع نحو 2.4 تريليون
+                جنيه في نهاية ديسمبر 2021 بمعدل نمو بلغ نحو 50% عن يونيو 2020
+                تمثل نحو 37.1% من إجمالي ودائع الجهاز المصرفي، وذلك بفضل قيام
+                البنك بتقديم مجموعة متنوعة من الأوعية الادخارية بالعملتين
+                المحلية والأجنبية بأسعار فائدة جاذبة وتنافسية، ولتقترب ودائع
+                البنك من نحو 2.8 تريليون جنيه في نهاية يونيو 2022 مما يعكس ثقة
+                العملاء في البنك الأهلي المصري.كما قام البنك بتوفير العديد من
+                الأنظمة التمويلية المميزة التي تلبى كافة الاحتياجات التمويلية
+                اللازمة لكافة القطاعات الاقتصادية الرئيسية، حيث بلغ إجمالي محفظة
+                التجزئة المصرفية نحو 159 مليار جنيه في نهاية ديسمبر2021 "بحصة
+                سوقية تمثل نحو 26.3%" بزيادة قدرها 57 ملياراً عن يونيو2020
+                وبمعدل نمو بلغ نحو 56% (تتضمن نحو 11.5 مليار جنيه ضمن مبادرة
+                البنك المركزي المصري للتمويل العقاري لنحو 105 ألف عميل)، وقد
+                استمرت قروض التجزئة في الارتفاع لتصل إلى 188 مليار جنيه في نهاية
+                يونيو 2022.
+              </p>
+            </div>
+            <!-- End History bank Content -->
+
+            <!-- Start About bank Content -->
+            <div
+              class="tab-pane fade"
+              id="v-pills-about"
+              role="tabpanel"
+              aria-labelledby="v-pills-about-tab"
+              tabindex="0"
+            >
+              <h2 class="title_bank">تاريخ البنك</h2>
+            </div>
+            <!-- End About bank Content -->
+
+            <!-- Start Directors bank Content -->
+            <div
+              class="tab-pane fade"
+              id="v-pills-directors"
+              role="tabpanel"
+              aria-labelledby="v-pills-directors-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+            <!-- End Directors bank Content -->
+
+            <!-- Start Speech Directors bank Content -->
+            <div
+              class="tab-pane fade"
+              id="v-pills-speech"
+              role="tabpanel"
+              aria-labelledby="v-pills-speech-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+            <!-- End Speech Directors bank Content -->
+
+            <!-- Start Team bank Content -->
+            <div
+              class="tab-pane fade"
+              id="v-pills-team"
+              role="tabpanel"
+              aria-labelledby="v-pills-team-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+            <!-- End Team bank Content -->
+
+            <!-- Start report bank Tab -->
+            <div
+              class="tab-pane fade"
+              id="v-pills-report"
+              role="tabpanel"
+              aria-labelledby="v-pills-report-tab"
+              tabindex="0"
+            >
+              ...
+            </div>
+            <!-- End report bank Tab -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End bank history -->
+
+    <!-- Start Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-12">
+            <a href="index.html">
+              <img src="./media/image/logo.png" class="logo" alt="logo" />
+            </a>
+            <div class="contact_info">
+              <p class="title">المقر الرئيسي</p>
+              <p class="text">
+                1254 كورنيش النيل , برج الدالى , الدور التاني , بنك دجلة
+              </p>
+            </div>
+            <div class="contact_info">
+              <p class="title">اتصل بنا</p>
+              <p class="text">محليا 251254 - دوليا 201245451</p>
+            </div>
+            <div class="contact_info">
+              <p class="title">تواصل معنا</p>
+              <ul class="socialicon">
+                <li>
+                  <a href="https://www.facebook.com/ahmedhawam2030"
+                    ><i class="fab fa-facebook-f icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/AhmedHawam98"
+                    ><i class="fab fa-twitter icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/ahmed-hawam2020"
+                    ><i class="fab fa-linkedin-in icon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/ahmed_hawam"
+                    ><i class="fab fa-instagram icon"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <h4 class="title_footer">بنك دجلة</h4>
+            <div class="col-links">
+              <ul>
+                <li>
+                  <a class="link_footer" href="#">عن البنك</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#">الاستدامة</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#">الوظائف</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#">تمويل المشروعات</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#">تواصل معنا</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <h4 class="title_footer">روابط سريعة</h4>
+            <div class="col-links">
+              <ul>
+                <li>
+                  <a class="link_footer" href="#">خدمات الافراد</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#">خدمات الشركات و المؤسسات</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#">المشاريع الصغيرة</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#">الخزينة</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-12">
+            <h4 class="title_footer">طرق التعامل مع البنك</h4>
+            <div class="col-links">
+              <ul>
+                <li>
+                  <a class="link_footer" href="#">جهاز الخدمة الذاتية</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#">عربي اونلاين</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#">عربي موبايل</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#">مركز خدمة عملاء</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#">اكسبريس SMS</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#">فريق المبيعات المباشر</a>
+                </li>
+                <li>
+                  <a class="link_footer" href="#"
+                    >خدمات الصراف الآلي و بطاقات الدفع</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <p class="rights">جميع الحقوق محفوظة @ 2023 بنك دجلة</p>
+          <div class="item">
+            <a href="#">أسألة شائعة</a>
+            <a href="#">سياسة الامن</a>
+            <a href="#">الشروط و الاحكام</a>
+            <a href="#">سياسة الخصوصية</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

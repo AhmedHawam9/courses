@@ -1,0 +1,116 @@
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 60vh;
+    .text_header {
+      width: 80%;
+      top: 5rem;
+      font-size: 2rem;
+      transform: rotate(0);
+      text-align: center;
+      margin: 0 auto;
+    }
+    img {
+      filter: brightness(0.6);
+    }
+    .function_header {
+      width: 100%;
+      bottom: 0;
+    }
+  }
+  .offer {
+    .offer_description {
+      padding: 1rem;
+      padding-inline-start: 1.5rem;
+    }
+    img {
+      height: 350px;
+    }
+  }
+
+  .exchange_prices {
+    .exchange {
+      flex-direction: column;
+      .form-group {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .exchange_btn {
+        margin: 1rem auto;
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+
+  .application {
+    .application_image {
+      height: 300px;
+    }
+    .title {
+      text-align: center;
+    }
+    .text {
+      text-align: center;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+      .btn {
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+
+  .blogs {
+    .blog_card {
+      flex-direction: column;
+      img {
+        width: 100%;
+        border-radius: 6px 6px 0 0;
+      }
+      .description_blog {
+        width: 100%;
+      }
+    }
+  }
+  .contact_forms {
+    .text {
+      width: 70%;
+    }
+  }
+  footer {
+    .title_footer {
+      text-align: center;
+    }
+    .col-links {
+      ul {
+        li {
+          text-align: center;
+        }
+      }
+    }
+    .footer_bottom {
+      flex-direction: column;
+      align-items: center;
+      .rights {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      .item {
+        width: 100%;
+        text-align: center;
+        a {
+          font-size: 0.9rem;
+          margin-inline-end: 0.5rem;
+          &:last-child {
+            margin-inline-end: 0;
+          }
+        }
+      }
+    }
+  }
+}

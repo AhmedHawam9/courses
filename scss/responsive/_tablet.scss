@@ -1,0 +1,92 @@
+@media only screen and (max-width: 991.98px) {
+  .header {
+    .text_header {
+      width: 40%;
+      top: 6rem;
+    }
+    .function_header {
+      width: 60%;
+    }
+  }
+  .offer {
+    img {
+      height: 400px;
+    }
+  }
+  .exchange_prices {
+    .text {
+      margin-bottom: 2rem;
+    }
+    .exchange {
+      width: 100%;
+      justify-content: center;
+      .form-group {
+        width: 42.5%;
+        select {
+          width: 100%;
+        }
+      }
+      .exchange_btn {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .btn_exchange_page {
+      margin-top: 2rem;
+    }
+  }
+  .application {
+    .application_image {
+      height: 350px;
+    }
+    .title {
+      font-size: 1.7rem;
+      width: 100%;
+    }
+    .text {
+      font-size: 1.2rem;
+      width: 100%;
+    }
+    .buttons {
+      display: flex;
+      .btn {
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+  .links_section {
+    .link_card {
+      margin-bottom: 2rem;
+      &.middle_link_card {
+        margin-bottom: 2rem;
+        img {
+          height: 400px;
+        }
+      }
+      img {
+        height: 400px;
+      }
+    }
+  }
+  .contact_forms {
+    .text {
+      width: 40%;
+    }
+  }
+  footer {
+    .logo {
+      margin: 0 auto 2rem;
+    }
+    .contact_info {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      .socialicon {
+        justify-content: center;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

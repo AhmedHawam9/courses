@@ -1,0 +1,18 @@
+@media only screen and (max-width: 1200px) {
+    .header {
+        .text_header {
+            width: 25%;
+            top: 5rem;
+        }
+        .function_header {
+            width: 50%;
+        }
+    }
+    .offer {
+        .offer_description {
+            .text {
+                width: 90%;
+            }
+        }
+    }
+}
