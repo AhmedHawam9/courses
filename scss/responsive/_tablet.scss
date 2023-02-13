@@ -75,6 +75,43 @@
       width: 40%;
     }
   }
+  .bank_history {
+    .nav-pills {
+      margin-inline-end: 2rem;
+    }
+    .tab-content {
+      .directors {
+        .card_director {
+          width: 47%;
+          margin-inline-end: 5%;
+          &:nth-child(2n) {
+            margin-inline-end: 0;
+          }
+          &:nth-child(3n) {
+            margin-inline-end: 5%;
+          }
+        }
+      }
+      .reports {
+        .card_report {
+          width: 47%;
+          margin-inline-end: 5%;
+          &:nth-child(2n) {
+            margin-inline-end: 0;
+          }
+          &:nth-child(3n) {
+            margin-inline-end: 5%;
+          }
+        }
+      }
+      .speech {
+        flex-direction: column;
+        .image {
+          margin: 2rem auto;
+        }
+      }
+    }
+  }
   footer {
     .logo {
       margin: 0 auto 2rem;

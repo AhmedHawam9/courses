@@ -538,6 +538,10 @@ a {
 
 .bank_history {
   margin: 5rem 0;
+  .content_bank {
+    display: flex;
+    align-items: start;
+  }
   .nav-pills {
     width: 20%;
     margin-inline-end: 5rem;
@@ -563,11 +567,158 @@ a {
       color: $PrimaryText;
       margin-bottom: 1.5rem
     }
-    .text_bank {
+    .text_bank, .text_bank * {
       font-family: "regular";
       color: $SecondText;
       font-size: 1.2rem;
-      line-height: 2
+      line-height: 2;
+      margin-bottom: 3rem;
+    }
+    .sustainability_content_img {
+      width: 100%;
+      height: 350px;
+      margin-bottom: 2rem;
+    }
+    .card_about_bank {
+      width: 48%;
+      margin-inline-end: 1.5%;
+      display: inline-block;
+      border: 1px solid $PrimaryText;
+      padding: 1.5rem;
+      border-radius: 6px;
+      .title_about_card {
+        font-family: "semibold";
+        color: #000
+      }
+      .text_about_card {
+        font-family: "regular";
+        color: $SecondText;
+        height: 45px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .directors {
+      display: flex;
+      flex-wrap: wrap;
+      .card_director {
+        display: inline-flex;
+        flex-direction: column;
+        width: 31%;
+        background-color: #F7F7F7;
+        margin-bottom: 2rem;
+        margin-inline-end: 2%;
+        &:nth-child(3n) {
+          margin-inline-end: 0;
+        }
+        .image_director {
+          width: 100%;
+          height: 200px;
+        }
+        .title_director {
+          font-family: "semibold";
+          color: $PrimaryText;
+          margin: 1.1rem 1.5rem .7rem;
+        }
+        .title_position {
+          font-family: "regular";
+          color: $SecondText;
+          margin: 0 1.5rem 1.5rem
+        }
+      }
+    }
+    .speech {
+      display: flex;
+      .image {
+        position: relative;
+        margin-top: 15px;
+        img {
+          width: 230px;
+          height: 230px;
+          margin-inline-end: 2.5rem;
+          border-radius: 5px;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: $SecondColor;
+          width: 230px;
+          height: 230px;
+          top: -15px;
+          left: -15px;
+          right: -15px;
+          z-index: -1;
+          border-radius: 5px;
+        }
+      }
+      .text_speech {
+        font-family: "regular";
+        color: $SecondText;
+        font-size: 1.2rem;
+        line-height: 2;
+      }
+    }
+    .reports {
+      display: flex;
+      flex-wrap: wrap;
+      .card_report {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        width: 31%;
+        border: .5px solid #B8B8B8;
+        padding: 1.2rem;
+        margin-bottom: 2rem;
+        margin-inline-end: 2%;
+        font-family: "semibold";
+        color: $SecondText;
+        &:nth-child(3n) {
+          margin-inline-end: 0;
+        }
+        img {
+          width: 35px;
+          height: 45px;
+          margin-inline-end: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.credit {
+  margin: 5rem 0;
+  .card_credit {
+    display: flex;
+    background-color: #F7F7F7;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    img {
+      width: 40%;
+      height: 250px;
+      border-radius: 0px 6px 6px 0px;
+      margin-inline-end: 1.5rem;
+    }
+    .description_card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .title {
+        font-family: "semibold";
+        color: $PrimaryText;
+        margin-bottom: 1rem;
+      }
+      .text {
+        font-family: "regular";
+        color: $SecondText;
+      }
+      .show_more {
+        font-family: "semibold";
+        color: $PrimaryColor;
+        margin-top: 1.5rem;
+      }
     }
   }
 }

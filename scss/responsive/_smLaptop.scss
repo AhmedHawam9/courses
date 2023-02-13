@@ -15,4 +15,29 @@
             }
         }
     }
+    .bank_history {
+        .nav-pills {
+            width: 25%;
+        }
+        .tab-content {
+            .card_about_bank {
+                .text_about_card {
+                    -webkit-line-clamp: 3;
+                    height: 55px;
+                }
+            }
+            .speech {
+                .image {
+                    img {
+                        height: 200px;
+                        width: 200px;
+                    }
+                    &::after {
+                        height: 200px;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
 }
