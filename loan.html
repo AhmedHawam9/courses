@@ -12,7 +12,7 @@
     <!-- ? Main CSS -->
 
     <!-- ? Custom CSS -->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-select.min.css" />
     <!-- ? Custom CSS -->
 
     <!-- ? Main JavaScript -->
@@ -24,7 +24,7 @@
     <!-- ? Main JavaScript -->
 
     <!-- ? Custom JavaScript -->
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
     <!-- ? Custom JavaScript -->
 
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -117,8 +117,16 @@
               الانترنت البنكي
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="banking_internet.html">الانترنت البنكي</a></li>
-              <li><a class="dropdown-item" href="banking_internet.html">الانترنت البنكي</a></li>
+              <li>
+                <a class="dropdown-item" href="banking_internet.html"
+                  >الانترنت البنكي</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="banking_internet.html"
+                  >الانترنت البنكي</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -128,203 +136,168 @@
 
     <!-- Start hero section -->
     <section class="hero_section">
-      <img src="./media/image/contact.jpg" alt="contact" />
-      <h1 class="title">التواصل معنا</h1>
-      <ul class="nav nav-pills" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active"
-            id="pills-contact-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-contact"
-            type="button"
-            role="tab"
-            aria-controls="pills-contact"
-            aria-selected="true"
-          >
-            اتصل بنا
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="pills-complaints-tab"
-            data-bs-toggle="pill"
-            data-bs-target="#pills-complaints"
-            type="button"
-            role="tab"
-            aria-controls="pills-complaints"
-            aria-selected="false"
-          >
-            الشكاوي
-          </button>
-        </li>
-      </ul>
+      <img src="./media/image/loan.jpg" alt="credit_cards" />
+      <h1 class="title">حاسبة القروض</h1>
     </section>
-    <!-- Start hero section -->
+    <!-- End hero section -->
 
-    <section class="contact_forms">
+    <!-- Start loan -->
+    <section class="loan">
       <div class="container">
-        <div class="tab-content" id="pills-tabContent">
-          <!-- Start contact form -->
-          <div
-            class="tab-pane fade show active"
-            id="pills-contact"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab"
-            tabindex="0"
-          >
-            <h2 class="title">اتصل بنا</h2>
-            <p class="text">
-              من فضلك ادخل البيانات التالية لارسال طلبك الى خدمة العملاء وسنقوم
-              بالرد عليك فى خلال 24 ساعة
-            </p>
+        <div class="row">
+          <div class="col-lg-6 col-12">
             <form action="">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      class="form-control"
-                      placeholder="الاسم"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      name=""
-                      id=""
-                      class="form-control"
-                      placeholder="البريد الالكتروني"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      class="form-control"
-                      placeholder="رقم الهاتف"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      class="form-control"
-                      placeholder="عنوان الرسالة"
-                    />
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <textarea
-                      name=""
-                      id=""
-                      cols="30"
-                      rows="10"
-                      class="form-control"
-                      placeholder="نص الرسالة"
-                    ></textarea>
-                  </div>
-                </div>
+              <div class="form-group">
+                <select
+                  name=""
+                  id=""
+                  class="selectpicker form-control"
+                  title="نوع القرض"
+                >
+                  <option value="">قرض 1</option>
+                  <option value="">قرض 2</option>
+                </select>
               </div>
-              <button type="submit" class="btn submit_btn">ارسال</button>
-            </form>
-          </div>
-          <!-- End contact form -->
+              <div class="form-group">
+                <select
+                  name=""
+                  id=""
+                  class="selectpicker form-control"
+                  title="اختر برنامج القروض"
+                >
+                  <option value="">قرض 1</option>
+                  <option value="">قرض 2</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="المبلغ"
+                />
+                <small>*يجب ان يكون المبلغ بين 25000 و 70000 جنيها </small>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="فترة الأقرض فى الفترة"
+                />
+              </div>
+              <div class="form-group">
+                <div id="inputDiv">
+                  <div id="etiqueta"></div>
+                  <input
+                    type="range"
+                    value="40"
+                    min="12"
+                    max="60"
+                    autocomplete="off"
+                  />
+                  <script>
+                    /* para añadir reglas CSS  de manera dinámica*/
+                    var s = document.createElement("style");
+                    document.head.appendChild(s);
 
-          <!-- Start complaints form -->
-          <div
-            class="tab-pane fade"
-            id="pills-complaints"
-            role="tabpanel"
-            aria-labelledby="pills-complaints-tab"
-            tabindex="0"
-          >
-            <h2 class="title">الشكاوي</h2>
-            <p class="text w-50">
-              عميلنا العزيز، حرصًا منا على تقديم أعلى مستويات الخدمة وتعزيز
-              رضاكم على خدماتنا، وحتى نكون دائمًا عند حسن ظنكم، في حال كان لديكم
-              أي شكوى حول خدماتنا أو منتجاتنا، يرجى تخصيص دقائق من وقتك لتقديمها
-              مباشرة إلى البنك من خلال النموذج الالكتروني أدناه و سيتم التواصل
-              معكم من خلال من خلال فريق وحدة شكاوي العملاء خلال ثلاثة أيام عمل.
-            </p>
-            <form action="">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      class="form-control"
-                      placeholder="الاسم"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group">
-                    <input
-                      type="email"
-                      name=""
-                      id=""
-                      class="form-control"
-                      placeholder="البريد الالكتروني"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      class="form-control"
-                      placeholder="رقم الهاتف"
-                    />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group">
-                    <input
-                      type="text"
-                      name=""
-                      id=""
-                      class="form-control"
-                      placeholder="عنوان الرسالة"
-                    />
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-group">
-                    <textarea
-                      name=""
-                      id=""
-                      cols="30"
-                      rows="10"
-                      class="form-control"
-                      placeholder="نص الرسالة"
-                    ></textarea>
-                  </div>
+                    var inputDiv = document.querySelector("#inputDiv");
+                    var w = parseInt(
+                      window
+                        .getComputedStyle(inputDiv, null)
+                        .getPropertyValue("width")
+                    );
+                    /* EL INPUT */
+                    var elInput = document.querySelector("input[type='range']");
+                    elInput.style.width = w + "px";
+                    var inputMin = elInput.getAttribute("min");
+                    var inputMax = elInput.getAttribute("max");
+                    var k = w / (inputMax - inputMin);
+
+                    /* LA ETIQUETA */
+                    var etiqueta = document.querySelector("#etiqueta");
+                    var ew = parseInt(
+                      window
+                        .getComputedStyle(etiqueta, null)
+                        .getPropertyValue("width")
+                    );
+
+                    /* el valor de la etiqueta (el tooltip) */
+                    etiqueta.innerHTML = elInput.value;
+                    /* calcula la posición inicial de la etiqueta (el tooltip) */
+                    etiqueta.style.right = elInput.value * k - ew / 2 + "px";
+                    /* establece el estilo inicial del TRACK */
+                    s.textContent =
+                      "input[type=range]::-webkit-slider-runnable-track{ background-image:-webkit-linear-gradient(right, #FCDF07 " +
+                      elInput.value +
+                      "%,#FCDF07 " +
+                      elInput.value +
+                      "%)}";
+                    s.textContent +=
+                      "input[type=range]::-moz-range-track{ background-image:-moz-linear-gradient(right, #FCDF07 " +
+                      elInput.value +
+                      "%,#FCDF07 " +
+                      elInput.value +
+                      "%)}";
+
+                    elInput.addEventListener(
+                      "input",
+                      function () {
+                        /* cambia el valor de la etiqueta (el tooltip) */
+                        etiqueta.innerHTML = elInput.value;
+                        /* cambia la posición de la etiqueta (el tooltip) */
+                        etiqueta.style.right = elInput.value * k - ew / 2 + "px";
+                        /* cambia el estilo del TRACK */
+                        s.textContent =
+                          "input[type=range]::-webkit-slider-runnable-track{ background-image:-webkit-linear-gradient(right, #FCDF07 " +
+                          elInput.value +
+                          "%,#FCDF07 " +
+                          elInput.value +
+                          "%)}";
+                        s.textContent +=
+                          "input[type=range]::-moz-range-track{ background-image:-moz-linear-gradient(right, #FCDF07 " +
+                          elInput.value +
+                          "%,#FCDF07 " +
+                          elInput.value +
+                          "%)}";
+                      },
+                      false
+                    );
+                  </script>
                 </div>
               </div>
-              <button type="submit" class="btn submit_btn">ارسال</button>
             </form>
           </div>
-          <!-- End complaints form -->
+          <div class="col-lg-6 col-12">
+            <div class="result_loan">
+              <h2 class="title">النتائج الخاصة بالقرض</h2>
+              <div class="result_loan_card">
+                <h3 class="percentage">20 %</h3>
+                <h4 class="title_result">معدل الفائدة المتناقضة</h4>
+              </div>
+
+              <div class="result_loan_card">
+                <h3 class="percentage">10 %</h3>
+                <h4 class="title_result">معدل الفائدة الثابتة</h4>
+              </div>
+
+              <div class="result_loan_card">
+                <h3 class="percentage">550 جنية</h3>
+                <h4 class="title_result">اجمالى الفوائد</h4>
+              </div>
+
+              <div class="result_loan_card">
+                <h3 class="percentage">4.250</h3>
+                <h4 class="title_result">القسط الشهري</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- End loan -->
 
     <!-- Start Footer -->
     <footer>

@@ -1,7 +1,7 @@
-$PrimaryColor: #CE3436;
-$SecondColor: #317D3C;
-$PrimaryText: #0C1F0F;
-$SecondText: #535F55;
+$PrimaryColor: #ce3436;
+$SecondColor: #317d3c;
+$PrimaryText: #0c1f0f;
+$SecondText: #535f55;
 
 @font-face {
   font-family: "light";
@@ -96,7 +96,7 @@ a {
   img {
     width: 100%;
     height: 100%;
-    filter: brightness(.7);
+    filter: brightness(0.7);
   }
   .title {
     position: absolute;
@@ -116,14 +116,14 @@ a {
         margin-inline-end: 0;
       }
       .nav-link {
-        background-color: rgba(230, 230, 230, .76);
+        background-color: rgba(230, 230, 230, 0.76);
         color: #000;
         border-radius: 0;
         width: 100%;
         font-family: "semibold";
-        padding: .75rem;
+        padding: 0.75rem;
         &.active {
-          background-color: rgba(49, 125, 60, .8);
+          background-color: rgba(49, 125, 60, 0.8);
           color: #fff;
         }
       }
@@ -140,7 +140,7 @@ a {
   img {
     width: 100%;
     height: 100%;
-    filter: brightness(.8);
+    filter: brightness(0.8);
   }
   .text_header {
     position: absolute;
@@ -171,10 +171,10 @@ a {
       padding: 2rem;
       color: #fff;
       border: 1px solid $SecondColor;
-      border-inline-end: 1px solid #3A9447;
+      border-inline-end: 1px solid #3a9447;
       width: 33.3%;
       text-align: center;
-      transition: .7s ease-in-out;
+      transition: 0.7s ease-in-out;
       &:last-child {
         border-inline-end: none;
       }
@@ -189,14 +189,14 @@ a {
         background-color: #fff;
         color: $SecondColor;
         border: 1px solid $SecondColor;
-        transition: .7s ease-in-out;
+        transition: 0.7s ease-in-out;
       }
     }
   }
 }
 
 .offer {
-  background-color: #F2F7F3;
+  background-color: #f2f7f3;
   img {
     width: 100%;
     height: 550px;
@@ -217,13 +217,13 @@ a {
       font-family: "semibold";
       padding: 1rem 2.5rem;
       color: #fff;
-      background-color: #CE3436;
-      transition: .7s ease-in-out;
+      background-color: #ce3436;
+      transition: 0.7s ease-in-out;
       &:hover {
         color: $PrimaryColor;
         border: 1px solid $PrimaryColor;
         background-color: transparent;
-        transition: .7s ease-in-out;
+        transition: 0.7s ease-in-out;
       }
     }
   }
@@ -272,7 +272,7 @@ a {
         width: 10px;
         height: 10px;
         border-radius: 3px;
-        opacity: .3;
+        opacity: 0.3;
         &.swiper-pagination-bullet-active {
           opacity: 1;
           width: 35px;
@@ -283,7 +283,7 @@ a {
 }
 
 .exchange_prices {
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding: 5rem 0;
   .text {
     font-family: "regular";
@@ -321,15 +321,15 @@ a {
         border-radius: 0;
         width: 50%;
         font-family: "regular";
-        font-size: .8rem;
-        padding: .75rem;
+        font-size: 0.8rem;
+        padding: 0.75rem;
         -moz-appearance: none;
         -webkit-appearance: none;
         appearance: none;
-        background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+        background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
         background-repeat: no-repeat, repeat;
-        background-position: left .7em top 50%, 0 0;
-        background-size: .65em auto, 100%;
+        background-position: left 0.7em top 50%, 0 0;
+        background-size: 0.65em auto, 100%;
       }
     }
   }
@@ -342,12 +342,12 @@ a {
     font-family: "semibold";
     color: #fff;
     background-color: $PrimaryColor;
-    transition: .7s ease-in-out;
+    transition: 0.7s ease-in-out;
     &:hover {
       color: $PrimaryColor;
       border: 1px solid $PrimaryColor;
       background-color: transparent;
-      transition: .7s ease-in-out;
+      transition: 0.7s ease-in-out;
     }
   }
 }
@@ -369,7 +369,7 @@ a {
   }
   .text {
     font-family: "regular";
-    color: #D9D9D9;
+    color: #d9d9d9;
     width: 80%;
     margin: 1.5rem 0 4rem;
     font-size: 1.5rem;
@@ -399,7 +399,7 @@ a {
   .blog_card {
     display: flex;
     border-radius: 6px;
-    border: 1px solid #A6A6A6;
+    border: 1px solid #a6a6a6;
     margin-bottom: 2rem;
     img {
       width: 45%;
@@ -416,8 +416,8 @@ a {
         width: fit-content;
         background-color: $SecondColor;
         color: #fff;
-        font-size: .8rem;
-        padding: .5rem 1.5rem;
+        font-size: 0.8rem;
+        padding: 0.5rem 1.5rem;
       }
       .title {
         font-family: "semibold";
@@ -438,13 +438,13 @@ a {
     display: block;
     width: fit-content;
     color: #fff;
-    background-color: #CE3436;
-    transition: .7s ease-in-out;
+    background-color: #ce3436;
+    transition: 0.7s ease-in-out;
     &:hover {
       color: $PrimaryColor;
       border: 1px solid $PrimaryColor;
       background-color: transparent;
-      transition: .7s ease-in-out;
+      transition: 0.7s ease-in-out;
     }
   }
 }
@@ -482,12 +482,12 @@ a {
       border-radius: 0;
       background-color: $PrimaryColor;
       color: #fff;
-      transition: .7s ease-in-out;
+      transition: 0.7s ease-in-out;
       &:hover {
         background-color: transparent;
         color: $PrimaryColor;
         border: 1px solid $PrimaryColor;
-        transition: .7s ease-in-out;
+        transition: 0.7s ease-in-out;
       }
     }
   }
@@ -511,10 +511,10 @@ a {
     margin-bottom: 1.5rem;
     .form-control {
       color: $SecondText;
-      background-color: #F7F7F7;
+      background-color: #f7f7f7;
       border-radius: 4px;
       font-family: "semibold";
-      padding: .75rem;
+      padding: 0.75rem;
       resize: none;
     }
   }
@@ -524,14 +524,14 @@ a {
     background-color: $PrimaryColor;
     color: #fff;
     font-family: "semibold";
-    padding: .75rem 4rem;
+    padding: 0.75rem 4rem;
     border-radius: 0;
-    transition: .7s ease-in-out;
+    transition: 0.7s ease-in-out;
     &:hover {
       background-color: transparent;
       color: $PrimaryColor;
       border: 1px solid $PrimaryColor;
-      transition: .7s ease-in-out;
+      transition: 0.7s ease-in-out;
     }
   }
 }
@@ -550,7 +550,7 @@ a {
       font-size: 1.2rem;
       padding: 1.5rem 2rem;
       font-family: "regular";
-      background-color: #EBEBEB;
+      background-color: #ebebeb;
       color: $PrimaryText;
       border-radius: 0;
       border-bottom: 1px solid #fff;
@@ -565,9 +565,10 @@ a {
     .title_bank {
       font-family: "semibold";
       color: $PrimaryText;
-      margin-bottom: 1.5rem
+      margin-bottom: 1.5rem;
     }
-    .text_bank, .text_bank * {
+    .text_bank,
+    .text_bank * {
       font-family: "regular";
       color: $SecondText;
       font-size: 1.2rem;
@@ -588,7 +589,7 @@ a {
       border-radius: 6px;
       .title_about_card {
         font-family: "semibold";
-        color: #000
+        color: #000;
       }
       .text_about_card {
         font-family: "regular";
@@ -608,7 +609,7 @@ a {
         display: inline-flex;
         flex-direction: column;
         width: 31%;
-        background-color: #F7F7F7;
+        background-color: #f7f7f7;
         margin-bottom: 2rem;
         margin-inline-end: 2%;
         &:nth-child(3n) {
@@ -621,12 +622,12 @@ a {
         .title_director {
           font-family: "semibold";
           color: $PrimaryText;
-          margin: 1.1rem 1.5rem .7rem;
+          margin: 1.1rem 1.5rem 0.7rem;
         }
         .title_position {
           font-family: "regular";
           color: $SecondText;
-          margin: 0 1.5rem 1.5rem
+          margin: 0 1.5rem 1.5rem;
         }
       }
     }
@@ -669,7 +670,7 @@ a {
         flex-direction: row;
         align-items: center;
         width: 31%;
-        border: .5px solid #B8B8B8;
+        border: 0.5px solid #b8b8b8;
         padding: 1.2rem;
         margin-bottom: 2rem;
         margin-inline-end: 2%;
@@ -692,12 +693,12 @@ a {
   margin: 5rem 0;
   .card_credit {
     display: flex;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     border-radius: 6px;
     margin-bottom: 2rem;
     img {
       width: 40%;
-      height: 250px;
+      height: 200px;
       border-radius: 0px 6px 6px 0px;
       margin-inline-end: 1.5rem;
     }
@@ -719,6 +720,318 @@ a {
         color: $PrimaryColor;
         margin-top: 1.5rem;
       }
+    }
+  }
+}
+
+.type_credit {
+  margin: 5rem 0;
+  .type_card_credit {
+    border: 0.5px solid #9f9f9f;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    img {
+      width: 100%;
+      height: 250px;
+      border-radius: 6px 6px 0 0;
+    }
+    .title {
+      background-color: $SecondColor;
+      color: #fff;
+      font-family: "semibold";
+      padding: 1rem;
+      text-align: center;
+    }
+    .text {
+      color: $PrimaryText;
+      font-family: "semibold";
+      width: 80%;
+      font-size: 1.2rem;
+      margin: 1rem auto 2rem;
+      text-align: center;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      width: fit-content;
+      background-color: $PrimaryColor;
+      color: #fff;
+      border-radius: 0;
+      width: 40px;
+      height: 40px;
+      margin-inline-start: auto;
+      margin-inline-end: 0.8rem;
+      margin-bottom: 0.8rem;
+      transition: 0.7s ease-in-out;
+      &:hover {
+        background-color: transparent;
+        color: $PrimaryColor;
+        border: 1px solid $PrimaryColor;
+        transition: 0.7s ease-in-out;
+      }
+    }
+  }
+}
+
+.details_card {
+  margin: 5rem 0;
+  .title {
+    font-family: "bold";
+    color: $PrimaryText;
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .image_header {
+    display: block;
+    width: 400px;
+    margin: 0 auto 5rem;
+  }
+  .advantages {
+    .sub_title {
+      font-family: "semibold";
+      color: #000;
+      margin-bottom: 1.5rem;
+    }
+    ul {
+      li {
+        font-family: "semibold";
+        color: $PrimaryText;
+        width: 70%;
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+}
+
+.banking_internet {
+  margin: 5rem 0;
+  .card_banking_internet {
+    border: 0.5px solid #9f9f9f;
+    border-radius: 6px;
+    margin-bottom: 2rem;
+    img {
+      width: 100%;
+      height: 300px;
+      border-radius: 6px 6px 0 0;
+    }
+    .title {
+      background-color: $SecondColor;
+      color: #fff;
+      font-family: "semibold";
+      padding: 1rem;
+      text-align: center;
+    }
+    .text {
+      color: $PrimaryText;
+      font-family: "semibold";
+      width: 80%;
+      font-size: 1.2rem;
+      margin: 1rem auto 2rem;
+      text-align: center;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      width: fit-content;
+      background-color: $PrimaryColor;
+      color: #fff;
+      border-radius: 0;
+      width: 40px;
+      height: 40px;
+      margin-inline-start: auto;
+      margin-inline-end: 0.8rem;
+      margin-bottom: 0.8rem;
+      transition: 0.7s ease-in-out;
+      &:hover {
+        background-color: transparent;
+        color: $PrimaryColor;
+        border: 1px solid $PrimaryColor;
+        transition: 0.7s ease-in-out;
+      }
+    }
+  }
+}
+
+.loan {
+  margin: 5rem 0;
+  .result_loan {
+    padding: 2rem;
+    background-color: $SecondColor;
+    .title {
+      font-family: "semibold";
+      color: #fff;
+    }
+    .result_loan_card {
+      display: inline-flex;
+      flex-direction: column;
+      width: 48%;
+      margin-top: 4rem;
+      margin-inline-end: 3%;
+      &:nth-child(2n) {
+        margin-inline-end: 0;
+      }
+      .percentage {
+        font-family: "semibold";
+        color: #fff;
+        margin-bottom: 0.4rem;
+      }
+      .title_result {
+        font-family: "semibold";
+        color: #d9d9d9;
+      }
+    }
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+    input {
+      background-color: #f7f7f7;
+      font-family: "semibold";
+      color: $SecondText;
+      padding: 1rem;
+      border: transparent;
+    }
+    .bootstrap-select {
+      .dropdown-toggle {
+        background-color: #f7f7f7;
+        padding: 1rem;
+        &:hover {
+          border-color: transparent;
+        }
+        .filter-option-inner-inner {
+          font-family: "semibold";
+          color: $SecondText;
+          text-align: start;
+        }
+      }
+      .dropdown-menu {
+        li {
+          a {
+            font-family: "semibold";
+            color: $SecondText;
+            text-align: start;
+          }
+        }
+      }
+    }
+    small {
+      display: block;
+      text-align: end;
+      font-family: "regular";
+      color: $SecondText;
+      margin-top: 0.7rem;
+      font-size: 0.8rem;
+    }
+
+    input[type="range"] {
+      display: block;
+      background-color: transparent;
+      width: 100% !important;
+    }
+
+    input[type="range"]:focus {
+      outline: none;
+    }
+
+    #inputDiv {
+      width: 100%;
+      margin: 5rem auto 0;
+      position: relative;
+    }
+
+    #etiqueta {
+      width: 30px;
+      height: 26px;
+      // position: absolute;
+      z-index: 9;
+      background-color: #FCDF07;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      padding-top: 7px;
+      top: -45px;
+    }
+
+    #etiqueta:after {
+      content: "";
+      display: block;
+      width: 10px;
+      height: 10px;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      z-index: 8;
+      background-color: #FCDF07;
+      position: relative;
+      right: 9px;
+      top: -5px;
+      z-index: -1;
+      /*top:-1px;*/
+    }
+    /* 2 */
+
+    input[type="range"],
+    input[type="range"]::-webkit-slider-runnable-track,
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+    }
+    /* 2.1 THUMB */
+
+    input[type="range"]::-webkit-slider-thumb {
+      background-color: #fff;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #333;
+      border-radius: 50%;
+      margin-top: -9px;
+    }
+
+    input[type="range"]::-moz-range-thumb {
+      background-color: #555;
+      width: 15px;
+      height: 15px;
+      border: 3px solid #333;
+      border-radius: 50%;
+    }
+
+    input[type="range"]::-ms-thumb {
+      background-color: #555;
+      width: 20px;
+      height: 20px;
+      border: 3px solid #333;
+      border-radius: 50%;
+    }
+    /* 2.2 TRACK */
+
+    input[type="range"]::-webkit-slider-runnable-track {
+      background-color: #fff;
+      height: 3px;
+    }
+
+    input[type="range"]:focus::-webkit-slider-runnable-track {
+      outline: none;
+    }
+
+    input[type="range"]::-moz-range-track {
+      background-color: #555;
+      height: 3px;
+    }
+
+    input[type="range"]::-ms-track {
+      background-color: #555;
+      height: 3px;
+    }
+
+    input[type="range"]::-ms-fill-lower {
+      background-color: #FCDF07;
+    }
+
+    input[type="range"]::-ms-fill-upper {
+      background-color: black;
     }
   }
 }
