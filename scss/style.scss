@@ -1104,5 +1104,95 @@ a {
   }
 }
 
+.branches_atm {
+  margin: 4rem 0;
+  .title {
+    font-family: "semibold";
+    color: $PrimaryText;
+    text-align: center;
+  }
+  .text {
+    font-family: "semibold";
+    color: $SecondText;
+    text-align: center;
+    width: 25%;
+    margin: 0 auto 3rem;
+  }
+  .table {
+    thead {
+      .head_back {
+        th {
+          background-color: $SecondColor;
+          color: #fff;
+          font-family: "semibold";
+          font-size: 1.2rem;
+          text-align: center;
+          vertical-align: middle
+        }
+      }
+      .subhead_back {
+        th {
+          background-color: rgba(49, 125, 60, .5);
+          color: #fff;
+          font-family: "semibold";
+          font-size: 1.2rem;
+          text-align: center;
+          vertical-align: middle
+        }
+      }
+    }
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          background-color: transparent
+        }
+        &:nth-child(even) {
+          background-color: rgba(49, 125, 60, .1);
+        }
+        font-family: "semibold";
+        color: $PrimaryText;
+        text-align: center;
+        font-size: 1.1rem;
+        vertical-align: middle;
+        .logo_lang {
+          width: 30px;
+        }
+        .currency {
+          font-size: .8rem;
+          margin-bottom: 0
+        }
+      }
+    }
+  }
+  .bootstrap-select {
+    margin-top: 2rem;
+    .dropdown-toggle {
+      padding: .75rem;
+      &:hover {
+        background-color: #f8f9fa;
+        border-color: transparent;
+      }
+    }
+    .dropdown-menu {
+      li {
+        a {
+          span {
+            &.text {
+              margin-bottom: 0;
+              text-align: start;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .filter-option-inner-inner {
+    text-align: start;
+    font-family: "semibold";
+    color: $SecondText
+  }
+}
+
 @import "./_layout.scss";
 @import "./_responsive.scss";
