@@ -1,157 +1,98 @@
 @media only screen and (max-width: 991.98px) {
-  .header {
-    .text_header {
-      width: 40%;
-      top: 6rem;
-    }
-    .function_header {
-      width: 60%;
+  .dashboard {
+    .row.flex-nowrap.w-100 {
+      margin: 0 !important;
     }
   }
-  .offer {
-    img {
-      height: 400px;
-    }
+  .login {
+    width: 80%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
   }
-  .exchange_prices {
-    .text {
-      margin-bottom: 2rem;
+  .index_cards {
+    margin-inline-start: 0;
+    .home {
+      .targets {
+        .target_card {
+          width: 100%;
+          margin-inline-end: 0;
+          margin-bottom: 2.5rem;
+          &:nth-child(even) {
+            margin-inline-end: 0;
+            position: unset;
+            top: unset;
+          }
+        }
+      }
     }
-    .exchange {
-      width: 100%;
-      justify-content: center;
-      .form-group {
-        width: 42.5%;
-        select {
+    .top_messages {
+      p {
+        width: 80%;
+      }
+      .message_card {
+        width: 100%;
+      }
+    }
+    .card_current_questions {
+      .description {
+        .text {
+          width: 80%;
+        }
+      }
+      .answer_btn {
+        padding: 0.75rem 2rem;
+        width: 40%;
+      }
+    }
+    .add_questions {
+      form {
+        width: 100%;
+      }
+    }
+    .question {
+      .details_question {
+        .card_Message_Details {
+          .details {
+            .required_time, .line, .remaining_time {
+              margin-inline-end: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .library {
+      .ps-4 {
+        padding-inline-start: .75rem !important;
+        padding-inline-end: .75rem !important;
+        margin-top: 1.5rem;
+      }
+    }
+    .setting {
+      .personal_data {
+        p {
+          width: 50%;
+        }
+        form {
           width: 100%;
         }
       }
-      .exchange_btn {
-        width: 50px;
-        height: 50px;
-      }
     }
-    .btn_exchange_page {
+    .team_details .side_answer {
       margin-top: 2rem;
     }
-  }
-  .application {
-    .application_image {
-      height: 350px;
-    }
-    .title {
-      font-size: 1.7rem;
-      width: 100%;
-    }
-    .text {
-      font-size: 1.2rem;
-      width: 100%;
-    }
-    .buttons {
-      display: flex;
-      .btn {
-        img {
-          width: 150px;
-        }
+    .teams, .entry, .questionnaires {
+      padding: 2rem;
+      .filter {
+        width: 100% !important;
       }
     }
-  }
-  .links_section {
-    .link_card {
-      margin-bottom: 2rem;
-      &.middle_link_card {
-        margin-bottom: 2rem;
-        img {
-          height: 400px;
-        }
-      }
-      img {
-        height: 400px;
-      }
-    }
-  }
-  .contact_forms {
-    .text {
-      width: 40%;
-    }
-  }
-  .bank_history {
-    .nav-pills {
-      margin-inline-end: 2rem;
-    }
-    .tab-content {
-      .directors {
-        .card_director {
-          width: 47%;
-          margin-inline-end: 5%;
-          &:nth-child(2n) {
-            margin-inline-end: 0;
-          }
-          &:nth-child(3n) {
-            margin-inline-end: 5%;
+    .add_answer {
+      form {
+        .form-group {
+          .video-js {
+            height: 400px;
           }
         }
-      }
-      .reports {
-        .card_report {
-          width: 47%;
-          margin-inline-end: 5%;
-          &:nth-child(2n) {
-            margin-inline-end: 0;
-          }
-          &:nth-child(3n) {
-            margin-inline-end: 5%;
-          }
-        }
-      }
-      .speech {
-        flex-direction: column;
-        .image {
-          margin: 2rem auto;
-        }
-      }
-    }
-  }
-  .details_card {
-    .advantages {
-      ul {
-        li {
-          width: 100%;
-        }
-      }
-    }
-  }
-  .employment {
-    .text_employment {
-      width: 80%;
-    }
-    .card_employment {
-      margin-bottom: 2rem;
-    }
-  }
-  .details_blog {
-    .text {
-      width: 80%;
-    }
-  }
-  .banking_internet {
-    .card_banking_internet {
-      img {
-        height: 200px;
-      }
-    }
-  }
-  footer {
-    .logo {
-      margin: 0 auto 2rem;
-    }
-    .contact_info {
-      width: 100%;
-      margin: 0 auto;
-      text-align: center;
-      .socialicon {
-        justify-content: center;
-        margin-bottom: 2rem;
       }
     }
   }
