@@ -47,241 +47,25 @@
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
-    <div class="d-flex sidemobile p-0">
-      <!-- ======= Start Sidebar ======= -->
-      <section class="sidebar open">
-        <ul
-          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-          id="menu"
-        >
-          <div class="image_logo">
-            <img src="./media/image/logo.png" alt="logo_sidebar" class="logo" />
+    
+    
+    <section class="login">
+      <div class="container">
+        <form action="./pages/home/index.html" class="login_card">
+          <p class="title">هيا بنا لنبدأ</p>
+          <span class="text">ادخل البيانات التالية لتسجيل دخولك</span>
+          <div class="form-group">
+            <input type="text" name="" id="" class="form-control" placeholder="رقم الموبايل" required>
           </div>
-          <li class="nav-item">
-            <a href="index.html" class="nav-link align-middle">
-              <img src="./media/image/icon/home.png" alt="icon" />
-              <span>الرئيسية</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a
-              href="#submenulibrary"
-              data-bs-toggle="collapse"
-              class="nav-link accordion-button align-middle collapsed"
-            >
-              <img src="./media/image/icon/courses.png" alt="icon" />
-              <span>الكورسات</span>
-              <i class="fa-solid fa-angle-up"></i>
-            </a>
-            <ul
-              class="collapse flex-column"
-              id="submenulibrary"
-              data-bs-parent="#menu"
-            >
-              <div class="close">
-                <i class="fa-solid fa-xmark"></i>
-              </div>
-              <li>
-                <a href="departments.html" class="nav-link">
-                  <i class="fa-solid fa-circle dot"></i>
-                  <span>الكورسات</span></a
-                >
-              </li>
-              <li>
-                <a href="#" class="nav-link">
-                  <i class="fa-solid fa-circle dot"></i>
-                  <span>طلبات الانضمام</span></a
-                >
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="/pages/university/index.html" class="nav-link align-middle">
-              <img src="./media/image/icon/university.png" alt="icon" />
-              <span>الجامعات</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/pages/collage/index.html" class="nav-link align-middle">
-              <img src="./media/image/icon/collage.png" alt="icon" />
-              <span>الكليات</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/pages/teachers/index.html" class="nav-link align-middle">
-              <img src="./media/image/icon/teachers.png" alt="icon" />
-              <span>المدرسين</span>
-            </a>
-          </li>
-          <li class="nav-item disable_mobile">
-            <a href="messages.html" class="nav-link align-middle">
-              <img src="./media/image/icon/subject.png" alt="icon" />
-              <span>المواد التعليمية</span>
-            </a>
-          </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
-              <img src="./media/image/icon/hall.png" alt="icon" />
-              <span>القاعات</span>
-            </a>
-          </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
-              <img src="./media/image/icon/exams.png" alt="icon" />
-              <span>الامتحانات</span>
-            </a>
-          </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
-              <img src="./media/image/icon/students.png" alt="icon" />
-              <span>الطلاب</span>
-            </a>
-          </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
-              <img src="./media/image/icon/intro.png" alt="icon" />
-              <span>مكاتب INTRO</span>
-            </a>
-          </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
-              <img src="./media/image/icon/video.png" alt="icon" />
-              <span>مكاتب فيدويوهات </span>
-            </a>
-          </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
-              <img src="./media/image/icon/lessons.png" alt="icon" />
-              <span>الدروس</span>
-            </a>
-          </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
-              <img src="./media/image/icon/questions.png" alt="icon" />
-              <span>بنك الأسالة</span>
-            </a>
-          </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
-              <img src="./media/image/icon/blogs.png" alt="icon" />
-              <span>المدونة</span>
-            </a>
-          </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
-              <img src="./media/image/icon/financial.png" alt="icon" />
-              <span>المعاملات المالية</span>
-            </a>
-          </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
-              <img src="./media/image/icon/settings.png" alt="icon" />
-              <span>الاعدادات العامة</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!-- ======= end Sidebar ======= -->
-
-      <!-- ======= Main ======= -->
-      <section class="index_cards">
-        <!-- ======= Start navbar ======= -->
-        <nav class="navbar">
-          <div class="d-flex w-25">
-            <div class="menu">
-              <i class="fa-solid fa-bars"></i>
-            </div>
-            <div class="search">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input
-                type="search"
-                name=""
-                id=""
-                class="form-control"
-                placeholder="Search…"
-              />
-            </div>
+          <div class="form-group">
+            <input type="password" name="" id="" class="form-control" placeholder="كلمة المرور" required>
           </div>
-          <div>
-            <div class="changelocal d-inline-block">
-              <div class="dropdown lang">
-                <a
-                  class="btn dropdown-toggle"
-                  href="#"
-                  role="button"
-                  id="dropdownMenuLink"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <!-- lang -->
-                  <i class="fa-solid fa-earth-americas px-2"></i>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <li>
-                    <a class="dropdown-item">
-                      <img
-                        src="./media/image/saudi-arabia.png"
-                        alt="saudi-arabia"
-                      />
-                      Arabic
-                    </a>
-                    <a class="dropdown-item">
-                      <img
-                        src="./media/image/united-kingdom.png"
-                        alt="united-kingdom"
-                      />
-                      English
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="dropdown d-inline-block">
-              <button
-                class="btn btn-secondary dropdown-toggle"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="./media/image/7w7w.jpg"
-                  class="admin_img"
-                  alt="person"
-                />
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li>
-                  <a class="dropdown-item" href="reports.html">Reports</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="setting.html">Setting</a>
-                </li>
-                <li><a class="dropdown-item" href="#">Logout</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-        <!-- ======= End navbar ======= -->
-
-        <!-- ======= Start Content ======= -->
-        <section class="content">
-          <div class="container"></div>
-        </section>
-        <!-- ======= End Content ======= -->
-      </section>
-      <!-- ======= Main ======= -->
-    </div>
-    <!-- ? ======= footer =========== -->
+          <a href="forget_password.html" class="forget_password">نسيت كلمة المرور</a>
+          <button type="submit" class="btn">تسجيل الدخول</button>
+        </form>
+      </div>
+    </section>
 
     <script src="js/main.js"></script>
-    <script src="js/counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script>
-      $(".counter").counterUp({
-        delay: 20,
-        time: 2000,
-      });
-    </script>
   </body>
 </html>

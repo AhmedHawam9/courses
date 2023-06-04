@@ -232,6 +232,35 @@ a {
     transition: .7s ease-in-out;
   }
 }
+.SecondButton {
+  background-color: transparent;
+  color: $SecondColor;
+  border: 1px solid $SecondColor;
+  font-size: .8rem;
+  padding: .75rem 3rem;
+  font-family: "semibold";
+  transition: .7s ease-in-out;
+  &:hover {
+    background-color: $SecondColor;
+    color: #fff;
+    transition: .7s ease-in-out;
+  }
+}
+
+.BlueButton {
+  background-color: $PrimaryColor;
+  color: #fff;
+  font-size: .8rem;
+  padding: .75rem 3rem;
+  font-family: "semibold";
+  transition: .7s ease-in-out;
+  &:hover {
+    background-color: transparent;
+    color: $PrimaryColor;
+    border: 1px solid $PrimaryColor;
+    transition: .7s ease-in-out;
+  }
+}
 
 .filter_table {
   display: flex;
@@ -262,6 +291,7 @@ a {
   }
   .bootstrap-select {
     width: 15% !important;
+    margin-inline-start: .75rem;
     .dropdown-toggle {
       background-color: transparent;
       padding: .8rem;
@@ -349,6 +379,140 @@ table {
       border-radius: 5px;
       margin-top: 2rem;
     }
+    .add_item {
+      border: 1px solid #D6D6D6;
+      border-radius: 5px;
+      margin: 1.5rem 0;
+      padding: 2rem;
+      .form-group {
+        margin-bottom: 1.5rem;
+        width: 55%;
+        label {
+          font-family: "semibold";
+          color: $PrimaryColor;
+          margin-bottom: .8rem;
+        }
+        .form-control {
+          background-color: #F5F8FA;
+          color: #A1A1A1;
+          border-color: transparent;
+          font-family: "regular";
+          font-size: .9rem;
+          padding: 1rem;
+          resize: none;
+          &:focus {
+            border-color: transparent !important;
+          }
+          &::placeholder {
+            color: #a1a1a1;
+          }
+        }
+        .bootstrap-select {
+          padding: 0;
+          .dropdown-toggle {
+            background-color: transparent;
+            padding: 1rem;
+            &:hover {
+              border-color: transparent !important;
+            }
+          }
+          .dropdown-menu {
+            li {
+              a {
+                text-align: start;
+                font-family: "regular";
+                font-size: .9rem;
+              }
+            }
+          }
+          .filter-option-inner-inner {
+            text-align: start;
+            font-family: "regular";
+            font-size: .8rem;
+            color: #a1a1a1;
+          }
+        }
+      }
+      .upload_file {
+        .upload_file_label {
+          background-color: #F5F8FA;
+          border: 1px dashed #D1D3D6;
+          width: 100%;
+          text-align: center;
+          padding: 1.5rem;
+          border-radius: 8px;
+          cursor: pointer;
+          svg {
+            color: $SecondColor;
+            font-size: 3.5rem;
+          }
+          p {
+            font-family: "medium";
+            color: #5F666F;
+            margin: 1.5rem 0 .5rem !important;
+          }
+          span {
+            font-family: "regular";
+            color: #5F666F;
+          }
+        }
+      }
+      .halls_type {
+        text-align: center;
+        padding: 0;
+        border-radius: 8px;
+        width: 48.5%;
+        display: inline-block;
+        label {
+          background-color: #F5F8FA;
+          color: #A1A1A1;
+          margin-bottom: 0;
+          padding: 1rem;
+          width: 100%;
+          cursor: pointer;
+          border-radius: 8px;
+        }
+        
+        input[type="radio"]:checked+label {
+          background-color: $PrimaryColor;
+          color: #fff;
+        }
+      }
+      .content_course {
+        text-align: center;
+        padding: 0;
+        border-radius: 8px;
+        width: 100%;
+        display: inline-block;
+        label {
+          background-color: #F5F8FA;
+          color: #535353;
+          margin-bottom: 0;
+          padding: 1rem;
+          width: 100%;
+          cursor: pointer;
+          border-radius: 8px;
+          svg {
+            color: #535353;
+            font-size: 1.2rem;
+            margin-inline-end: .5rem;
+          }
+        }
+        
+        input[type="radio"]:checked+label {
+          background-color: rgba($color: $SecondColor, $alpha: .07);
+          border: 1px solid $SecondColor;
+          color: #2E0C06;
+          svg {
+            color: $SecondColor;
+          }
+        }
+      }
+      .PrimaryButton {
+        font-size: 1rem;
+        padding: .75rem 7rem;
+      }
+    }
     .teachers {
       margin-top: 2rem;
       border-radius: 5px;
@@ -406,114 +570,357 @@ table {
         }
       }
     }
-    .add_item {
-      border: 1px solid #D6D6D6;
+    .courses {
+      margin-top: 2rem;
       border-radius: 5px;
-      margin-top: 1.5rem;
       padding: 2rem;
-      .form-group {
-        margin-bottom: 1.5rem;
-        width: 55%;
-        label {
-          font-family: "semibold";
-          color: $PrimaryColor;
-          margin-bottom: .8rem;
-        }
-        .form-control {
-          background-color: #F5F8FA;
-          color: #A1A1A1;
-          border-color: transparent;
-          font-family: "regular";
-          font-size: .9rem;
-          padding: .75rem;
-          &:focus {
-            border-color: transparent !important;
-          }
-          &::placeholder {
-            color: #a1a1a1;
+      border: 1px solid #D6D6D6;
+      .filter_table {
+        .form-group {
+          .form-control {
+            background-color: rgba(143, 146, 161, .05);
           }
         }
         .bootstrap-select {
-          padding: 0;
           .dropdown-toggle {
-            background-color: transparent;
-            padding: .75rem;
-            &:hover {
-              border-color: transparent !important;
-            }
-          }
-          .dropdown-menu {
-            li {
-              a {
-                text-align: start;
-                font-family: "regular";
-                font-size: .9rem;
-              }
-            }
-          }
-          .filter-option-inner-inner {
-            text-align: start;
-            font-family: "regular";
-            font-size: .8rem;
-            color: #a1a1a1;
+            background-color: rgba(143, 146, 161, .05);
           }
         }
       }
-      .PrimaryButton {
-        font-size: 1rem;
-        padding: .75rem 7rem;
+      .card_course {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #D4D4D4;
+        border-radius: 10px;
+        margin-bottom: 1.5rem;
+        .data_course {
+          display: flex;
+          img {
+            width: 250px;
+            height: 230px;
+            margin-inline-end: 1.5rem;
+            border-radius: 0 10px 10px 0;
+          }
+          .data {
+            padding: 1.5rem 0;
+            .name {
+              font-family: "semibold";
+              color: $PrimaryText;
+            }
+            .teacher_name {
+              .name {
+                font-family: "regular";
+                color: $SecondColor;
+              }
+              .type_course {
+                font-family: "regular";
+                color: $SecondColor;
+                &:before {
+                  content:"\A";
+                  width:7px;
+                  height:7px;
+                  border-radius:50%;
+                  margin-inline-end: 5px;
+                  background: $PrimaryColor;
+                  display:inline-block;
+                }
+              }
+            }
+            .info {
+              svg {
+                color: #919191;
+                margin-inline-end: .5rem;
+              }
+              p {
+                font-family: "regular";
+                color: $PrimaryText;
+                display: inline-block;
+                .title {
+                  color: #919191;
+                }
+              }
+            }
+          }
+        }
+        .dropdown {
+          margin-top: 1.5rem;
+          margin-inline-end: 1rem;
+          .dropdown-toggle {
+            border-color: transparent;
+            &::after {
+              content: unset;
+            }
+          }
+          .dropdown-menu {
+            .dropdown-item {
+              text-align: start;
+              font-size: .8rem;
+              font-family: "regular";
+            }
+          }
+        }
+      }
+    }
+    .mytree {
+      margin-top: 2rem;
+      div {
+        padding: 0 20px;
+        color: #5F666F;
+        font-family: "semibold";
+        font-size: .8rem;
+        .icon {
+          &::after {
+            content: "+";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            width: 30px;
+            height: 30px;
+            background-color: #5F666F;
+            color: #fff;
+            border-radius: 5px;
+            padding: .5rem;
+            margin-inline-end: .5rem;
+          }
+        }
+        &.university  {
+          &.expanded {
+            p {
+              .icon {
+                &::after {
+                  content: "-";
+                  background-color: $SecondColor;
+                }
+              }
+            }
+          }
+          .faculty {
+            p {
+              .icon {
+                &::after {
+                  content: "+";
+                  background-color: #5F666F;
+                }
+              }
+            }
+            &.expanded {
+              p {
+                .icon {
+                  &::after {
+                    content: "-";
+                    background-color: $SecondColor;
+                  }
+                }
+              }
+            }
+            .department {
+              p {
+                .icon {
+                  &::after {
+                    content: "+";
+                    background-color: #5F666F;
+                  }
+                }
+              }
+              &.expanded {
+                p {
+                  .icon {
+                    &::after {
+                      content: "-";
+                      background-color: $SecondColor;
+                    }
+                  }
+                }
+              }
+              .division {
+                p {
+                  .icon {
+                    &::after {
+                      content: "+";
+                      background-color: #5F666F;
+                    }
+                  }
+                }
+                &.expanded {
+                  p {
+                    .icon {
+                      &::after {
+                        content: "-";
+                        background-color: $SecondColor;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        p {
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+    .mytree div.parent div {
+      display:none;
+      /* cursor:default; */
+    }
+    .mytree div.parent {
+      cursor:pointer;
+    }
+    .subjects {
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        list-style: none;
+        .subject {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #F7F7F7;
+          font-family: "regular";
+          color: #5F666F;
+          padding: .5rem 1rem;
+          border-radius: 32px;
+          width: 20%;
+          margin-inline-end: 5%;
+          margin-bottom: 1.5rem;
+          &:nth-child(4n) {
+            margin-inline-end: 0;
+          }
+          .name {
+            margin-bottom: 0;
+            svg {
+              margin-inline-end: .5rem;
+            }
+          }
+          .delete {
+            color: $SecondColor;
+          }
+        }
+      }
+    }
+    .not_found {
+      text-align: start;
+      margin-top: 1rem;
+      .modal {
+        * {
+          display: block !important;
+        }
+        .modal-dialog {
+          max-width: 30%;
+        }
+        .modal-dialog-centered {
+          display: flex !important;
+        }
+        .modal-content {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          color: var(--bs-modal-color);
+          pointer-events: auto;
+          background-color: var(--bs-modal-bg);
+          background-clip: padding-box;
+          border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+          border-radius: var(--bs-modal-border-radius);
+          outline: 0;
+        }
+        .modal-body {
+          position: relative;
+          flex: 1 1 auto;
+          padding: 2rem;
+          .title_section {
+            margin-bottom: 1.5rem;
+          }
+          .form-group {
+            padding: 0;
+            label {
+              font-family: "medium";
+              color: $PrimaryText;
+              margin-bottom: .5rem;
+            }
+            .form-control {
+              font-size: .8rem;
+              padding: .75rem;
+              background-color: #F5F8FA;
+              margin-bottom: 1.5rem;
+            }
+          }
+        }      
       }
     }
   }
 }
 
 .login {
-  width: 40%;
-  margin: 6rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
   padding: 3rem;
-  background-color: $SecondColor;
-  h1 {
-    color: #fff;
-    text-align: center;
-    font-family: "bold";
-  }
-  h5 {
-    text-align: center;
-    color: $SecondText;
-    font-family: "regular";
-    margin-bottom: 3rem;
-  }
-  .form-group {
-    margin-bottom: 1.5rem;
-    label {
-      margin-bottom: 0.7rem;
-      font-family: "semibold";
-      color: #fff;
-    }
-    input {
-      background-color: #3b3b3b;
-      color: $SecondText;
-      border: transparent;
-      border-radius: 5px;
-      padding: 0.75rem;
-      font-size: 0.8rem;
-      font-family: "regular";
-    }
-  }
-  .btn {
-    width: 100%;
-    background-color: $PrimaryText;
-    color: #fff;
-    padding: 0.75rem;
-    font-size: 0.8rem;
-    margin-top: 1rem;
-    font-family: "semibold";
-    transition: 0.7s ease-in-out;
-    &:hover {
-      border: 1px solid $PrimaryText;
+  background-color: #FAFAFA;
+  .login_card {
+    width: 55%;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+    background-color: #fff;
+    border-radius: 12px;
+    .title {
       color: $PrimaryText;
-      background-color: transparent;
+      text-align: center;
+      font-family: "bold";
+    }
+    .text {
+      text-align: center;
+      color: $PrimaryText;
+      font-family: "regular";
+      text-align: center;
+      display: block;
+      margin-bottom: 3rem;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+      label {
+        margin-bottom: 0.7rem;
+        font-family: "semibold";
+        color: #fff;
+      }
+      input {
+        background-color: transparent;
+        color: $SecondText;
+        border-radius: 5px;
+        padding: 1rem;
+        font-size: 0.8rem;
+        font-family: "regular";
+      }
+    }
+    .forget_password {
+      display: block;
+      color: $PrimaryText;
+      margin-inline-start: auto;
+      width: fit-content;
+      font-family: "semibold";
+    }
+    .btn {
+      width: 100%;
+      background-color: $SecondColor;
+      color: #fff;
+      padding: 1rem;
+      font-size: 0.8rem;
+      margin-top: 1.5rem;
+      font-family: "semibold";
       transition: 0.7s ease-in-out;
+      &:hover {
+        border: 1px solid $PrimaryText;
+        color: $PrimaryText;
+        background-color: transparent;
+        transition: 0.7s ease-in-out;
+      }
     }
   }
 }

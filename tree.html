@@ -55,7 +55,11 @@
           id="menu"
         >
           <div class="image_logo">
-            <img src="../../media/image/logo.png" alt="logo_sidebar" class="logo" />
+            <img
+              src="../../media/image/logo.png"
+              alt="logo_sidebar"
+              class="logo"
+            />
           </div>
           <li class="nav-item">
             <a href="../home/index.html" class="nav-link align-middle">
@@ -96,7 +100,10 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="/pages/university/index.html" class="nav-link align-middle">
+            <a
+              href="/pages/university/index.html"
+              class="nav-link align-middle"
+            >
               <img src="../../media/image/icon/university.png" alt="icon" />
               <span>الجامعات</span>
             </a>
@@ -268,102 +275,161 @@
         <section class="content">
           <div class="container">
             <div class="d-flex align-items-center justify-content-between">
-                <h4 class="title_section">الفرق</h4>
-                <a href="add.html" class="btn PrimaryButton">اضافة فرقة جديدة</a>
+              <h4 class="title_section">الهيكل</h4>
+              <div class="buttons">
+                <button type="button" class="btn SecondButton">حذف الفرقة الرابعة</button>
+                <button type="button" class="btn PrimaryButton">اضافة مادة جديدة</button>
+              </div>
             </div>
-            <div class="table_data">
-                <div class="filter_table">
-                    <div class="form-group">
-                        <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم الكلية , الجامعة , الموقع">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="mytree" style="padding: 12px">
+              <div class="university">
+                <p><span class="icon"></span> جامعة القاهرة</p>
+                <!-- Start not found -->
+                <div class="not_found">
+                  <p>ليس هناك كليات بعد !</p>
+                  <button type="button" class="btn BlueButton" data-bs-toggle="modal" data-bs-target="#facultyModal">إضافة كلية جديدة</button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="facultyModal" tabindex="-1" aria-labelledby="facultyModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <h4 class="title_section">اضافة كلية جديدة</h4>
+                          <form action="">
+                            <div class="form-group">
+                              <label for="">اسم الكلية</label>
+                              <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الكلية">
+                            </div>
+                            <button type="submit" class="btn BlueButton">حفظ</button>
+                          </form>
+                        </div> 
+                      </div>
                     </div>
-                    <select name="" id="" class="form-control selectpicker" title="كل الجامعات">
-                        <option value="">تيست</option>
-                        <option value="">تيست</option>
-                        <option value="">تيست</option>
-                    </select>
-                    <select name="" id="" class="form-control selectpicker" title="كل الكليات">
-                        <option value="">تيست</option>
-                        <option value="">تيست</option>
-                        <option value="">تيست</option>
-                    </select>
+                  </div>
+                  <!-- Finish Modal -->
+
                 </div>
-                <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th scope="col"># الرقم</th>
-                        <th scope="col">اسم الفرقة</th>
-                        <th scope="col">الجامعة</th>
-                        <th scope="col">الكلية</th>
-                        <th scope="col">عدد الطلاب</th>
-                        <th scope="col">تاريخ الاضافة</th>
-                        <th scope="col"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>الفرقة الاول</td>
-                        <td>كلية التجارة عربي</td>
-                        <td>جامعة المنصورة</td>
-                        <td>252</td>
-                        <td>يوليو22 , 2022</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">الأقسام</a></li>
-                                  <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                  <li><a class="dropdown-item" href="#">حذف</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>الفرقة الاول</td>
-                        <td>جامعة القاهرة</td>
-                        <td>كلية التجارة عربي</td>
-                        <td>400</td>
-                        <td>يوليو22 , 2022</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">الأقسام</a></li>
-                                  <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                  <li><a class="dropdown-item" href="#">حذف</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>الفرقة الاول</td>
-                        <td>جامعة الاسكندرية</td>
-                        <td>كلية التجارة عربي</td>
-                        <td>2000</td>
-                        <td>يوليو22 , 2022</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">الأقسام</a></li>
-                                  <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                  <li><a class="dropdown-item" href="#">حذف</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                </table>
+                <!-- End not found -->
+              </div>
+              <div class="university">
+                <p><span class="icon"></span> جامعة المنصورة</p>
+                <div class="faculty">
+                  <p><span class="icon"></span> كلية الهندسة</p>
+                </div>
+                <div class="faculty">
+                  <p><span class="icon"></span> كلية التجارة</p>
+                </div>
+                <div class="faculty">
+                  <p><span class="icon"></span> كلية التجارة</p>
+                  <!-- Start not found -->
+                  <div class="not_found">
+                    <p>ليس هناك أقسام مضافة بعد !</p>
+                    <button type="button" class="btn BlueButton" data-bs-toggle="modal" data-bs-target="#divisionModal">اضافة قسم جديد</button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="divisionModal" tabindex="-1" aria-labelledby="divisionModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <h4 class="title_section">اضافة قسم جديد</h4>
+                            <form action="">
+                              <div class="form-group">
+                                <label for="">اسم القسم</label>
+                                <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم القسم">
+                              </div>
+                              <button type="submit" class="btn BlueButton">حفظ</button>
+                            </form>
+                          </div> 
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Finish Modal -->
+
+                  </div>
+                  <!-- End not found -->
+                </div>
+                <div class="faculty">
+                  <p><span class="icon"></span> كلية الحاسبات والمعلومات</p>
+                  <div class="department">
+                    <p><span class="icon"></span> قسم علوم الحاسب</p>
+                  </div>
+                  <div class="department">
+                    <p><span class="icon"></span> قسم نظم المعلومات</p>
+                  </div>
+                  <div class="department">
+                    <p><span class="icon"></span> قسم تكنولوجيا المعلومات</p>
+                    <div class="division">
+                      <p><span class="icon"></span> الفرقة الأولى</p>
+                    </div>
+                    <div class="division">
+                      <p><span class="icon"></span> الفرقة الثانية</p>
+                    </div>
+                    <div class="division">
+                      <p><span class="icon"></span> الفرقة الثالثة</p>
+                    </div>
+                    <div class="division">
+                      <p><span class="icon"></span> الفرقة الرابعة</p>
+                      <div class="subjects">
+                        <ul>
+                          <li class="subject">
+                            <p class="name">
+                              <i class="fa-solid fa-book-open"></i>
+                              مدخل في علم الجودة
+                            </p>
+                            <i class="fa-solid fa-trash-can delete"></i>
+                          </li>
+                          <li class="subject">
+                            <p class="name">
+                              <i class="fa-solid fa-book-open"></i>
+                              مدخل في علم الجودة
+                            </p>
+                            <i class="fa-solid fa-trash-can delete"></i>
+                          </li>
+                          <li class="subject">
+                            <p class="name">
+                              <i class="fa-solid fa-book-open"></i>
+                              مدخل في علم الجودة
+                            </p>
+                            <i class="fa-solid fa-trash-can delete"></i>
+                          </li>
+                          <li class="subject">
+                            <p class="name">
+                              <i class="fa-solid fa-book-open"></i>
+                              مدخل في علم الجودة
+                            </p>
+                            <i class="fa-solid fa-trash-can delete"></i>
+                          </li>
+                          <li class="subject">
+                            <p class="name">
+                              <i class="fa-solid fa-book-open"></i>
+                              مدخل في علم الجودة
+                            </p>
+                            <i class="fa-solid fa-trash-can delete"></i>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="university">
+                <p><span class="icon"></span> جامعة عين شمس</p>
+              </div>
+              <div class="university">
+                <p><span class="icon"></span> جامعة دمياط</p>
+              </div>
             </div>
+            <script>
+              $(function () {
+                $("div.mytree div:has(div)").addClass("parent");
+                $("div.mytree div").click(function () {
+                  var thistree = $(this);
+                  thistree.children("div").slideToggle("slow");
+                  thistree.filter(".parent").toggleClass("expanded");
+                  return false;
+                });
+              });
+            </script>
           </div>
         </section>
         <!-- ======= End Content ======= -->

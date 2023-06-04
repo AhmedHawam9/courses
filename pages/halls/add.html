@@ -267,103 +267,29 @@
         <!-- ======= Start Content ======= -->
         <section class="content">
           <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <h4 class="title_section">الفرق</h4>
-                <a href="add.html" class="btn PrimaryButton">اضافة فرقة جديدة</a>
-            </div>
-            <div class="table_data">
-                <div class="filter_table">
-                    <div class="form-group">
-                        <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم الكلية , الجامعة , الموقع">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <select name="" id="" class="form-control selectpicker" title="كل الجامعات">
-                        <option value="">تيست</option>
-                        <option value="">تيست</option>
-                        <option value="">تيست</option>
-                    </select>
-                    <select name="" id="" class="form-control selectpicker" title="كل الكليات">
-                        <option value="">تيست</option>
-                        <option value="">تيست</option>
-                        <option value="">تيست</option>
-                    </select>
+            <h4 class="title_section">اضافة قاعة جديدة</h4>
+            <form action="index.html" class="add_item">
+                <div class="form-group">
+                  <label for="">اسم القاعة</label>
+                  <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم القاعة" required>
                 </div>
-                <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th scope="col"># الرقم</th>
-                        <th scope="col">اسم الفرقة</th>
-                        <th scope="col">الجامعة</th>
-                        <th scope="col">الكلية</th>
-                        <th scope="col">عدد الطلاب</th>
-                        <th scope="col">تاريخ الاضافة</th>
-                        <th scope="col"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>الفرقة الاول</td>
-                        <td>كلية التجارة عربي</td>
-                        <td>جامعة المنصورة</td>
-                        <td>252</td>
-                        <td>يوليو22 , 2022</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">الأقسام</a></li>
-                                  <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                  <li><a class="dropdown-item" href="#">حذف</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>الفرقة الاول</td>
-                        <td>جامعة القاهرة</td>
-                        <td>كلية التجارة عربي</td>
-                        <td>400</td>
-                        <td>يوليو22 , 2022</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">الأقسام</a></li>
-                                  <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                  <li><a class="dropdown-item" href="#">حذف</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>الفرقة الاول</td>
-                        <td>جامعة الاسكندرية</td>
-                        <td>كلية التجارة عربي</td>
-                        <td>2000</td>
-                        <td>يوليو22 , 2022</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">الأقسام</a></li>
-                                  <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                  <li><a class="dropdown-item" href="#">حذف</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                </table>
-            </div>
+                <div class="form-group">
+                    <label for="">سعة الطلاب</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="ادخل سعة الطلاب" required>
+                </div>
+                <div class="form-group">
+                    <label for="" class="d-block">نوع القاعة</label>
+                    <div class="form-group halls_type">
+                        <input type="radio" name="halls_type" id="airConditioner" required hidden>
+                        <label for="airConditioner">مكيفة</label>
+                    </div>
+                    <div class="form-group halls_type me-3">
+                        <input type="radio" name="halls_type" id="notAirConditioner" required hidden>
+                        <label for="notAirConditioner"> غير مكيفة</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn PrimaryButton">حفظ</button>
+            </form>
           </div>
         </section>
         <!-- ======= End Content ======= -->
