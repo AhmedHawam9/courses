@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html id="langHtml" lang="ar">
+  <head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- ? Required meta tags -->
+
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../scss/style.min.css" />
+    <!-- ? Main CSS -->
+
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="../../css/video-js.min.css" />
+    <!-- ? Custom CSS -->
+
+    <!-- ? Main JavaScript -->
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/all.min.js"></script>
+    <script src="../../js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+
+    <!-- ? Custom JavaScript -->
+    <script src="../../js/bootstrap-select.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <!-- ? Title -->
+    <title>Courses</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="../../media/image/favicon.ico" type="image" />
+    <!-- ? Favicon -->
+
+    <script>
+      console.log(
+        "%c <== 7w7w++ ==>  ",
+        "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;"
+      );
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img
+              src="../../media/image/logo.png"
+              alt="logo_sidebar"
+              class="logo"
+            />
+          </div>
+          <li class="nav-item">
+            <a href="../home/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/home.png" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#submenulibrary"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="../../media/image/icon/courses.png" alt="icon" />
+              <span>الكورسات</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenulibrary"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <li>
+                <a href="/pages/courses/index.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>الكورسات</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>طلبات الانضمام</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              href="/pages/university/index.html"
+              class="nav-link align-middle"
+            >
+              <img src="../../media/image/icon/university.png" alt="icon" />
+              <span>الجامعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/collage/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/collage.png" alt="icon" />
+              <span>الكليات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/teachers/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/teachers.png" alt="icon" />
+              <span>المدرسين</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="messages.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/subject.png" alt="icon" />
+              <span>المواد التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="../halls/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/hall.png" alt="icon" />
+              <span>القاعات</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/exams.png" alt="icon" />
+              <span>الامتحانات</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/students.png" alt="icon" />
+              <span>الطلاب</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/intro.png" alt="icon" />
+              <span>مكاتب INTRO</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/video.png" alt="icon" />
+              <span>مكاتب فيدويوهات </span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/lessons.png" alt="icon" />
+              <span>الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/questions.png" alt="icon" />
+              <span>بنك الأسالة</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/blogs.png" alt="icon" />
+              <span>المدونة</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/financial.png" alt="icon" />
+              <span>المعاملات المالية</span>
+            </a>
+          </li>
+          <li class="nav-item disable_mobile">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/settings.png" alt="icon" />
+              <span>الاعدادات العامة</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <!-- ======= Main ======= -->
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="d-flex w-25">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="search"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Search…"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="changelocal d-inline-block">
+              <div class="dropdown lang">
+                <a
+                  class="btn dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- lang -->
+                  <i class="fa-solid fa-earth-americas px-2"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item">
+                      <img
+                        src="../../media/image/saudi-arabia.png"
+                        alt="saudi-arabia"
+                      />
+                      Arabic
+                    </a>
+                    <a class="dropdown-item">
+                      <img
+                        src="../../media/image/united-kingdom.png"
+                        alt="united-kingdom"
+                      />
+                      English
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown d-inline-block">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="../../media/image/7w7w.jpg"
+                  class="admin_img"
+                  alt="person"
+                />
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="reports.html">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="setting.html">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
+
+        <!-- ======= Start Content ======= -->
+        <section class="content">
+          <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+              <h4 class="title_section">تفاصيل الكورس</h4>
+              <div class="buttons d-flex align-items-center">
+                <a href="#" class="btn mx-1 SecondButton">تعديل البيانات</a>
+                <a href="#" class="btn mx-1 TransparentButton"
+                  >اضافة فيديو جديد</a
+                >
+                <a href="#" class="btn mx-1 PrimaryButton">إضافة درس جديد</a>
+                <a href="#" class="btn mx-1 BlueButton">ارسال رسالة</a>
+              </div>
+            </div>
+            <div class="details_course">
+              <div class="row">
+                <div class="col-lg-4 col-12">
+                  <div class="info_head_course">
+                    <img src="../../media/image/7w7w.jpg" alt="course_image" />
+                    <h4 class="course_name">Princibles Of UI/UX Design</h4>
+                    <p class="teacher_name">د / اشرف عمران</p>
+                    <a href="#" class="btn edit_btn">تعديل البيانات</a>
+                    <div class="student_course">
+                      <div class="join_student_number">
+                        <i class="fa-solid fa-users"></i>
+                        <div class="data">
+                          <p class="title">عدد الطلاب المنضمين :</p>
+                          <p class="text">120 طالب</p>
+                        </div>
+                      </div>
+                      <div class="join_student_number">
+                        <i class="fa-regular fa-rectangle-list"></i>
+                        <div class="data">
+                          <p class="title">طلبات الانضمام :</p>
+                          <p class="text">120 طالب</p>
+                        </div>
+                      </div>
+                      <a href="#" class="btn BlueButton">إضافة طلاب جديدة</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-12">
+                  <div class="details">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="details-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#details-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="details-tab-pane"
+                          aria-selected="true"
+                        >
+                          التفاصيل العامة
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="lesson-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#lesson-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="lesson-tab-pane"
+                          aria-selected="false"
+                        >
+                          الدروس
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="student-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#student-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="student-tab-pane"
+                          aria-selected="false"
+                        >
+                          الطلاب
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="exam-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#exam-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="exam-tab-pane"
+                          aria-selected="false"
+                        >
+                          الامتحانات
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="rate-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#rate-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="rate-tab-pane"
+                          aria-selected="true"
+                        >
+                          التقييمات
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <!-- Start details course -->
+                      <div
+                        class="tab-pane fade show active"
+                        id="details-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="details-tab"
+                        tabindex="0"
+                      >
+                        <!-- Start video -->
+                        <div class="video">
+                          <div class="row w-100 mx-auto">
+                            <video
+                              id="my-video"
+                              class="video-js"
+                              controls
+                              preload="auto"
+                              width="640"
+                              height="264"
+                              poster="../../media/image/video.jpg"
+                              data-setup="{}"
+                            >
+                              <source
+                                src="../../media/video/video.mp4"
+                                type="video/mp4"
+                              />
+                            </video>
+                          </div>
+                        </div>
+                        <!-- End video -->
+
+                        <h1 class="title">
+                          Princibles Of UI/UX Design ADOBE XD
+                        </h1>
+                        <ul class="university">
+                          <li>
+                            <p class="title">الجامعة</p>
+                            <p class="text">جامعة عين شمس / القاهرة</p>
+                          </li>
+                          <li>
+                            <p class="title">الكلية</p>
+                            <p class="text">كلية الحاسبات والمعلومات</p>
+                          </li>
+                          <li>
+                            <p class="title">المادة</p>
+                            <p class="text">Design</p>
+                          </li>
+                          <li>
+                            <p class="title">المدرس</p>
+                            <p class="text">د/ أشرف عمران</p>
+                          </li>
+                        </ul>
+                        <!-- Details course -->
+                        <h4 class="subTitle">تفاصيل الكورس</h4>
+                        <p class="text">
+                          هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                          لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                          أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة
+                          إلى زيادة عدد الحروف التى يولدها التطبيق.ذا كنت تحتاج
+                          إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة
+                          عدد الفقرات كما
+                        </p>
+                        <!-- Details course -->
+
+                        <!-- What students learn from the course -->
+                        <h4 class="subTitle">ماذا يتعلم الطلاب من الكورس</h4>
+                        <ul class="list_content">
+                          <li class="text">فهم اساسيات الديزاين</li>
+                          <li class="text">فهم اساسيات الديزاين</li>
+                          <li class="text">فهم اساسيات الديزاين</li>
+                          <li class="text">فهم اساسيات الديزاين</li>
+                        </ul>
+                        <!-- What students learn from the course -->
+
+                        <!-- acquired skills -->
+                        <h4 class="subTitle">المهارات المكتسبة</h4>
+                        <ul class="acquired_skills">
+                          <li>تدريب على الامتحانات</li>
+                          <li>سهولة المزاكرة في اى وقت</li>
+                        </ul>
+                        <!-- acquired skills -->
+
+                        <!-- course dates -->
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h4 class="subTitle">مواعيد الكورس</h4>
+                          <button type="button" class="btn SecondButton" data-bs-toggle="modal" data-bs-target="#addDatesModal">اضافة مواعيد جديدة</button>
+
+                          <!-- Modal Add new dates -->
+                          <div class="modal fade" id="addDatesModal" tabindex="-1" aria-labelledby="addDatesModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <p class="title">اضافة مواعيد الكورس</p>
+                                  <p class="text">اختر الأيام المحددة للكورس واضافة الساعات من و الى ويمكنك إضافة اكثر من مجموعه</p>
+                                  <ul class="dates_list">
+                                    <!-- For loop this date list -->
+                                    <li class="date_list">
+                                      <p class="day">الأحد</p>
+                                      <input type="time" name="" id="" class="form-control">
+                                      <span>الي</span>
+                                      <input type="time" name="" id="" class="form-control">
+                                      <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" id="Checkbox" role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault" id="day">مغلق</label>
+                                      </div>
+                                    </li>
+                                    <!-- For loop this date list -->
+                                    
+                                    <!-- For loop this date list -->
+                                    <li class="date_list">
+                                      <p class="day">الاتنين</p>
+                                      <input type="time" name="" id="" class="form-control">
+                                      <span>الي</span>
+                                      <input type="time" name="" id="" class="form-control">
+                                      <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">مغلق</label>
+                                      </div>
+                                    </li>
+                                    <!-- For loop this date list -->
+
+                                    <!-- For loop this date list -->
+                                    <li class="date_list">
+                                      <p class="day">الثلاثاء</p>
+                                      <input type="time" name="" id="" class="form-control">
+                                      <span>الي</span>
+                                      <input type="time" name="" id="" class="form-control">
+                                      <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">مغلق</label>
+                                      </div>
+                                    </li>
+                                    <!-- For loop this date list -->
+
+                                    <!-- For loop this date list -->
+                                    <li class="date_list">
+                                      <p class="day">الاربعاء</p>
+                                      <input type="time" name="" id="" class="form-control">
+                                      <span>الي</span>
+                                      <input type="time" name="" id="" class="form-control">
+                                      <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">مغلق</label>
+                                      </div>
+                                    </li>
+                                    <!-- For loop this date list -->
+                                  </ul>
+                                  <div class="form-group">
+                                    <label for="">العدد الكلي للطلاب</label>
+                                    <input type="number" name="" id="" class="form-control" placeholder="ادخل العدد الكلي">
+                                  </div>
+                                  <div id="showAppendNewGroup"></div>
+                                  <button class="btn TransparentBlueButton" onclick="addNewGroup()">+ إضافة مجموعة اخري</button>
+                                  <button class="btn PrimaryButton">حفظ</button>
+                                  <script>
+                                    const checkbox = document.getElementById('Checkbox');
+                                    const day = document.getElementById('day');
+
+                                    checkbox.addEventListener('change', function() {
+                                      if (this.checked) {
+                                        day.textContent = 'مفتوح';
+                                      } else {
+                                        day.textContent = 'مغلق';
+                                      }
+                                    });
+                                  </script>
+
+                                  <script>
+                                    function addNewGroup(){
+                                      jQuery("#showAppendNewGroup")
+                                        .append(`
+                                        <ul class="dates_list">
+                                          <!-- For loop this date list -->
+                                          <li class="date_list">
+                                            <p class="day">الأحد</p>
+                                            <input type="time" name="" id="" class="form-control">
+                                            <span>الي</span>
+                                            <input type="time" name="" id="" class="form-control">
+                                            <div class="form-check form-switch">
+                                              <input class="form-check-input" type="checkbox" id="Checkbox" role="switch" id="flexSwitchCheckDefault">
+                                              <label class="form-check-label" for="flexSwitchCheckDefault" id="day">مغلق</label>
+                                            </div>
+                                          </li>
+                                          <!-- For loop this date list -->
+                                          
+                                          <!-- For loop this date list -->
+                                          <li class="date_list">
+                                            <p class="day">الاتنين</p>
+                                            <input type="time" name="" id="" class="form-control">
+                                            <span>الي</span>
+                                            <input type="time" name="" id="" class="form-control">
+                                            <div class="form-check form-switch">
+                                              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                              <label class="form-check-label" for="flexSwitchCheckDefault">مغلق</label>
+                                            </div>
+                                          </li>
+                                          <!-- For loop this date list -->
+
+                                          <!-- For loop this date list -->
+                                          <li class="date_list">
+                                            <p class="day">الثلاثاء</p>
+                                            <input type="time" name="" id="" class="form-control">
+                                            <span>الي</span>
+                                            <input type="time" name="" id="" class="form-control">
+                                            <div class="form-check form-switch">
+                                              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                              <label class="form-check-label" for="flexSwitchCheckDefault">مغلق</label>
+                                            </div>
+                                          </li>
+                                          <!-- For loop this date list -->
+
+                                          <!-- For loop this date list -->
+                                          <li class="date_list">
+                                            <p class="day">الاربعاء</p>
+                                            <input type="time" name="" id="" class="form-control">
+                                            <span>الي</span>
+                                            <input type="time" name="" id="" class="form-control">
+                                            <div class="form-check form-switch">
+                                              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                              <label class="form-check-label" for="flexSwitchCheckDefault">مغلق</label>
+                                            </div>
+                                          </li>
+                                          <!-- For loop this date list -->
+                                        </ul>
+                                        <div class="form-group">
+                                          <label for="">العدد الكلي للطلاب</label>
+                                          <input type="number" name="" id="" class="form-control" placeholder="ادخل العدد الكلي">
+                                        </div>
+                                        `)
+                                    }
+                                  </script>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Modal Add new dates -->
+
+                        </div>
+                        <div class="course_dates">
+                          <p class="title">
+                            <i class="fa-solid fa-building-columns"></i>
+                            سنتر التوحيد
+                          </p>
+                          <p class="title">مواعيد الكورس</p>
+                          <ul class="list_group">
+                            <!-- For loop this list group card -->
+                            <li class="list_group_card">
+                              <!-- title groups -->
+                              <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="title"><i class="fa-solid fa-book-open"></i> المجموعة الأولي</h5>
+                                <div class="actions">
+                                  <a href="#" class="btn"><i class="fa-solid fa-users"></i></a>
+                                  <a href="#" class="btn"><i class="fa-solid fa-tv"></i></a>
+                                </div>
+                              </div>
+                              <!-- title groups -->
+
+                              <!-- student statistics -->
+                              <div class="student_statistics">
+                                <div class="statistics_card">
+                                  <i class="fa-solid fa-users"></i>
+                                  <p class="title">العدد الكلي للطلاب : </p>
+                                  <p class="text">200</p>
+                                </div>
+                                <div class="statistics_card">
+                                  <i class="fa-solid fa-users"></i>
+                                  <p class="title">العدد المتبقي : </p>
+                                  <p class="text">200</p>
+                                </div>
+                              </div>
+                              <!-- student statistics -->
+
+                              <!-- dates groups -->
+                              <ul class="dates">
+                                <!-- For loop this card date -->
+                                <li class="card_date">
+                                  <i class="fa-regular fa-clock"></i>
+                                  <span>السبت  (ص 11 - 12م)</span>
+                                </li>
+                                <!-- For loop this card date -->
+                                
+                                <!-- For loop this card date -->
+                                <li class="card_date">
+                                  <i class="fa-regular fa-clock"></i>
+                                  <span>السبت  (ص 11 - 12م)</span>
+                                </li>
+                                <!-- For loop this card date -->
+
+                                <!-- For loop this card date -->
+                                <li class="card_date">
+                                  <i class="fa-regular fa-clock"></i>
+                                  <span>السبت  (ص 11 - 12م)</span>
+                                </li>
+                                <!-- For loop this card date -->
+                              </ul>
+                              <!-- dates groups -->
+                            </li>
+                            <!-- For loop this list group card -->
+
+                            <!-- For loop this list group card -->
+                            <li class="list_group_card">
+                              <!-- title groups -->
+                              <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="title"><i class="fa-solid fa-book-open"></i> المجموعة الثانية</h5>
+                                <div class="actions">
+                                  <a href="#" class="btn"><i class="fa-solid fa-users"></i></a>
+                                  <a href="#" class="btn"><i class="fa-solid fa-tv"></i></a>
+                                </div>
+                              </div>
+                              <!-- title groups -->
+
+                              <!-- student statistics -->
+                              <div class="student_statistics">
+                                <div class="statistics_card">
+                                  <i class="fa-solid fa-users"></i>
+                                  <p class="title">العدد الكلي للطلاب : </p>
+                                  <p class="text">200</p>
+                                </div>
+                                <div class="statistics_card">
+                                  <i class="fa-solid fa-users"></i>
+                                  <p class="title">العدد المتبقي : </p>
+                                  <p class="text">200</p>
+                                </div>
+                              </div>
+                              <!-- student statistics -->
+
+                              <!-- dates groups -->
+                              <ul class="dates">
+                                <!-- For loop this card date -->
+                                <li class="card_date">
+                                  <i class="fa-regular fa-clock"></i>
+                                  <span>السبت  (ص 11 - 12م)</span>
+                                </li>
+                                <!-- For loop this card date -->
+                                
+                                <!-- For loop this card date -->
+                                <li class="card_date">
+                                  <i class="fa-regular fa-clock"></i>
+                                  <span>السبت  (ص 11 - 12م)</span>
+                                </li>
+                                <!-- For loop this card date -->
+
+                                <!-- For loop this card date -->
+                                <li class="card_date">
+                                  <i class="fa-regular fa-clock"></i>
+                                  <span>السبت  (ص 11 - 12م)</span>
+                                </li>
+                                <!-- For loop this card date -->
+                              </ul>
+                              <!-- dates groups -->
+                            </li>
+                            <!-- For loop this list group card -->
+                          </ul>
+                        </div>
+                        <!-- course dates -->
+
+                      </div>
+                      <!-- Start details course -->
+                      <div
+                        class="tab-pane fade"
+                        id="lesson-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="lesson-tab"
+                        tabindex="0"
+                      >
+                        ...
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="student-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="student-tab"
+                        tabindex="0"
+                      >
+                        ...
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="exam-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="exam-tab"
+                        tabindex="0"
+                      >
+                        ...
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="rate-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="rate-tab"
+                        tabindex="0"
+                      >
+                        ...
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ======= End Content ======= -->
+      </section>
+      <!-- ======= Main ======= -->
+    </div>
+    <!-- ? ======= footer =========== -->
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/video.min.js"></script>
+  </body>
+</html>
