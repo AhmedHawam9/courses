@@ -744,7 +744,9 @@
                         <!-- course dates -->
 
                       </div>
-                      <!-- Start details course -->
+                      <!-- End details course -->
+
+                      <!-- Start Lessons course -->
                       <div
                         class="tab-pane fade"
                         id="lesson-tab-pane"
@@ -752,8 +754,112 @@
                         aria-labelledby="lesson-tab"
                         tabindex="0"
                       >
-                        ...
+                        <div class="accordion" id="accordionExample">
+                          <!-- For loop this lesson card -->
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                الدرس الأول
+                              </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <h6 class="title">تفاصيل الدرس</h6>
+                                  <div class="actions">
+                                    <button class="btn"><i class="fa-solid fa-trash-can"></i></button>
+                                    <a href="#" class="btn"><i class="fa-solid fa-pen-to-square"></i></a>
+                                  </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-start">
+                                  <div class="data">
+                                    <p class="text">
+                                      هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                                      المساحة، لقد تم توليد هذا النص من مولد
+                                      النص العربى، حيث يمكنك أن تولد مثل هذا
+                                      النص أو العديد من النصوص الأخرى إضافة إلى
+                                      زيادة عدد الحروف التى يولدها التطبيق.ذا
+                                      كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك
+                                      مولد
+                                    </p>
+                                    <div class="statistics">
+                                      <div class="card_statistic">
+                                        <p class="title">اجمالى عدد الفيديوهات</p>
+                                        <p class="text">22 فيديو</p>
+                                      </div>
+                                      <div class="card_statistic">
+                                        <p class="title">اجمالى وقت الدرس المتوقع</p>
+                                        <p class="text">50:00 دقيقة</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <img src="../../media/image/course.jpg" class="image_lesson" alt="lesson">
+                                </div>
+                                <!-- Student learn -->
+                                <ul class="student_learn">
+                                  <h6 class="title">ماذا يتعلم الطلاب من الكورس</h6>
+                                  <li>فهم اساسيات الديزاين</li>
+                                  <li>فهم اساسيات الديزاين</li>
+                                  <li>فهم اساسيات الديزاين</li>
+                                  <li>فهم اساسيات الديزاين</li>
+                                </ul>
+                                <!-- Student learn -->
+
+                                <!-- content of lesson -->
+                                <div class="content_lesson">
+                                  <h6 class="title">محتوي الدرس</h6>
+                                  <!-- For loop this card lesson -->
+                                  <a href="#" class="card_content_lesson">
+                                    <div class="poster_video">
+                                      <img src="../../media/image/course.jpg" class="poster" alt="poster">
+                                      <img src="../../media/image/icon/play.png" class="play" alt="play">
+                                    </div>
+                                    <div class="data">
+                                      <h5 class="title">الفيديو الأول : في مقدمة مادة المحاسبة</h5>
+                                      <p class="text">
+                                        هذا النص هو مثال لنص يمكن أن يستبدل في
+                                        نفس المساحة، لقد تم توليد هذا النص من
+                                        مولد النص العربى، حيث يمكنك أن تولد
+                                      </p>
+                                      <div class="info">
+                                        <i class="fa-regular fa-closed-captioning"></i>
+                                        <p class="title_info">رقم الفيديو : </p>
+                                        <p class="text_info">1</p>
+                                      </div>
+                                      <div class="info">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        <p class="title_info">تاريخ نزول الفيديو : </p>
+                                        <p class="text_info"> 22مارس - 8:30 م</p>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <!-- For loop this card lesson -->
+                                </div>
+                                <!-- content of lesson -->
+                              </div>
+                            </div>
+                          </div>
+                          <!-- For loop this lesson card -->
+
+                          <!-- For loop this lesson card -->
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                الدرس الثاني
+                              </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                ...
+                              </div>
+                            </div>
+                          </div>
+                          <!-- For loop this lesson card -->
+                        </div>
                       </div>
+                      <!-- End Lessons course -->
+
+                      <!-- Start student course -->
                       <div
                         class="tab-pane fade"
                         id="student-tab-pane"
@@ -763,6 +869,9 @@
                       >
                         ...
                       </div>
+                      <!-- End student course -->
+
+                      <!-- Start exam course -->
                       <div
                         class="tab-pane fade"
                         id="exam-tab-pane"
@@ -770,8 +879,14 @@
                         aria-labelledby="exam-tab"
                         tabindex="0"
                       >
-                        ...
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                          <h4 class="title">كل الامتحانات (3 )</h4>
+                          <a href="#" class="btn PrimaryButton">إضافة امتحان جديد</a>
+                        </div>
                       </div>
+                      <!-- End exam course -->
+
+                      <!-- Start rate course -->
                       <div
                         class="tab-pane fade"
                         id="rate-tab-pane"
@@ -779,8 +894,68 @@
                         aria-labelledby="rate-tab"
                         tabindex="0"
                       >
-                        ...
+                        <h4 class="title_section">التقييمات</h4>
+                        <!-- For loop this card rate -->
+                        <div class="card_rate">
+                          <div class="d-flex justify-content-between align-items-start">
+                            <div class="student_data">
+                              <img src="../../media/image/7w7w.jpg" alt="student">
+                              <div class="data">
+                                <p class="name">أحمد حوام</p>
+                                <div class="rating">
+                                  <i class="fa-solid fa-star active"></i>
+                                  <i class="fa-solid fa-star active"></i>
+                                  <i class="fa-solid fa-star active"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <span class="date">منذ شهرين</span>
+                          </div>
+                          <p class="text">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                            لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                            أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                            ...هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                            المساحة، لقد تم توليد هذا النص من مولد النص العربى،
+                            حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                            الأخرى ...ه
+                          </p>
+                        </div>
+                        <!-- For loop this card rate -->
+
+                        <!-- For loop this card rate -->
+                        <div class="card_rate">
+                          <div class="d-flex justify-content-between align-items-start">
+                            <div class="student_data">
+                              <img src="../../media/image/7w7w.jpg" alt="student">
+                              <div class="data">
+                                <p class="name">أحمد حوام</p>
+                                <div class="rating">
+                                  <i class="fa-solid fa-star active"></i>
+                                  <i class="fa-solid fa-star active"></i>
+                                  <i class="fa-solid fa-star active"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <span class="date">منذ شهرين</span>
+                          </div>
+                          <p class="text">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                            لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                            أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                            ...هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                            المساحة، لقد تم توليد هذا النص من مولد النص العربى،
+                            حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص
+                            الأخرى ...ه
+                          </p>
+                        </div>
+                        <!-- For loop this card rate -->
                       </div>
+                      <!-- End rate course -->
                     </div>
                   </div>
                 </div>

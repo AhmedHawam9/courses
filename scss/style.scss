@@ -1051,6 +1051,11 @@ table {
               color: $PrimaryText;
               margin: 2rem 0 1.5rem;
             }
+            .title_section {
+              font-family: "semibold";
+              color: $PrimaryText;
+              margin: 3rem 0 1.5rem;
+            }
             .university {
               display: flex;
               justify-content: space-between;
@@ -1277,6 +1282,185 @@ table {
                 display: block;
                 margin-top: 1.5rem;
                 width: 50%;
+              }
+            }
+            .card_rate {
+              width: 90%;
+              margin-bottom: 1.5rem;
+              .student_data {
+                display: flex;
+                align-items: center;
+                img {
+                  width: 70px;
+                  height: 70px;
+                  border-radius: 50%;
+                  margin-inline-end: 1rem;
+                }
+                .name {
+                  font-family: "semibold";
+                  color: $PrimaryText;
+                }
+                .rating {
+                  svg {
+                    color: rgba($color: #E4AA3C, $alpha: 0.4);
+                    &.active {
+                      color: rgba($color: #E4AA3C, $alpha: 1.0);
+                    }
+                  }
+                }
+              }
+              .date {
+                font-family: "regular";
+                color: #5F666F;
+                font-size: .8rem;
+              }
+              .text {
+                font-family: "regular";
+                color: #596364;
+                font-size: .9rem;
+                margin-top: .8rem;
+                width: 85%;
+              }
+            }
+            .accordion {
+              margin-top: 2rem;
+              .accordion-item {
+                margin-bottom: 1.5rem;
+                .accordion-header {
+                  .accordion-button {
+                    color: $PrimaryText;
+                    font-family: "semibold";
+                    font-size: 1.1rem;
+                    &::after {
+                      margin-left: unset;
+                      margin-inline-start: auto;
+                    }
+                    &:not(.collapsed) {
+                      background-color: transparent;
+                    }
+                  }
+                }
+                .accordion-body {
+                  .title {
+                    margin: 0;
+                    font-family: "bold";
+                    color: $PrimaryText;
+                  }
+                  .actions {
+                    .btn {
+                      svg {
+                        color: $SecondColor;
+                        font-size: 1.2rem;
+                      }
+                      &:hover {
+                        border-color: transparent;
+                      }
+                    }
+                  }
+                  .data {
+                    margin-top: 1.1rem;
+                    .text {
+                      font-size: .9rem;
+                    }
+                    .statistics {
+                      display: flex;
+                      border: 1px solid #D4D4D4;
+                      border-radius: 6px;
+                      width: 85%;
+                      .card_statistic {
+                        width: 50%;
+                        padding: .7rem 1.5rem;
+                        .title {
+                          margin-bottom: 1rem;
+                          font-family: "regular";
+                          color: #828282;
+                        }
+                        .text {
+                          margin-bottom: 0;
+                          font-family: "medium";
+                          color: $PrimaryText;
+                        }
+                      }
+                    }
+                  }
+                  .image_lesson {
+                    width: 200px;
+                    height: 170px;
+                    border-radius: 9px;
+                    margin-top: 1.1rem;
+                  }
+                  .student_learn {
+                    list-style: none;
+                    li {
+                      margin-top: 1rem;
+                      font-family: "medium";
+                      color: #2E0C06;
+                    }
+                  }
+                  .content_lesson {
+                    margin-top: 2rem;
+                    .title {
+                      padding-bottom: 1rem;
+                      border-bottom: 1px solid #9D9D9D;
+                      margin-bottom: 1.5rem;
+                    }
+                    .card_content_lesson {
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                      margin-bottom: 1.5rem;
+                      .poster_video {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-inline-end: 1.5rem;
+                        .poster {
+                          width: 230px;
+                          height: 160px;
+                        }
+                        .play {
+                          position: absolute;
+                          width: 50px;
+                          height: 50px;
+                        }
+                      }
+                      .data {
+                        margin: 0;
+                        .title {
+                          border-bottom: 0;
+                          padding-bottom: 0;
+                          margin-bottom: .5rem;
+                          font-family: "bold";
+                        }
+                        .text {
+                          font-family: "regular";
+                          margin-bottom: 1rem;
+                        }
+                        .info {
+                          display: flex;
+                          align-items: center;
+                          margin-bottom: .5rem;
+                          svg {
+                            color: $SecondColor;
+                            margin-inline-end: .5rem;
+                          }
+                          .title_info {
+                            font-family: "regular";
+                            color: #5F666F;
+                            margin-bottom: 0;
+                            margin-inline-end: .5rem;
+                          }
+                          .text_info {
+                            font-family: "medium";
+                            color: $PrimaryText;
+                            margin-bottom: 0;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
