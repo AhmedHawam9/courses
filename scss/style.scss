@@ -796,6 +796,42 @@ table {
       display:none;
       /* cursor:default; */
     }
+    .mytree {
+      .university {
+        &:nth-child(odd) {
+          background-color: #fff;
+          .subjects ul .subject {
+            background-color: #F7F7F7;
+          }
+        }
+        &:nth-child(even) {
+          background-color: rgba($color: $PrimaryColor, $alpha: 0.05);
+          .subjects ul .subject {
+            background-color: #fff;
+          }
+        }
+      }
+      .bnt-sm {
+        font-size: .7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+      }
+    }
+    .mytree .head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      // margin-bottom: 1rem;
+      padding: .5rem 0;
+      .title {
+        margin-bottom: 0;
+      }
+      .actions {
+        margin-bottom: 0;
+      }
+    }
     .mytree div.parent {
       cursor:pointer;
     }
@@ -810,7 +846,6 @@ table {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          background-color: #F7F7F7;
           font-family: "regular";
           color: #5F666F;
           padding: .5rem 1rem;
