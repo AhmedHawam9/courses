@@ -804,6 +804,9 @@ table {
             .modal-body {
               display: block !important;
               padding: var(--bs-modal-padding);
+              div {
+                display: block;
+              }
             }
             .modal-footer {
               display: flex !important;
