@@ -791,6 +791,26 @@ table {
           align-items: center;
         }
       }
+      .modal {
+        .modal-dialog {
+          display: block;
+          .modal-content {
+            display: block;
+            .modal-header {
+              display: flex;
+              padding: var(--bs-modal-header-padding);
+            }
+            .modal-body {
+              display: block;
+              padding: var(--bs-modal-padding);
+            }
+            .modal-footer {
+              display: flex;
+              padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * .5);
+            }
+          }
+        }
+      }
     }
     .mytree div.parent div {
       display:none;
@@ -831,26 +851,6 @@ table {
       }
       .actions {
         margin-bottom: 0;
-      }
-      .modal {
-        .modal-dialog {
-          display: block;
-          .modal-content {
-            display: block;
-            .modal-header {
-              display: flex;
-              padding: var(--bs-modal-header-padding);
-            }
-            .modal-body {
-              display: block;
-              padding: var(--bs-modal-padding);
-            }
-            .modal-footer {
-              display: flex;
-              padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * .5);
-            }
-          }
-        }
       }
     }
     .mytree div.parent {
