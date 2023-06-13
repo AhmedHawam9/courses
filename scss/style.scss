@@ -791,22 +791,22 @@ table {
           align-items: center;
         }
       }
-      
+
       .modal {
         .modal-dialog {
-          display: block;
+          display: block !important;
           .modal-content {
-            display: block;
+            display: block !important;
             .modal-header {
-              display: flex;
+              display: flex !important;
               padding: var(--bs-modal-header-padding);
             }
             .modal-body {
-              display: block;
+              display: block !important;
               padding: var(--bs-modal-padding);
             }
             .modal-footer {
-              display: flex;
+              display: flex !important;
               padding: calc(var(--bs-modal-padding) - var(--bs-modal-footer-gap) * .5);
             }
           }
