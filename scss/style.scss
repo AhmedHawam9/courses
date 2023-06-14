@@ -87,6 +87,30 @@ body {
   padding: 0;
   background-color: #fff !important;
 }
+.bootstrap-select {
+  .dropdown-toggle {
+    padding: .8rem;
+    &:hover {
+      border-color: transparent !important;
+    }
+  }
+  .dropdown-menu {
+    li {
+      a {
+        text-align: start;
+        font-family: "regular";
+        font-size: .9rem;
+        color: #000;
+      }
+    }
+  }
+  .filter-option-inner-inner {
+    text-align: start;
+    font-family: "regular";
+    font-size: .8rem;
+    color: #a1a1a1;
+  }
+}
 .multiselect__select::before {
   top: 1.4rem;
   border-color: #fff transparent transparent transparent;
@@ -793,6 +817,9 @@ table {
       }
 
       .modal {
+        &.show ~ .parent{
+          pointer-events: none;
+        }
         .modal-dialog {
           display: block !important;
           .modal-content {
@@ -806,6 +833,36 @@ table {
               padding: var(--bs-modal-padding);
               div {
                 display: block;
+              }
+              .form-group {
+                padding: 0;
+                margin-bottom: 1.5rem;
+                label {
+                  margin-bottom: .5rem;
+                }
+              }
+              .bootstrap-select {
+                display: inline-block;
+                padding: 0;
+                .filter-option {
+                  padding: 0;
+                  .filter-option-inner {
+                    padding: 0;
+                    .filter-option-inner-inner {
+                      padding: 0;
+                    }
+                  }
+                }
+                .dropdown-menu {
+                  display: none;
+                  padding: 0;
+                  &.show {
+                    display: block;
+                  }
+                  div {
+                    padding: 0;
+                  }
+                }
               }
             }
             .modal-footer {

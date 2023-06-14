@@ -301,7 +301,28 @@
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                          ...
+                          <form action="">
+                            <div class="form-group">
+                              <label for=""> test</label>
+                              <select id="faculties" class="form-control selectpicker"  title="اختر الكلية"
+                                  data-live-search="true">
+                                      <option value="1">item 1</option>
+                                      <option value="2">item 1</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for=""> test</label>
+                              <select id="faculties" class="form-control selectpicker"  title="اختر الكلية"
+                                  data-live-search="true">
+                                      <option value="1">item 1</option>
+                                      <option value="2">item 1</option>
+                              </select>
+                            </div>
+                            <div class="form-group">
+                              <label for=""> test</label>
+                              <input type="text" class="form-control">
+                            </div>
+                          </form>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -568,8 +589,29 @@
             </div>
             <script>
               $(function () {
-                $("div.mytree div:has(div)").addClass("parent");
-                $("div.mytree div").click(function () {
+                $("div.mytree .university").addClass("parent");
+                $("div.mytree .university").click(function () {
+                  var thistree = $(this);
+                  thistree.children("div").slideToggle("slow");
+                  thistree.filter(".parent").toggleClass("expanded");
+                  return false;
+                });
+                $("div.mytree .university .faculty").addClass("parent");
+                $("div.mytree .university .faculty").click(function () {
+                  var thistree = $(this);
+                  thistree.children("div").slideToggle("slow");
+                  thistree.filter(".parent").toggleClass("expanded");
+                  return false;
+                });
+                $("div.mytree .university .faculty .department").addClass("parent");
+                $("div.mytree .university .faculty .department").click(function () {
+                  var thistree = $(this);
+                  thistree.children("div").slideToggle("slow");
+                  thistree.filter(".parent").toggleClass("expanded");
+                  return false;
+                });
+                $("div.mytree .university .faculty .department .division").addClass("parent");
+                $("div.mytree .university .faculty .department .division").click(function () {
                   var thistree = $(this);
                   thistree.children("div").slideToggle("slow");
                   thistree.filter(".parent").toggleClass("expanded");
