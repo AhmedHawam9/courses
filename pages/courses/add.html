@@ -268,7 +268,494 @@
         <section class="content">
           <div class="container">
             <h4 class="title_section">اضافة كورس جديد</h4>
-            <form action="index.html" class="add_item">
+
+
+
+            <section class="wizard-section">
+              <div class="row no-gutters">
+                <div class="form-wizard">
+                  <form action="index.html" class="add_item">
+                    <div class="form-wizard-header">
+                      <ul class="list-unstyled form-wizard-steps clearfix">
+                        <li class="active"><span>1</span></li>
+                        <li><span>2</span></li>
+                      </ul>
+                    </div>
+                    <fieldset class="wizard-fieldset show">
+                      <div class="row w-75">
+                        <div class="col-12">
+                            <div class="form-group w-100">
+                              <label for="">اسم الكورس</label>
+                              <input type="text" name="" id="" class="form-control wizard-required" placeholder="ادخل اسم الكورس" required>
+                              <div class="wizard-form-error"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group w-100">
+                                <label for="">الجامعة</label>
+                                <select name="" id="" class="form-control selectpicker" title="اختر الجامعة">
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group w-100">
+                                <label for="">الكلية</label>
+                                <select name="" id="" class="form-control selectpicker" title="اختر الكلية">
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group w-100">
+                                <label for="">الفرقة التعليمية</label>
+                                <select name="" id="" class="form-control selectpicker" title="اختر الفرقة">
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group w-100">
+                                <label for="">المادة</label>
+                                <select name="" id="" class="form-control selectpicker" title="اختر المادة">
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group w-100">
+                                <label for="">المدرس</label>
+                                <select name="" id="" class="form-control selectpicker" title="اختر مدرس المادة">
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group w-100">
+                                <label for="" class="d-block">نوع القاعة</label>
+                                <div class="form-group content_course">
+                                    <input type="radio" name="content_course" class="wizard-required" id="online" required hidden>
+                                    <label for="online"><i class="fa-solid fa-video"></i> أونلاين</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group w-100">
+                                <label for="" class="d-block invisible">نوع القاعة</label>
+                                <div class="form-group content_course me-3">
+                                    <input type="radio" name="content_course" class="wizard-required" id="center" required hidden>
+                                    <label for="center"><i class="fa-solid fa-house-laptop"></i> داخل السنتر</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group w-100">
+                                <label for="">القاعة</label>
+                                <select name="" id="" class="form-control selectpicker" title="اختر القاعة">
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group w-100">
+                                <label for="">تفاصيل الكورس</label>
+                                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="اكتب تفاصيل الكورس كاملة"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group w-100">
+                              <label for="">مهارات مكتسبة من الكورس</label>
+                              <input type="text" name="" id="" class="form-control" placeholder="ادخل بعض المهارات المكتسبة" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group w-100">
+                                <label for="">ماذا يتعلم الطلاب من الكورس ؟</label>
+                                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="اكتب هنا"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group upload_file w-100">
+                              <label for="">اضف صورة الغلاف</label>
+                              <label for="imageCover" class="upload_file_label">
+                                <i class="fa-regular fa-image"></i>
+                                <p>اسحب صور المنتج هنا او قم باستخدام البراوزر</p>
+                                <span id="fileNameImage">1600 * 1400 , والحد الاقصي 10 ميجا</span>
+                              </label>
+                              <input type="file" name="" id="imageCover" class="form-control" accept="image/*" hidden>
+                            </div>
+                            <script>
+                                const fileInputImage = document.getElementById('imageCover');
+                                const fileNameImage = document.getElementById('fileNameImage');
+                            
+                                fileInputImage.addEventListener('change', (event) => {
+                                  const file = event.target.files[0];
+                                  fileNameImage.textContent = file.name;
+                                });
+                            </script>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="form-group upload_file w-100">
+                              <label for="">اضف فيديو للمقدمة </label>
+                              <label for="introVideo" class="upload_file_label">
+                                <i class="fa-regular fa-image"></i>
+                                <p>اسحب صور المنتج هنا او قم باستخدام البراوزر</p>
+                                <span id="fileNameVideo">فيديو  (4:3 , mp4 ,60 secs )</span>
+                              </label>
+                              <input type="file" name="" id="introVideo" class="form-control" accept="video/*" hidden>
+                            </div>
+                            <script>
+                                const fileInputVideo = document.getElementById('introVideo');
+                                const fileNameVideo = document.getElementById('fileNameVideo');
+                            
+                                fileInputVideo.addEventListener('change', (event) => {
+                                  const file = event.target.files[0];
+                                  fileNameVideo.textContent = file.name;
+                                });
+                            </script>
+                        </div>
+                        <div class="col-12">
+                          <!-- <button type="submit" class="btn PrimaryButton w-100">الحفظ و المتابعة</button> -->
+                          <div class="form-group clearfix w-100">
+                            <a href="javascript:;" class="btn form-wizard-next-btn PrimaryButton w-100">الحفظ و المتابعة</a>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>	
+                    <fieldset class="wizard-fieldset">
+                      
+                      <div class="form-group clearfix">
+                        <a href="javascript:;" class="form-wizard-previous-btn">Previous</a>
+                        <a href="javascript:;" class="form-wizard-next-btn">Next</a>
+                      </div>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <style>
+              .wizard-content-left {
+                background-blend-mode: darken;
+                background-color: rgba(0, 0, 0, 0.45);
+                background-image: url("https://i.ibb.co/X292hJF/form-wizard-bg-2.jpg");
+                background-position: center center;
+                background-size: cover;
+                height: 100vh;
+                padding: 30px;
+              }
+              .wizard-content-left h1 {
+                color: #ffffff;
+                font-size: 38px;
+                font-weight: 600;
+                padding: 12px 20px;
+                text-align: center;
+              }
+
+              .form-wizard {
+                color: #888888;
+                padding: 30px;
+              }
+              .form-wizard .wizard-form-radio {
+                display: inline-block;
+                margin-left: 5px;
+                position: relative;
+              }
+              .form-wizard .wizard-form-radio input[type="radio"] {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                -ms-appearance: none;
+                -o-appearance: none;
+                appearance: none;
+                background-color: #dddddd;
+                height: 25px;
+                width: 25px;
+                display: inline-block;
+                vertical-align: middle;
+                border-radius: 50%;
+                position: relative;
+                cursor: pointer;
+              }
+              .form-wizard .wizard-form-radio input[type="radio"]:focus {
+                outline: 0;
+              }
+              .form-wizard .wizard-form-radio input[type="radio"]:checked {
+                background-color: #fb1647;
+              }
+              .form-wizard .wizard-form-radio input[type="radio"]:checked::before {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                background-color: #ffffff;
+                border-radius: 50%;
+                left: 1px;
+                right: 0;
+                margin: 0 auto;
+                top: 8px;
+              }
+              .form-wizard .wizard-form-radio input[type="radio"]:checked::after {
+                content: "";
+                display: inline-block;
+                webkit-animation: click-radio-wave 0.65s;
+                -moz-animation: click-radio-wave 0.65s;
+                animation: click-radio-wave 0.65s;
+                background: #000000;
+                content: '';
+                display: block;
+                position: relative;
+                z-index: 100;
+                border-radius: 50%;
+              }
+              .form-wizard .wizard-form-radio input[type="radio"] ~ label {
+                padding-left: 10px;
+                cursor: pointer;
+              }
+              .form-wizard .form-wizard-header {
+                text-align: center;
+              }
+              .form-wizard .wizard-fieldset {
+                display: none;
+              }
+              .form-wizard .wizard-fieldset.show {
+                display: block;
+              }
+              .form-wizard .wizard-form-error {
+                display: none;
+                background-color: #d70b0b;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 2px;
+                width: 100%;
+              }
+              .form-wizard .form-wizard-previous-btn {
+                background-color: #fb1647;
+              }
+              .form-wizard .form-control {
+                font-weight: 300;
+                height: auto !important;
+                padding: 15px;
+                color: #888888;
+                background-color: #f1f1f1;
+                border: none;
+              }
+              .form-wizard .form-control:focus {
+                box-shadow: none;
+              }
+              .form-wizard .form-group {
+                position: relative;
+                margin: 25px 0;
+              }
+              .form-wizard .wizard-form-text-label {
+                position: absolute;
+                left: 10px;
+                top: 16px;
+                transition: 0.2s linear all;
+              }
+              .form-wizard .focus-input .wizard-form-text-label {
+                color: #942714;
+                top: -18px;
+                transition: 0.2s linear all;
+                font-size: 12px;
+              }
+              .form-wizard .form-wizard-steps {
+                margin: 30px 0;
+              }
+              .form-wizard .form-wizard-steps li {
+                width: 25%;
+                float: right;
+                position: relative;
+              }
+              .form-wizard .form-wizard-steps li::after {
+                background-color: #f3f3f3;
+                content: "";
+                height: 5px;
+                left: 0;
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 100%;
+                border-bottom: 1px solid #dddddd;
+                border-top: 1px solid #dddddd;
+              }
+              .form-wizard .form-wizard-steps li span {
+                background-color: #dddddd;
+                border-radius: 50%;
+                display: inline-block;
+                height: 40px;
+                line-height: 40px;
+                position: relative;
+                text-align: center;
+                width: 40px;
+                z-index: 1;
+              }
+              .form-wizard .form-wizard-steps li:last-child::after {
+                width: 50%;
+              }
+              .form-wizard .form-wizard-steps li.active span, .form-wizard .form-wizard-steps li.activated span {
+                background-color: #942714;
+                color: #ffffff;
+              }
+              .form-wizard .form-wizard-steps li.active::after, .form-wizard .form-wizard-steps li.activated::after {
+                background-color: #942714;
+                right: 50%;
+                width: 50%;
+                border-color: #942714;
+              }
+              .form-wizard .form-wizard-steps li.activated::after {
+                width: 100%;
+                border-color: #942714;
+              }
+              .form-wizard .form-wizard-steps li:last-child::after {
+                right: 0;
+              }
+              .form-wizard .wizard-password-eye {
+                position: absolute;
+                right: 32px;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+              }
+              @keyframes click-radio-wave {
+                0% {
+                  width: 25px;
+                  height: 25px;
+                  opacity: 0.35;
+                  position: relative;
+                }
+                100% {
+                  width: 60px;
+                  height: 60px;
+                  margin-left: -15px;
+                  margin-top: -15px;
+                  opacity: 0.0;
+                }
+              }
+              @media screen and (max-width: 767px) {
+                .wizard-content-left {
+                  height: auto;
+                }
+              }
+            </style>
+            <script>
+              jQuery(document).ready(function() {
+                // click on next button
+                jQuery('.form-wizard-next-btn').click(function() {
+                  var parentFieldset = jQuery(this).parents('.wizard-fieldset');
+                  var currentActiveStep = jQuery(this).parents('.form-wizard').find('.form-wizard-steps .active');
+                  var next = jQuery(this);
+                  var nextWizardStep = true;
+                  parentFieldset.find('.wizard-required').each(function(){
+                    var thisValue = jQuery(this).val();
+
+                    if( thisValue == "") {
+                      jQuery(this).siblings(".wizard-form-error").slideDown();
+                      nextWizardStep = false;
+                    }
+                    else {
+                      jQuery(this).siblings(".wizard-form-error").slideUp();
+                    }
+                  });
+                  if( nextWizardStep) {
+                    next.parents('.wizard-fieldset').removeClass("show","400");
+                    currentActiveStep.removeClass('active').addClass('activated').next().addClass('active',"400");
+                    next.parents('.wizard-fieldset').next('.wizard-fieldset').addClass("show","400");
+                    jQuery(document).find('.wizard-fieldset').each(function(){
+                      if(jQuery(this).hasClass('show')){
+                        var formAtrr = jQuery(this).attr('data-tab-content');
+                        jQuery(document).find('.form-wizard-steps .form-wizard-step-item').each(function(){
+                          if(jQuery(this).attr('data-attr') == formAtrr){
+                            jQuery(this).addClass('active');
+                            var innerWidth = jQuery(this).innerWidth();
+                            var position = jQuery(this).position();
+                            jQuery(document).find('.form-wizard-step-move').css({"left": position.left, "width": innerWidth});
+                          }else{
+                            jQuery(this).removeClass('active');
+                          }
+                        });
+                      }
+                    });
+                  }
+                });
+                //click on previous button
+                jQuery('.form-wizard-previous-btn').click(function() {
+                  var counter = parseInt(jQuery(".wizard-counter").text());;
+                  var prev =jQuery(this);
+                  var currentActiveStep = jQuery(this).parents('.form-wizard').find('.form-wizard-steps .active');
+                  prev.parents('.wizard-fieldset').removeClass("show","400");
+                  prev.parents('.wizard-fieldset').prev('.wizard-fieldset').addClass("show","400");
+                  currentActiveStep.removeClass('active').prev().removeClass('activated').addClass('active',"400");
+                  jQuery(document).find('.wizard-fieldset').each(function(){
+                    if(jQuery(this).hasClass('show')){
+                      var formAtrr = jQuery(this).attr('data-tab-content');
+                      jQuery(document).find('.form-wizard-steps .form-wizard-step-item').each(function(){
+                        if(jQuery(this).attr('data-attr') == formAtrr){
+                          jQuery(this).addClass('active');
+                          var innerWidth = jQuery(this).innerWidth();
+                          var position = jQuery(this).position();
+                          jQuery(document).find('.form-wizard-step-move').css({"left": position.left, "width": innerWidth});
+                        }else{
+                          jQuery(this).removeClass('active');
+                        }
+                      });
+                    }
+                  });
+                });
+                //click on form submit button
+                jQuery(document).on("click",".form-wizard .form-wizard-submit" , function(){
+                  var parentFieldset = jQuery(this).parents('.wizard-fieldset');
+                  var currentActiveStep = jQuery(this).parents('.form-wizard').find('.form-wizard-steps .active');
+                  parentFieldset.find('.wizard-required').each(function() {
+                    var thisValue = jQuery(this).val();
+                    if( thisValue == "" ) {
+                      jQuery(this).siblings(".wizard-form-error").slideDown();
+                    }
+                    else {
+                      jQuery(this).siblings(".wizard-form-error").slideUp();
+                    }
+                  });
+                });
+                // focus on input field check empty or not
+                jQuery(".form-control").on('focus', function(){
+                  var tmpThis = jQuery(this).val();
+                  if(tmpThis == '' ) {
+                    jQuery(this).parent().addClass("focus-input");
+                  }
+                  else if(tmpThis !='' ){
+                    jQuery(this).parent().addClass("focus-input");
+                  }
+                }).on('blur', function(){
+                  var tmpThis = jQuery(this).val();
+                  if(tmpThis == '' ) {
+                    jQuery(this).parent().removeClass("focus-input");
+                    jQuery(this).siblings('.wizard-form-error').slideDown("3000");
+                  }
+                  else if(tmpThis !='' ){
+                    jQuery(this).parent().addClass("focus-input");
+                    jQuery(this).siblings('.wizard-form-error').slideUp("3000");
+                  }
+                });
+              });
+            </script>
+
+
+
+            <!-- <form action="index.html" class="add_item">
                 <div class="row w-75">
                     <div class="col-12">
                         <div class="form-group w-100">
@@ -416,7 +903,7 @@
                         <button type="submit" class="btn PrimaryButton w-100">الحفظ و المتابعة</button>
                     </div>
                 </div>
-            </form>
+            </form> -->
           </div>
         </section>
         <!-- ======= End Content ======= -->
