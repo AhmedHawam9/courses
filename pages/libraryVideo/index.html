@@ -55,11 +55,7 @@
           id="menu"
         >
           <div class="image_logo">
-            <img
-              src="../../media/image/logo.png"
-              alt="logo_sidebar"
-              class="logo"
-            />
+            <img src="../../media/image/logo.png" alt="logo_sidebar" class="logo" />
           </div>
           <li class="nav-item">
             <a href="../home/index.html" class="nav-link align-middle">
@@ -100,10 +96,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a
-              href="/pages/university/index.html"
-              class="nav-link align-middle"
-            >
+            <a href="/pages/university/index.html" class="nav-link align-middle">
               <img src="../../media/image/icon/university.png" alt="icon" />
               <span>الجامعات</span>
             </a>
@@ -227,14 +220,14 @@
                   <li>
                     <a class="dropdown-item">
                       <img
-                        src="./media/image/saudi-arabia.png"
+                        src="../../media/image/saudi-arabia.png"
                         alt="saudi-arabia"
                       />
                       Arabic
                     </a>
                     <a class="dropdown-item">
                       <img
-                        src="./media/image/united-kingdom.png"
+                        src="../../media/image/united-kingdom.png"
                         alt="united-kingdom"
                       />
                       English
@@ -252,7 +245,7 @@
                 aria-expanded="false"
               >
                 <img
-                  src="./media/image/7w7w.jpg"
+                  src="../../media/image/7w7w.jpg"
                   class="admin_img"
                   alt="person"
                 />
@@ -273,7 +266,53 @@
 
         <!-- ======= Start Content ======= -->
         <section class="content">
-          <div class="container"></div>
+          <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <h4 class="title_section">مكتبة فيديوهات</h4>
+                <a href="add.html" class="btn PrimaryButton">اضافة فيديو جديد</a>
+            </div>
+            <div class="video_library">
+                <div class="filter_table">
+                    <div class="form-group">
+                        <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم المادة , الدكتور">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <select name="" id="" class="form-control selectpicker" title="كل المواد">
+                        <option value="">تيست</option>
+                        <option value="">تيست</option>
+                        <option value="">تيست</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <!-- For loop this video card -->
+                    <div class="col-lg-6 col-12">
+                        <div class="card_video">
+                            <div class="video_cover">
+                                <img src="../../media/image/video.jpg" alt="cover" class="cover" />
+                                <img src="../../media/image/icon/play.png" alt="play" class="play" />
+                            </div>
+                            <div class="data">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="title">فيديو شرح مادة المحاسبة المالية  و شرح الاساسيات</p>
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="show.html">عرض التفاصيل</a></li>
+                                        <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                        <li><a class="dropdown-item" href="#">حذف</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <p class="date"><i class="fa-solid fa-calendar-days"></i> تاريخ الاضافة : 22 مايو 2022</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- For loop this video card -->
+                </div>
+            </div>
+          </div>
         </section>
         <!-- ======= End Content ======= -->
       </section>
@@ -282,13 +321,5 @@
     <!-- ? ======= footer =========== -->
 
     <script src="../../js/main.js"></script>
-    <script src="js/counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script>
-      $(".counter").counterUp({
-        delay: 20,
-        time: 2000,
-      });
-    </script>
   </body>
 </html>

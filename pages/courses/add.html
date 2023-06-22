@@ -113,67 +113,67 @@
               <span>المدرسين</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="messages.html" class="nav-link align-middle">
               <img src="../../media/image/icon/subject.png" alt="icon" />
               <span>المواد التعليمية</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="../halls/index.html" class="nav-link align-middle">
               <img src="../../media/image/icon/hall.png" alt="icon" />
               <span>القاعات</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/exams.png" alt="icon" />
               <span>الامتحانات</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/students.png" alt="icon" />
               <span>الطلاب</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
+          <li class="nav-item">
+            <a href="/pages/intro/index.html" class="nav-link align-middle">
               <img src="../../media/image/icon/intro.png" alt="icon" />
               <span>مكاتب INTRO</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
+          <li class="nav-item">
+            <a href="/pages/libraryVideo/index.html" class="nav-link align-middle">
               <img src="../../media/image/icon/video.png" alt="icon" />
               <span>مكاتب فيدويوهات </span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/lessons.png" alt="icon" />
               <span>الدروس</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/questions.png" alt="icon" />
               <span>بنك الأسالة</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/blogs.png" alt="icon" />
               <span>المدونة</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/financial.png" alt="icon" />
               <span>المعاملات المالية</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/settings.png" alt="icon" />
               <span>الاعدادات العامة</span>
@@ -279,31 +279,61 @@
                       </ul>
                     </div>
                     <fieldset class="wizard-fieldset show">
-                      <!-- <input type="text" id="input-field">
-                      <div id="output-div"></div>
+                      <!-- <input id="textInput" placeholder="Type text and press Enter">
+                      <ul id="itemList"></ul>
                       <script>
-const inputField = document.getElementById("input-field");
-const outputDiv = document.getElementById("output-div");
+                        const inputElement = document.getElementById('textInput');
+const itemListElement = document.getElementById('itemList');
+let itemList = [];
 
-inputField.addEventListener("keyup", function(event) {
-  if (event.key === "Enter") {
-    const values = inputField.value.split(",");
-    values.forEach(function(value) {
-      const trimmedValue = value.trim();
-      if (trimmedValue !== "") {
-        outputDiv.innerHTML += `<span>${trimmedValue}<button class="remove-btn">x</button></span>`;
-      }
-    });
-    inputField.value = "";
+// Add item to the list when Enter key is pressed
+inputElement.addEventListener('keyup', function(event) {
+  if (event.key === 'Enter' && inputElement.value.trim() !== '') {
+    addItem(inputElement.value);
+    inputElement.value = '';
   }
 });
 
-outputDiv.addEventListener("click", function(event) {
-  if (event.target.classList.contains("remove-btn")) {
-    const span = event.target.parentNode;
-    span.parentNode.removeChild(span);
+// Delete item from the list
+itemListElement.addEventListener('click', function(event) {
+  if (event.target.classList.contains('delete-button')) {
+    const listItem = event.target.parentNode;
+    const index = Array.from(itemListElement.children).indexOf(listItem);
+    deleteItem(index);
   }
 });
+
+// Function to add item to the list
+function addItem(text) {
+  const item = {
+    text: text,
+    id: Date.now()
+  };
+  itemList.push(item);
+  renderList();
+}
+
+// Function to delete item from the list
+function deleteItem(index) {
+  itemList.splice(index, 1);
+  renderList();
+}
+
+// Function to render the list
+function renderList() {
+  itemListElement.innerHTML = '';
+  itemList.forEach(item => {
+    const listItem = document.createElement('li');
+    listItem.textContent = item.text;
+
+    const deleteButton = document.createElement('button');
+    deleteButton.textContent = 'Delete';
+    deleteButton.classList.add('delete-button');
+
+    listItem.appendChild(deleteButton);
+    itemListElement.appendChild(listItem);
+  });
+}
 
                       </script> -->
                       <div class="row w-75">

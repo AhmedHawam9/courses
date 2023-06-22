@@ -1112,6 +1112,7 @@ table {
                 &.title {
                   font-family: "regular";
                   color: #595959;
+                  font-size: .9rem;
                 }
                 &.text {
                   font-family: "medium";
@@ -1649,6 +1650,157 @@ table {
                 color: #2e0c06;
               }
             }
+            &.students {
+              .title {
+                margin: 0;
+              }
+              .student_card {
+                display: flex;
+                background-color: #fff;
+                padding: 1.5rem;
+                border-radius: 5px;
+                margin-bottom: 1.5rem;
+                img {
+                  width: 70px;
+                  height: 70px;
+                  border-radius: 50%;
+                  margin-inline-end: 1.5rem;
+                }
+                .student_data {
+                  .name {
+                    font-family: "semibold";
+                    color: $PrimaryText;
+                    margin-bottom: .5rem;
+                  }
+                  .phone {
+                    font-family: "regular";
+                    color: $SecondText;
+                    font-size: .8rem;
+                    margin-bottom: 1rem;
+                  }
+                  .info {
+                    .title {
+                      font-family: "regular";
+                      color: #5F666F;
+                      font-size: .8rem;
+                    }
+                    .text {
+                      font-family: "regular";
+                      color: $PrimaryText;
+                      font-size: .8rem;
+                    }
+                    svg {
+                      margin-inline-end: .5rem;
+                      color: #5F666F;
+                      font-size: .8rem;
+                    }
+                  }
+                  .buttons {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 1rem;
+                    .PrimaryButton {
+                      margin-inline-start: .5rem;
+                      padding: .75rem 2.5rem;
+                    }
+                    .BlueButton {
+                      padding: .75rem 2.5rem;
+                    }
+                  }
+                }
+                .dropdown {
+                  margin-inline-start: auto;
+                  .dropdown-toggle {
+                    &:hover {
+                      border-color: transparent;
+                    }
+                    &::after {
+                      content: unset;
+                    }
+                  }
+                  .dropdown-menu {
+                    .dropdown-item {
+                      text-align: start;
+                      font-family: "regular";
+                      font-size: .8rem;
+                    }
+                  }
+                }
+                .modal {
+                  .modal-dialog {
+                    .modal-body {
+                      padding: 2rem;
+                    }
+                  }
+                  .title_section {
+                    margin: 0;
+                  }
+                  .form-group {
+                    .form-control {
+                      padding: 0.75rem;
+                      background-color: #F5F8FA;
+                      border: 1px solid #F5F8FA;
+                      width: 100%;
+                      &:focus, &:hover {
+                        border: 1px solid #F5F8FA;
+                        border-color: #F5F8FA !important;
+                      }
+                    }
+                    .bootstrap-select {
+                      padding: 0;
+                      background-color: transparent;
+                      width: 100%;
+                    }
+                    .dropdown-toggle {
+                      background-color: #F5F8FA;
+                      &::after {
+                        display: inline-block;
+                        margin-left: 0.255em;
+                        vertical-align: 0.255em;
+                        content: "";
+                        border-top: 0.3em solid;
+                        border-right: 0.3em solid transparent;
+                        border-bottom: 0;
+                        border-left: 0.3em solid transparent;
+                      }
+                      &:hover {
+                        background-color: #f2f8fc;
+                      }
+                    }
+                    .bootstrap-select {
+                      .dropdown-menu.inner {
+                        .dropdown-item {
+                          .text {
+                            font-size: .9rem;
+                            width: 100%;
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .bootstrap-select.form-control {
+                width: 20%;
+                .dropdown-toggle {
+                  background-color: #f5f8fa;
+                  border: 1px solid #A8A8A8;
+                  &:hover {
+                    border: 1px solid #A8A8A8;
+                    border-color: #A8A8A8 !important;
+                  }
+                }
+                .dropdown-menu {
+                  li {
+                    a {
+                      .text {
+                        font-size: .8rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
             .content_lesson {
               margin-top: 2rem;
               .title {
@@ -1777,266 +1929,341 @@ table {
         }
       }
     }
-    .wizard-content-left {
-      background-blend-mode: darken;
-      background-color: rgba(0, 0, 0, 0.45);
-      background-image: url("https://i.ibb.co/X292hJF/form-wizard-bg-2.jpg");
-      background-position: center center;
-      background-size: cover;
-      height: 100vh;
-      padding: 30px;
+    .video_library {
+      margin-top: 2rem;
+      border-radius: 5px;
+      padding: 2rem;
+      border: 1px solid #d6d6d6;
+      .filter_table {
+        .form-group {
+          .form-control {
+            background-color: rgba(143, 146, 161, 0.05);
+          }
+        }
+        .bootstrap-select {
+          .dropdown-toggle {
+            background-color: rgba(143, 146, 161, 0.05);
+          }
+        }
+      }
+      .card_video {
+        display: block;
+        border-radius: 10px;
+        border: 1px solid #D4D4D4;
+        margin-bottom: 1.5rem;
+        .video_cover {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .cover {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px 10px 0 0;
+          }
+          .play {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 70px;
+          }
+        }
+        .data {
+          padding: 1.5rem;
+          .title {
+            font-family: "bold";
+            color: $PrimaryText;
+            font-size: 1.1rem;
+          }
+          .date {
+            font-family: "regular";
+            color: $SecondText;
+            svg {
+              margin-inline-end: .5rem;
+            }
+          }
+          .dropdown {
+            .dropdown-toggle {
+              &:hover {
+                border-color: transparent;
+              }
+              &::after {
+                content: unset;
+              }
+            }
+            .dropdown-menu {
+              .dropdown-item {
+                text-align: start;
+                font-family: "regular";
+                font-size: .9rem;
+              }
+            }
+          }
+        }
+      }
     }
-    .wizard-content-left h1 {
-      color: #ffffff;
-      font-size: 38px;
-      font-weight: 600;
-      padding: 12px 20px;
-      text-align: center;
-    }
-
     .form-wizard {
       color: #888888;
       padding: 30px;
-    }
-    .form-wizard .wizard-form-radio {
-      display: inline-block;
-      margin-left: 5px;
-      position: relative;
-    }
-    .form-wizard .wizard-form-radio input[type="radio"] {
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      -ms-appearance: none;
-      -o-appearance: none;
-      appearance: none;
-      background-color: #dddddd;
-      height: 25px;
-      width: 25px;
-      display: inline-block;
-      vertical-align: middle;
-      border-radius: 50%;
-      position: relative;
-      cursor: pointer;
-    }
-    .form-wizard .wizard-form-radio input[type="radio"]:focus {
-      outline: 0;
-    }
-    .form-wizard .wizard-form-radio input[type="radio"]:checked {
-      background-color: #fb1647;
-    }
-    .form-wizard .wizard-form-radio input[type="radio"]:checked::before {
-      content: "";
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      display: inline-block;
-      background-color: #ffffff;
-      border-radius: 50%;
-      left: 1px;
-      right: 0;
-      margin: 0 auto;
-      top: 8px;
-    }
-    .form-wizard .wizard-form-radio input[type="radio"]:checked::after {
-      content: "";
-      display: inline-block;
-      webkit-animation: click-radio-wave 0.65s;
-      -moz-animation: click-radio-wave 0.65s;
-      animation: click-radio-wave 0.65s;
-      background: #000000;
-      content: '';
-      display: block;
-      position: relative;
-      z-index: 100;
-      border-radius: 50%;
-    }
-    .form-wizard .wizard-form-radio input[type="radio"] ~ label {
-      padding-left: 10px;
-      cursor: pointer;
-    }
-    .form-wizard .form-wizard-header {
-      text-align: center;
-    }
-    .form-wizard .wizard-fieldset {
-      display: none;
-      .form-check {
-        margin-bottom: 1.5rem;
-        padding: 0;
-        .form-check-label {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          background-color: #F5F8FA;
-          width: fit-content;
-          padding: 1.5rem;
-          border-radius: 8px;
-          width: 100%;
-          border: 1px solid #F5F8FA;
-          &:focus-within {
-            border: 1px solid $SecondColor;
-          }
-          .data {
-            display: flex;
-            align-items: start;
-            img {
-              width: 40px;
-              height: 40px;
-              margin-inline-end: 1rem;
-            }
-            .info {
-              .title {
-                font-family: "semibold";
-                color: $PrimaryText;
-                margin-bottom: 0.5rem;
-                font-size: 1rem;
-              }
-              .text {
-                font-family: "regular";
-                color: $SecondText;
-                margin-bottom: 0;
-                font-size: .8rem;
-              }
-            }
-          }
-          .form-group {
-            width: 100%;
-            .form-control {
-              background-color: #fff;
-              width: 100%;
-            }
-          }
-        }
-        .form-check-input {
-          float: unset;
-          margin: 0;
-          &:checked {
-            background-color: $SecondColor;
-            border-color: $SecondColor;
-          }
-        }
-      }
-    }
-    .form-wizard .wizard-fieldset.show {
-      display: block;
-    }
-    .form-wizard .wizard-form-error {
-      display: none;
-      background-color: #d70b0b;
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 2px;
-      width: 100%;
-    }
-    .form-wizard .form-wizard-previous-btn {
-      background-color: #fb1647;
-    }
-    .form-wizard .form-control {
-      font-weight: 300;
-      height: auto !important;
-      padding: 15px;
-      color: #888888;
-      background-color: #f1f1f1;
-      border: none;
-    }
-    .form-wizard .form-control:focus {
-      box-shadow: none;
-    }
-    .form-wizard .form-group {
-      position: relative;
-      margin: 25px 0;
-    }
-    .form-wizard .wizard-form-text-label {
-      position: absolute;
-      left: 10px;
-      top: 16px;
-      transition: 0.2s linear all;
-    }
-    .form-wizard .focus-input .wizard-form-text-label {
-      color: #942714;
-      top: -18px;
-      transition: 0.2s linear all;
-      font-size: 12px;
-    }
-    .form-wizard .form-wizard-steps {
-      margin: 30px 0;
-      text-align: start;
-    }
-    .form-wizard .form-wizard-steps li {
-      width: 25%;
-      float: right;
-      position: relative;
-    }
-    .form-wizard .form-wizard-steps li::after {
-      background-color: #f3f3f3;
-      content: "";
-      height: 5px;
-      left: 0;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 100%;
-      border-bottom: 1px solid #dddddd;
-      border-top: 1px solid #dddddd;
-    }
-    .form-wizard .form-wizard-steps li span {
-      background-color: #dddddd;
-      border-radius: 50%;
-      display: inline-block;
-      height: 40px;
-      line-height: 40px;
-      position: relative;
-      text-align: center;
-      width: 40px;
-      z-index: 1;
-    }
-    .form-wizard .form-wizard-steps li:last-child::after {
-      width: 50%;
-    }
-    .form-wizard .form-wizard-steps li.active span, .form-wizard .form-wizard-steps li.activated span {
-      background-color: $PrimaryColor;
-      color: #ffffff;
-    }
-    .form-wizard .form-wizard-steps li.active::after, .form-wizard .form-wizard-steps li.activated::after {
-      background-color: $PrimaryColor;
-      right: 0%;
-      width: 50%;
-      border-color: $PrimaryColor;
-    }
-    .form-wizard .form-wizard-steps li.activated::after {
-      width: 100%;
-      border-color: $PrimaryColor;
-    }
-    .form-wizard .form-wizard-steps li:last-child::after {
-      right: -50%;
-    }
-    .form-wizard .wizard-password-eye {
-      position: absolute;
-      right: 32px;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-    }
-    @keyframes click-radio-wave {
-      0% {
-        width: 25px;
-        height: 25px;
-        opacity: 0.35;
+      .wizard-form-radio {
+        display: inline-block;
+        margin-left: 5px;
         position: relative;
       }
-      100% {
-        width: 60px;
-        height: 60px;
-        margin-left: -15px;
-        margin-top: -15px;
-        opacity: 0.0;
+      .wizard-form-radio input[type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        background-color: #dddddd;
+        height: 25px;
+        width: 25px;
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
       }
-    }
-    @media screen and (max-width: 767px) {
+      .wizard-form-radio input[type="radio"]:focus {
+        outline: 0;
+      }
+      .wizard-form-radio input[type="radio"]:checked {
+        background-color: #fb1647;
+      }
+      .wizard-form-radio input[type="radio"]:checked::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background-color: #ffffff;
+        border-radius: 50%;
+        left: 1px;
+        right: 0;
+        margin: 0 auto;
+        top: 8px;
+      }
+      .wizard-form-radio input[type="radio"]:checked::after {
+        content: "";
+        display: inline-block;
+        webkit-animation: click-radio-wave 0.65s;
+        -moz-animation: click-radio-wave 0.65s;
+        animation: click-radio-wave 0.65s;
+        background: #000000;
+        content: '';
+        display: block;
+        position: relative;
+        z-index: 100;
+        border-radius: 50%;
+      }
+      .wizard-form-radio input[type="radio"] ~ label {
+        padding-left: 10px;
+        cursor: pointer;
+      }
+      .form-wizard-header {
+        text-align: center;
+      }
+      .wizard-fieldset {
+        display: none;
+        .form-check {
+          margin-bottom: 1.5rem;
+          padding: 0;
+          .form-check-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #F5F8FA;
+            width: fit-content;
+            padding: 1.5rem;
+            border-radius: 8px;
+            width: 100%;
+            border: 1px solid #F5F8FA;
+            &:focus-within {
+              border: 1px solid $SecondColor;
+            }
+            .data {
+              display: flex;
+              align-items: start;
+              img {
+                width: 40px;
+                height: 40px;
+                margin-inline-end: 1rem;
+              }
+              .info {
+                .title {
+                  font-family: "semibold";
+                  color: $PrimaryText;
+                  margin-bottom: 0.5rem;
+                  font-size: 1rem;
+                }
+                .text {
+                  font-family: "regular";
+                  color: $SecondText;
+                  margin-bottom: 0;
+                  font-size: .8rem;
+                }
+              }
+            }
+            .form-group {
+              width: 100%;
+              .form-control {
+                background-color: #fff;
+                width: 100%;
+              }
+            }
+          }
+          .form-check-input {
+            float: unset;
+            margin: 0;
+            &:checked {
+              background-color: $SecondColor;
+              border-color: $SecondColor;
+            }
+          }
+        }
+      }
+      .wizard-fieldset.show {
+        display: block;
+      }
+      .wizard-form-error {
+        display: none;
+        background-color: #d70b0b;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        width: 100%;
+      }
+      .form-wizard-previous-btn {
+        background-color: #fb1647;
+      }
+      .form-control {
+        font-weight: 300;
+        height: auto !important;
+        padding: 15px;
+        color: #888888;
+        background-color: #f1f1f1;
+        border: none;
+      }
+      .form-control:focus {
+        box-shadow: none;
+      }
+      .form-group {
+        position: relative;
+        margin: 25px 0;
+      }
+      .wizard-form-text-label {
+        position: absolute;
+        left: 10px;
+        top: 16px;
+        transition: 0.2s linear all;
+      }
+      .focus-input .wizard-form-text-label {
+        color: #942714;
+        top: -18px;
+        transition: 0.2s linear all;
+        font-size: 12px;
+      }
+      .form-wizard-steps {
+        margin: 30px 0;
+        text-align: start;
+      }
+      .form-wizard-steps li {
+        width: 25%;
+        float: right;
+        position: relative;
+      }
+      .form-wizard-steps li::after {
+        background-color: #f3f3f3;
+        content: "";
+        height: 5px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        border-bottom: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
+      }
+      .form-wizard-steps li span {
+        background-color: #dddddd;
+        border-radius: 50%;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        position: relative;
+        text-align: center;
+        width: 40px;
+        z-index: 1;
+      }
+      .form-wizard-steps li:last-child::after {
+        width: 50%;
+      }
+      .form-wizard-steps li.active span, .form-wizard-steps li.activated span {
+        background-color: $PrimaryColor;
+        color: #ffffff;
+      }
+      .form-wizard-steps li.active::after, .form-wizard-steps li.activated::after {
+        background-color: $PrimaryColor;
+        right: 0%;
+        width: 50%;
+        border-color: $PrimaryColor;
+      }
+      .form-wizard-steps li.activated::after {
+        width: 100%;
+        border-color: $PrimaryColor;
+      }
+      .form-wizard-steps li:last-child::after {
+        right: -50%;
+      }
+      .wizard-password-eye {
+        position: absolute;
+        right: 32px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+      }
       .wizard-content-left {
-        height: auto;
+        background-blend-mode: darken;
+        background-color: rgba(0, 0, 0, 0.45);
+        background-image: url("https://i.ibb.co/X292hJF/form-wizard-bg-2.jpg");
+        background-position: center center;
+        background-size: cover;
+        height: 100vh;
+        padding: 30px;
+      }
+      .wizard-content-left h1 {
+        color: #ffffff;
+        font-size: 38px;
+        font-weight: 600;
+        padding: 12px 20px;
+        text-align: center;
+      }
+      @keyframes click-radio-wave {
+        0% {
+          width: 25px;
+          height: 25px;
+          opacity: 0.35;
+          position: relative;
+        }
+        100% {
+          width: 60px;
+          height: 60px;
+          margin-left: -15px;
+          margin-top: -15px;
+          opacity: 0.0;
+        }
+      }
+      @media screen and (max-width: 767px) {
+        .wizard-content-left {
+          height: auto;
+        }
       }
     }
   }

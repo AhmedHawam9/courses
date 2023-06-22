@@ -121,67 +121,67 @@
               <span>المدرسين</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="messages.html" class="nav-link align-middle">
               <img src="../../media/image/icon/subject.png" alt="icon" />
               <span>المواد التعليمية</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="../halls/index.html" class="nav-link align-middle">
               <img src="../../media/image/icon/hall.png" alt="icon" />
               <span>القاعات</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/exams.png" alt="icon" />
               <span>الامتحانات</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/students.png" alt="icon" />
               <span>الطلاب</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
+          <li class="nav-item">
+            <a href="/pages/intro/index.html" class="nav-link align-middle">
               <img src="../../media/image/icon/intro.png" alt="icon" />
               <span>مكاتب INTRO</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
-            <a href="setting.html" class="nav-link align-middle">
+          <li class="nav-item">
+            <a href="/pages/libraryVideo/index.html" class="nav-link align-middle">
               <img src="../../media/image/icon/video.png" alt="icon" />
               <span>مكاتب فيدويوهات </span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/lessons.png" alt="icon" />
               <span>الدروس</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/questions.png" alt="icon" />
               <span>بنك الأسالة</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/blogs.png" alt="icon" />
               <span>المدونة</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/financial.png" alt="icon" />
               <span>المعاملات المالية</span>
             </a>
           </li>
-          <li class="nav-item disable_mobile">
+          <li class="nav-item">
             <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/settings.png" alt="icon" />
               <span>الاعدادات العامة</span>
@@ -290,7 +290,7 @@
               <div class="row">
                 <div class="col-lg-4 col-12">
                   <div class="info_head_course">
-                    <img src="../../media/image/7w7w.jpg" alt="course_image" />
+                    <img src="../../media/image/course.jpg" alt="course_image" />
                     <h4 class="course_name">Princibles Of UI/UX Design</h4>
                     <p class="teacher_name">د / اشرف عمران</p>
                     <a href="#" class="btn edit_btn">تعديل البيانات</a>
@@ -861,13 +861,122 @@
 
                       <!-- Start student course -->
                       <div
-                        class="tab-pane fade"
+                        class="tab-pane students fade"
                         id="student-tab-pane"
                         role="tabpanel"
                         aria-labelledby="student-tab"
                         tabindex="0"
                       >
-                        ...
+                        <div class="row mt-4">
+                          <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h4 class="title">الطلاب</h4>
+                            <select name="" id="" class="form-control selectpicker" title="الطلاب">
+                              <option value="">كل الطلاب</option>
+                              <option value="">طلبات الانضمام</option>
+                            </select>
+                          </div>
+                          <!-- For loop student card -->
+                          <div class="col-lg-6 col-md-12 col-12">
+                            <div class="student_card">
+                              <img src="../../media/image/7w7w.jpg" alt="student">
+                              <div class="student_data">
+                                <p class="name">أحمد حمدي حوام</p>
+                                <p class="phone">010 2658 02251 </p>
+                                <div class="info">
+                                  <i class="fa-solid fa-users"></i>
+                                  <span class="title">المجموعة  الحالية: </span>
+                                  <span class="text"> المجموعة الثانية</span>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">تفاصيل الطالب</a></li>
+                                  <li><a class="dropdown-item" href="#">عرض السيشنز</a></li>
+                                  <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#changeGroupModal">تغيير المجموعة</button></li>
+                                  <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#expulsionModal">طرد الطالب</button></li>
+                                </ul>
+                              </div>
+
+                              <!-- Modal change group -->
+                              <div class="modal fade" id="changeGroupModal" tabindex="-1" aria-labelledby="changeGroupModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <form class="modal-body">
+                                      <h4 class="title_section">اختر المجموعة التي تريد نقل الطالب اليها</h4>
+                                      <div class="form-group">
+                                        <label for="">اختر المجموعة</label>
+                                        <select name="" id="" class="form-control selectpicker" title="اختر">
+                                          <option value="">مجموعة 1</option>
+                                          <option value="">مجموعة 2</option>
+                                        </select>
+                                      </div>
+                                      <button type="submit" class="btn BlueButton">تأكيد</button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Modal change group -->
+
+
+                              <!-- Modal expulsion group -->
+                              <div class="modal fade" id="expulsionModal" tabindex="-1" aria-labelledby="expulsionModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <form class="modal-body">
+                                      <h4 class="title_section">برجاء ادخال السبب لطرد الطالب</h4>
+                                      <div class="form-group">
+                                        <label for="">اكتب السبب هنا</label>
+                                        <input type="text" name="" id="" class="form-control" placeholder="اكتب هنا">
+                                      </div>
+                                      <button type="submit" class="btn BlueButton">تأكيد</button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Modal expulsion group -->
+                            </div>
+                          </div>
+                          <!-- For loop student card -->
+
+                          <!-- For loop student card -->
+                          <div class="col-lg-6 col-md-12 col-12">
+                            <div class="student_card">
+                              <img src="../../media/image/7w7w.jpg" alt="student">
+                              <div class="student_data">
+                                <p class="name">أحمد حمدي حوام</p>
+                                <p class="phone">010 2658 02251 </p>
+                                <div class="info">
+                                  <i class="fa-solid fa-ticket"></i>
+                                  <span class="title">كود الانضمام :  </span>
+                                  <span class="text">52161316</span>
+                                </div>
+                                <div class="info">
+                                  <i class="fa-solid fa-users"></i>
+                                  <span class="title">المجموعة : </span>
+                                  <span class="text"> المجموعة الثانية</span>
+                                </div>
+                                <div class="buttons">
+                                  <button class="btn BlueButton">قبول</button>
+                                  <button class="btn PrimaryButton">رفض</button>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">قبول الطالب</a></li>
+                                  <li><a class="dropdown-item" href="#">رفض الطالب</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- For loop student card -->
+
+                        </div>
                       </div>
                       <!-- End student course -->
 

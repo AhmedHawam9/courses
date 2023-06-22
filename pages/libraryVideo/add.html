@@ -55,11 +55,7 @@
           id="menu"
         >
           <div class="image_logo">
-            <img
-              src="../../media/image/logo.png"
-              alt="logo_sidebar"
-              class="logo"
-            />
+            <img src="../../media/image/logo.png" alt="logo_sidebar" class="logo" />
           </div>
           <li class="nav-item">
             <a href="../home/index.html" class="nav-link align-middle">
@@ -100,10 +96,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a
-              href="/pages/university/index.html"
-              class="nav-link align-middle"
-            >
+            <a href="/pages/university/index.html" class="nav-link align-middle">
               <img src="../../media/image/icon/university.png" alt="icon" />
               <span>الجامعات</span>
             </a>
@@ -227,14 +220,14 @@
                   <li>
                     <a class="dropdown-item">
                       <img
-                        src="./media/image/saudi-arabia.png"
+                        src="../../media/image/saudi-arabia.png"
                         alt="saudi-arabia"
                       />
                       Arabic
                     </a>
                     <a class="dropdown-item">
                       <img
-                        src="./media/image/united-kingdom.png"
+                        src="../../media/image/united-kingdom.png"
                         alt="united-kingdom"
                       />
                       English
@@ -252,7 +245,7 @@
                 aria-expanded="false"
               >
                 <img
-                  src="./media/image/7w7w.jpg"
+                  src="../../media/image/7w7w.jpg"
                   class="admin_img"
                   alt="person"
                 />
@@ -273,7 +266,53 @@
 
         <!-- ======= Start Content ======= -->
         <section class="content">
-          <div class="container"></div>
+          <div class="container">
+            <h4 class="title_section">إضافة فيديو جديد</h4>
+            <form action="index.html" class="add_item">
+                <div class="form-group">
+                  <label for="">نوع الفيديو</label>
+                  <select name="" id="" class="form-control selectpicker" title="نوع الفيديو">
+                    <option value="">لايف</option>
+                    <option value="">فيديو مرفوع</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="">رابط الفيديو</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="ادخل رابط الفيديو" required>
+                </div>
+                <div class="form-group">
+                    <label for="">كلمة المرور</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="ادخل كلمة المرور" required>
+                </div>
+                <div class="form-group">
+                    <label for="">تفاصيل الفيديو</label>
+                    <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل كاملة" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="">اضف وسوم من اقسام المكتبة</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="ادخل بعض الوسوم" required>
+                </div>
+                <div class="form-group upload_file">
+                    <label for="">اضف صورة الغلاف</label>
+                    <label for="imageCover" class="upload_file_label">
+                    <i class="fa-regular fa-image"></i>
+                    <p>اسحب صور المنتج هنا او قم باستخدام البراوزر</p>
+                    <span id="fileNameImage">1600 * 1400 , والحد الاقصي 10 ميجا</span>
+                    </label>
+                    <input type="file" name="" id="imageCover" class="form-control" accept="image/*" hidden>
+                </div>
+                <script>
+                    const fileInputImage = document.getElementById('imageCover');
+                    const fileNameImage = document.getElementById('fileNameImage');
+                
+                    fileInputImage.addEventListener('change', (event) => {
+                        const file = event.target.files[0];
+                        fileNameImage.textContent = file.name;
+                    });
+                </script>
+                <button type="submit" class="btn PrimaryButton">حفظ</button>
+            </form>
+          </div>
         </section>
         <!-- ======= End Content ======= -->
       </section>
@@ -282,13 +321,5 @@
     <!-- ? ======= footer =========== -->
 
     <script src="../../js/main.js"></script>
-    <script src="js/counterup.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script>
-      $(".counter").counterUp({
-        delay: 20,
-        time: 2000,
-      });
-    </script>
   </body>
 </html>
