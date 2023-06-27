@@ -279,12 +279,170 @@
               <h4 class="title_section">تفاصيل الكورس</h4>
               <div class="buttons d-flex align-items-center">
                 <a href="#" class="btn mx-1 SecondButton">تعديل البيانات</a>
-                <a href="#" class="btn mx-1 TransparentButton"
+                <a href="#" class="btn mx-1 TransparentButton" data-bs-toggle="modal" data-bs-target="#addEmptyVideoModal"
                   >اضافة فيديو جديد</a
                 >
                 <a href="#" class="btn mx-1 PrimaryButton">إضافة درس جديد</a>
                 <a href="#" class="btn mx-1 BlueButton">ارسال رسالة</a>
               </div>
+
+              <!-- Modal empty video -->
+              <div class="modal fade videoEmptyModal" id="addEmptyVideoModal" tabindex="-1" aria-labelledby="addEmptyVideoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <img src="../../media/image/icon/empty.png" alt="empty">
+                      <h2 class="title">هل تريد اضافة فيديو من مكتبة الفيديوهات المتاحة</h2>
+                      <div class="buttons">
+                        <button type="button" class="btn PrimaryButton" data-bs-toggle="modal" data-bs-target="#libraryVideoModal">نعم</button>
+                        <a href="add_new_video.html" type="button" class="btn SecondButton">اضافة فيديو جديد</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal empty video -->
+
+              <!-- Modal library video -->
+              <div class="modal fade videoLibraryModal" id="libraryVideoModal" tabindex="-1" aria-labelledby="libraryVideoModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <h4 class="title">اختر الفيديو الذي تريد اضافته الى الكورس الخاص بك</h4>
+                      <p class="text">اختر الدرس الذي تريد إضافتة</p>
+                      <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم الفيديو او المادة او الدكتور">
+                      <div class="row">
+                        <!-- Card video -->
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <div class="card_video"  data-bs-toggle="modal" data-bs-target="#addVideoDetailsModal">
+                            <iframe src="https://www.youtube.com/embed/-SxpD-M6IvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div class="data">
+                              <div class="texts">
+                                <p class="title">فيديو شرح مادة المحاسبة المالية  و شرح الاساسيات</p>
+                                <p class="text"><i class="fa-solid fa-calendar-days"></i> تاريخ الاضافة : 22 مايو 2022</p>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card video -->
+                        
+                        <!-- Card video -->
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <div class="card_video"  data-bs-toggle="modal" data-bs-target="#addVideoDetailsModal">
+                            <iframe src="https://www.youtube.com/embed/-SxpD-M6IvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div class="data">
+                              <div class="texts">
+                                <p class="title">فيديو شرح مادة المحاسبة المالية  و شرح الاساسيات</p>
+                                <p class="text"><i class="fa-solid fa-calendar-days"></i> تاريخ الاضافة : 22 مايو 2022</p>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card video -->
+
+                        <!-- Card video -->
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <div class="card_video"  data-bs-toggle="modal" data-bs-target="#addVideoDetailsModal">
+                            <iframe src="https://www.youtube.com/embed/-SxpD-M6IvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div class="data">
+                              <div class="texts">
+                                <p class="title">فيديو شرح مادة المحاسبة المالية  و شرح الاساسيات</p>
+                                <p class="text"><i class="fa-solid fa-calendar-days"></i> تاريخ الاضافة : 22 مايو 2022</p>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card video -->
+
+                        <!-- Card video -->
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <div class="card_video"  data-bs-toggle="modal" data-bs-target="#addVideoDetailsModal">
+                            <iframe src="https://www.youtube.com/embed/-SxpD-M6IvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <div class="data">
+                              <div class="texts">
+                                <p class="title">فيديو شرح مادة المحاسبة المالية  و شرح الاساسيات</p>
+                                <p class="text"><i class="fa-solid fa-calendar-days"></i> تاريخ الاضافة : 22 مايو 2022</p>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Card video -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal library video -->
+
+              <!-- Modal add video details -->
+              <div class="modal addVideoDetailsModal fade" id="addVideoDetailsModal" tabindex="-1" aria-labelledby="addVideoDetailsModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <h4 class="title">تفاصيل الفيديو</h4>
+                      <p class="text">هنا يظهر تفاصيل الفيديو الذي قمت باختيارة مع إمكانية اجراء بعض التعديلات علية ثم اضغط على زر اضف الآن لاضافتة الى قائمة الدروس الخاصة بك</p>
+                      <div class="form-group">
+                        <label for="">اسم الفيديو</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="اسم الفيديو">
+                      </div>
+                      <div class="form-group">
+                        <label for="">تفاصيل الفيديو</label>
+                        <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="تفاصيل الفيديو"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="">محتوي الفيديو</label>
+                        <iframe src="https://www.youtube.com/embed/-SxpD-M6IvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                      <div class="form-group">
+                        <label for="">عدد المرات المتاحة لعرض الفيديو</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="ادخل العدد المحدد">
+                      </div>
+                      <div class="form-group">
+                        <label for="">عدد المرات المتاحة لعرض الفيديو</label>
+                        <select name="" id="" class="selectpicker form-control" title="اختر النسبة التي عندها يعتبر الفيديو مكتملا">
+                          <option value="">تيست</option>
+                          <option value="">تيست</option>
+                          <option value="">تيست</option>
+                        </select>
+                      </div>
+                      <button class="btn PrimaryButton">اضف الفيديو الآن</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal add video details -->
             </div>
             <div class="details_course">
               <div class="row">

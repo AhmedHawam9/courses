@@ -486,6 +486,24 @@ table {
             color: #a1a1a1;
           }
         }
+        .radio {
+          display: flex;
+          flex-wrap: wrap;
+          .form-check {
+            width: 25%;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            .form-check-input {
+              float: right;
+              margin: 0;
+              margin-inline-end: 0.5rem;
+            }
+            .form-check-label {
+              margin-bottom: 0;
+            }
+          }
+        }
       }
       .form-group-width {
         width: 100%;
@@ -2263,6 +2281,168 @@ table {
       @media screen and (max-width: 767px) {
         .wizard-content-left {
           height: auto;
+        }
+      }
+    }
+    .videoEmptyModal {
+      .modal-content {
+        padding: 2rem;
+        img {
+          display: block;
+          width: 40%;
+          margin: 0 auto;
+        }
+        .title {
+          font-family: "bold";
+          color: $PrimaryText;
+          font-size: 1.7rem;
+          text-align: center;
+          margin: 3rem 0 1.5rem;
+        }
+        .buttons {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          margin: 0 auto;
+          .PrimaryButton {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+    .videoLibraryModal {
+      .modal-dialog {
+        max-width: 70%;
+        .modal-content {
+          padding: 1.5rem;
+          .title {
+            font-family: "bold";
+            color: $PrimaryText;
+          }
+          .text {
+            font-family: "semibold";
+            color: $SecondText;
+          }
+          input {
+            font-family: "regular";
+            color: $SecondText;
+            font-size: .8rem;
+            padding: .75rem;
+            margin-bottom: 1.5rem;
+          }
+          .card_video {
+            border: 1px solid #D4D4D4;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            iframe {
+              width: 100%;
+              height: 250px;
+              border-radius: 10px 10px 0 0;
+              pointer-events: none;
+            }
+            .data {
+              display: flex;
+              justify-content: space-between;
+              align-items: start;
+              padding: 1.5rem;
+              .texts {
+                .title {
+                  font-family: "bold";
+                  color: $PrimaryText;
+                  font-size: 1.1rem;
+                }
+                .text {
+                  font-family: "regular";
+                  color: $SecondText;
+                  svg {
+                    margin-inline-end: .5rem;
+                  }
+                }
+              } 
+              .dropdown {
+                .dropdown-toggle {
+                  &:hover {
+                    border-color: transparent;
+                  }
+                  &::after {
+                    content: unset;
+                  }
+                }
+                .dropdown-menu {
+                  .dropdown-item {
+                    text-align: start;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .addVideoDetailsModal {
+      .modal-dialog {
+        max-width: 50%;
+        .modal-content {
+          padding: 1.5rem;
+          .title {
+            font-family: "bold";
+            color: $PrimaryText;
+          }
+          .text {
+            font-family: "regular";
+            color: $SecondText;
+          }
+          .form-group {
+            margin-bottom: 1.5rem;
+            label {
+              font-family: "semibold";
+              color: #323A46;
+              margin-bottom: .8rem;
+            }
+            .form-control {
+              font-family: "semibold";
+              color: $PrimaryText;
+              border-color: transparent;
+              background-color: #f8f9fa;
+              font-size: .8rem;
+              padding: .75rem;
+              resize: none;
+            }
+            iframe {
+              width: 100%;
+              height: 250px;
+            }
+            .bootstrap-select {
+              padding: 0;
+              .dropdown-toggle {
+                padding: 0.8rem;
+                &:hover {
+                  border-color: transparent !important;
+                  background-color: #f8f9fa;
+                }
+              }
+              .dropdown-menu {
+                li {
+                  a {
+                    text-align: start;
+                    font-family: "regular";
+                    font-size: 0.9rem;
+                    color: #000;
+                  }
+                }
+              }
+              .filter-option-inner-inner {
+                text-align: start;
+                font-family: "regular";
+                font-size: 0.8rem;
+                color: #a1a1a1;
+              }
+            }
+          }
+          .PrimaryButton {
+            width: 100%;
+            padding: 1rem;
+          }
         }
       }
     }
