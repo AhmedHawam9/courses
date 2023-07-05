@@ -334,9 +334,12 @@
                         <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم الفيديو او المادة او الدكتور">
                         <div class="row">
                           <!-- Card video -->
-                          <div class="col-lg-6 col-md-6 col-12">
+                          <div class="col-lg-3 col-md-6 col-12">
                             <div class="card_video"  data-bs-toggle="modal" data-bs-target="#addVideoDetailsModal">
-                              <iframe src="https://www.youtube.com/embed/-SxpD-M6IvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                              <div class="video_cover">
+                                <img src="../../media/image/video.jpg" alt="cover" class="cover" />
+                                <img src="../../media/image/icon/play.png" alt="play" class="play" />
+                              </div>
                               <div class="data">
                                 <div class="texts">
                                   <p class="title">فيديو شرح مادة المحاسبة المالية  و شرح الاساسيات</p>
@@ -356,9 +359,12 @@
                           <!-- Card video -->
                           
                           <!-- Card video -->
-                          <div class="col-lg-6 col-md-6 col-12">
+                          <div class="col-lg-3 col-md-6 col-12">
                             <div class="card_video"  data-bs-toggle="modal" data-bs-target="#addVideoDetailsModal">
-                              <iframe src="https://www.youtube.com/embed/-SxpD-M6IvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                              <div class="video_cover">
+                                <img src="../../media/image/video.jpg" alt="cover" class="cover" />
+                                <img src="../../media/image/icon/play.png" alt="play" class="play" />
+                              </div>
                               <div class="data">
                                 <div class="texts">
                                   <p class="title">فيديو شرح مادة المحاسبة المالية  و شرح الاساسيات</p>
@@ -378,9 +384,12 @@
                           <!-- Card video -->
 
                           <!-- Card video -->
-                          <div class="col-lg-6 col-md-6 col-12">
+                          <div class="col-lg-3 col-md-6 col-12">
                             <div class="card_video"  data-bs-toggle="modal" data-bs-target="#addVideoDetailsModal">
-                              <iframe src="https://www.youtube.com/embed/-SxpD-M6IvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                              <div class="video_cover">
+                                <img src="../../media/image/video.jpg" alt="cover" class="cover" />
+                                <img src="../../media/image/icon/play.png" alt="play" class="play" />
+                              </div>
                               <div class="data">
                                 <div class="texts">
                                   <p class="title">فيديو شرح مادة المحاسبة المالية  و شرح الاساسيات</p>
@@ -400,9 +409,37 @@
                           <!-- Card video -->
 
                           <!-- Card video -->
-                          <div class="col-lg-6 col-md-6 col-12">
+                          <div class="col-lg-3 col-md-6 col-12">
                             <div class="card_video"  data-bs-toggle="modal" data-bs-target="#addVideoDetailsModal">
-                              <iframe src="https://www.youtube.com/embed/-SxpD-M6IvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                              <div class="video_cover">
+                                <img src="../../media/image/video.jpg" alt="cover" class="cover" />
+                                <img src="../../media/image/icon/play.png" alt="play" class="play" />
+                              </div>
+                              <div class="data">
+                                <div class="texts">
+                                  <p class="title">فيديو شرح مادة المحاسبة المالية  و شرح الاساسيات</p>
+                                  <p class="text"><i class="fa-solid fa-calendar-days"></i> تاريخ الاضافة : 22 مايو 2022</p>
+                                </div>
+                                <div class="dropdown">
+                                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Card video -->
+
+                          <!-- Card video -->
+                          <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card_video"  data-bs-toggle="modal" data-bs-target="#addVideoDetailsModal">
+                              <div class="video_cover">
+                                <img src="../../media/image/video.jpg" alt="cover" class="cover" />
+                                <img src="../../media/image/icon/play.png" alt="play" class="play" />
+                              </div>
                               <div class="data">
                                 <div class="texts">
                                   <p class="title">فيديو شرح مادة المحاسبة المالية  و شرح الاساسيات</p>
@@ -477,6 +514,39 @@
                     <input type="time" name="" id="" class="form-control" required>
                 </div>
                 <div class="form-group">
+                  <label for="" class="d-block">نوع الفيديو</label>
+                  <div class="form-group halls_type">
+                    <input type="radio" class="videoType" name="video" id="airConditioner" onclick="showDiv('record')" value="record" required hidden>
+                    <label for="airConditioner">مسجل</label>
+                  </div>
+                  <div class="form-group halls_type me-3">
+                    <input type="radio" class="videoType" name="video" id="notAirConditioner" onclick="showDiv('live')" value="live" required hidden>
+                    <label for="notAirConditioner">لايف</label>
+                  </div>
+
+                  <div id="record" style="display:none;">
+                    Content for option 1
+                  </div>
+                  <div id="live" style="display:none;">
+                    Content for option 2
+                  </div>
+
+                  <script>
+                    function showDiv(divId) {
+                      var div = document.getElementById(divId);
+                      
+                      // Hide all divs
+                      var allDivs = document.querySelectorAll('div[id^="div"]');
+                      allDivs.forEach(function(div) {
+                        div.style.display = "none";
+                      });
+                      
+                      // Show the selected div
+                      div.style.display = "block";
+                    }
+                  </script>
+                </div>
+                <div class="form-group">
                     <label for="">نسبة اكتمال الفيديو</label>
                     <div class="radio">
                         <div class="form-check">
@@ -505,16 +575,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="form-group">
-                  <div class="form-check form-switch">
-                    <label class="form-check-label" for="sound">بصمة الصوت</label>
-                    <input class="form-check-input" type="checkbox" role="switch" id="sound">
+                <div class="d-flex">
+                  <div class="form-group check">
+                    <div class="form-check form-switch">
+                      <label class="form-check-label" for="sound">بصمة الصوت</label>
+                      <input class="form-check-input" type="checkbox" role="switch" id="sound">
+                    </div>
                   </div>
-                </div>
-                <div class="form-group">
-                  <div class="form-check form-switch">
-                    <label class="form-check-label" for="text">عرض الرقم</label>
-                    <input class="form-check-input" type="checkbox" role="switch" id="text">
+                  <div class="form-group check">
+                    <div class="form-check form-switch">
+                      <label class="form-check-label" for="text">عرض الرقم</label>
+                      <input class="form-check-input" type="checkbox" role="switch" id="text">
+                    </div>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-12">

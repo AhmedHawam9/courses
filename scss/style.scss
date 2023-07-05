@@ -42,42 +42,6 @@ body {
 body {
   &:lang(ar) {
     direction: rtl;
-    .navbar .serach_navbar .search_navbar .btn {
-      left: 0.7rem;
-      right: unset !important;
-    }
-    .index_cards .setting .personal_data form .form-group svg {
-      left: 1rem;
-      right: unset !important;
-    }
-    .index_cards .add_team .form-group svg {
-      right: 0.7rem;
-      left: unset !important;
-    }
-    .form-group select {
-      background-position-x: 0 !important;
-    }
-    .questionnaires .questionnaires_card .link svg {
-      transform: rotate(180deg);
-    }
-    .sidebar .problem a svg {
-      transform: rotate(180deg);
-    }
-    .modal-header .btn-close {
-      margin-inline-start: auto;
-      margin-inline-end: 0;
-    }
-    .multiselect__tags {
-      text-align: start;
-    }
-    .multiselect__select {
-      left: 0;
-      right: unset;
-    }
-    .setting .personal_data form .file-upload-form {
-      right: 3%;
-      left: unset;
-    }
   }
 }
 
@@ -503,6 +467,10 @@ table {
               margin-bottom: 0;
             }
           }
+        }
+        &.check {
+          width: fit-content;
+          margin-inline-end: 4rem;
         }
         .form-switch {
           display: flex;
@@ -1124,6 +1092,15 @@ table {
           margin: 2rem 0 1rem;
           font-family: "sembiold";
           color: $PrimaryText;
+          .status {
+            border-radius: 32px;
+            font-family: "regular";
+            font-size: .8rem;
+            &.open {
+              background-color: rgba($color: #50C26B, $alpha: 0.1);
+              color: #50C26B;
+            }
+          }
         }
         .teacher_name {
           color: $PrimaryText;
@@ -1177,6 +1154,29 @@ table {
             width: 70%;
             padding: 1rem;
             margin-top: 1.5rem;
+          }
+        }
+      }
+      .basic_data {
+        background-color: #f5f8fa;
+        margin-bottom: 1.5rem;
+        padding: 2rem;
+        .data {
+          display: flex;
+          flex-wrap: wrap;
+          .info {
+            width: 25%;
+            margin-top: 2.5rem;
+            .title {
+              font-family: "regular";
+              color: $SecondText;
+              margin-bottom: 0.5rem;
+            }
+            .text {
+              font-family: "semibold";
+              color: $PrimaryText;
+              margin-bottom: 0;
+            }
           }
         }
       }
@@ -1973,6 +1973,39 @@ table {
                 }
               }
             }
+            table {
+              thead {
+                background-color: #fff;
+                color: #000;
+                font-size: .8rem;
+                tr {
+                  th {
+                    padding: 1rem 0.5rem !important;
+                  }
+                }
+              }
+              tbody {
+                font-size: .8rem;
+                tr {
+                  &:nth-child(odd), &:nth-child(even) {
+                    background-color: #fff;
+                  }
+                  th {
+                    padding: 1rem 0.5rem !important;
+                  }
+                  td {
+                    padding: 0 0.5rem !important;
+                    .dropdown {
+                      .dropdown-menu {
+                        .dropdown-item {
+                          font-size: .8rem;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
@@ -2364,26 +2397,41 @@ table {
             border: 1px solid #D4D4D4;
             border-radius: 10px;
             margin-bottom: 2rem;
-            iframe {
-              width: 100%;
-              height: 250px;
-              border-radius: 10px 10px 0 0;
-              pointer-events: none;
+            .video_cover {
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .cover {
+                width: 100%;
+                height: 180px;
+                border-radius: 10px 10px 0 0;
+              }
+              .play {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                margin: auto;
+                width: 70px;
+              }
             }
             .data {
               display: flex;
               justify-content: space-between;
               align-items: start;
-              padding: 1.5rem;
+              padding: 1rem;
               .texts {
                 .title {
                   font-family: "bold";
                   color: $PrimaryText;
-                  font-size: 1.1rem;
+                  font-size: 0.9rem;
                 }
                 .text {
                   font-family: "regular";
                   color: $SecondText;
+                  font-size: 0.8rem;
                   svg {
                     margin-inline-end: .5rem;
                   }
