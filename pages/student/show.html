@@ -277,7 +277,15 @@
           <div class="container">
             <div class="d-flex align-items-center justify-content-between">
               <h4 class="title_section">تفاصيل الطالب</h4>
-              <a href="#" class="btn PrimaryButton">ارسال رسالة</a>
+              <div class="dropdown">
+                <button class="btn PrimaryButton dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ارسال رسالة
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="send_message.html">رسالة الى ولى الأمر</a></li>
+                  <li><a class="dropdown-item" href="send_message.html">رسالة الى الطالب</a></li>
+                </ul>
+              </div>
             </div>
             <div class="details_course">
               <div class="row">
@@ -286,23 +294,24 @@
                     <img src="../../media/image/7w7w.jpg" alt="course_image" />
                     <h4 class="course_name">Ahmed Adel <span class="status open">(متاح الآن )</span></h4>
                     <p class="teacher_name">الفرقة الأولى,كلية الحاسبات والمعلومات</p>
-                    <div class="student_course">
-                      <div class="join_student_number">
-                        <i class="fa-solid fa-users"></i>
-                        <div class="data">
-                          <p class="title">عدد الطلاب المنضمين :</p>
-                          <p class="text">120 طالب</p>
-                        </div>
+                    <div class="student_course student_statistics">
+                      <div class="info_data_statistics_student">
+                        <i class="fa-regular fa-paste"></i>
+                        <p class="title">اجمالى الكورسات : </p>
+                        <p class="text">40</p>
                       </div>
-                      <div class="join_student_number">
-                        <i class="fa-regular fa-rectangle-list"></i>
-                        <div class="data">
-                          <p class="title">طلبات الانضمام :</p>
-                          <p class="text">120 طالب</p>
-                        </div>
+                      <div class="info_data_statistics_student">
+                        <i class="fa-regular fa-paste"></i>
+                        <p class="title">اجمالى الاختبارات : </p>
+                        <p class="text">22</p>
                       </div>
-                      <a href="#" class="btn BlueButton">تاريخ التسجيل للطالب</a>
+                      <div class="info_data_statistics_student">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <p class="title">تاريخ الانضمام : </p>
+                        <p class="text">22 مايو, 2023</p>
+                      </div>
                     </div>
+                    <a href="student_record.html" class="btn BlueButton">تاريخ التسجيل للطالب</a>
                   </div>
                 </div>
                 <div class="col-lg-8 col-12">
@@ -352,7 +361,7 @@
                             aria-controls="courses-tab-pane"
                             aria-selected="true"
                             >
-                                الكورسات
+                              الكورسات
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -366,7 +375,7 @@
                             aria-controls="exams-tab-pane"
                             aria-selected="false"
                             >
-                                الامتحانات
+                              الامتحانات
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
@@ -380,7 +389,7 @@
                             aria-controls="parents-tab-pane"
                             aria-selected="false"
                             >
-                                أولياء الأمور
+                              أولياء الأمور
                             </button>
                         </li>
                         </ul>
@@ -393,43 +402,105 @@
                             aria-labelledby="courses-tab"
                             tabindex="0"
                         >
-                            
-                            <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="title">تفاصيل الدرس</h6>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-start">
+                          <!-- For loop card course student -->
+                          <div class="card_course_student">
                             <div class="data">
-                                <p class="text">
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس
-                                المساحة، لقد تم توليد هذا النص من مولد
-                                النص العربى، حيث يمكنك أن تولد مثل هذا
-                                النص أو العديد من النصوص الأخرى إضافة إلى
-                                زيادة عدد الحروف التى يولدها التطبيق.ذا
-                                كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك
-                                مولد
-                                </p>
-                                <div class="statistics">
-                                <div class="card_statistic">
-                                    <p class="title">اجمالى عدد الفيديوهات</p>
-                                    <p class="text">22 فيديو</p>
+                              <img src="../../media/image/course.jpg" alt="course">
+                              <div class="info">
+                                <p class="course_name">كورس مادة المحاسبة المالية الترم الاول</p>
+                                <div class="d-flex">
+                                  <p class="name">أ/ أحمد عبد المنعم . </p>
+                                  <p class="type">كورس اونلاين</p>
                                 </div>
-                                <div class="card_statistic">
-                                    <p class="title">اجمالى وقت الدرس المتوقع</p>
-                                    <p class="text">50:00 دقيقة</p>
-                                </div>
-                                </div>
+                                <p class="date"><i class="fa-solid fa-calendar-days"></i> تاريخ الانضمام : 22 مايو 2022</p>
+                              </div>
                             </div>
-                            <img src="../../media/image/course.jpg" class="image_lesson" alt="lesson">
+                            <button class="btn SecondButton" data-bs-toggle="modal" data-bs-target="#studentModal">عرض التفاصيل</button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="studentModal" tabindex="-1" aria-labelledby="studentModalLabel" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  <div class="modal-body">
+                                    <div class="d-flex justify-content-between">
+                                      <h5 class="title">بيانات الطالب</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="d-flex align-items-center my-3">
+                                      <img src="../../media/image/7w7w.jpg" class="student_image" alt="student">
+                                      <div class="data">
+                                        <h4 class="name">أحمد السيد محمد</h4>
+                                        <p class="collage">الفرقة الأولى , كلية الحاسبات والمعلومات</p>
+                                        <a href="tel:0102545412022" class="phone">0102545412022</a>
+                                      </div>
+                                    </div>
+                                    <div class="course_student">
+                                      <div class="d-flex justify-content-between align-items-center">
+                                        <div class="data_course">
+                                          <img src="../../media/image/course.jpg" alt="course">
+                                          <div class="info">
+                                            <p class="course_name">كورس مادة المحاسبة المالية الترم الاول</p>
+                                            <div class="d-flex">
+                                              <p class="name">أ/ أحمد عبد المنعم . </p>
+                                              <p class="type">كورس اونلاين</p>
+                                            </div>
+                                            <p class="date"><i class="fa-solid fa-calendar-days"></i> تاريخ الانضمام : 22 مايو 2022</p>
+                                          </div>
+                                        </div>
+                                        <a href="history_session.html" class="btn BlueButton px-3">الحضور والانصراف للطالب</a>
+                                      </div>
+                                      <hr>
+                                      <div class="details">
+                                        <div class="list_details">
+                                          <p class="title">مدة الكورس</p>
+                                          <p class="text">اسبوعين و 3ايام</p>
+                                        </div>
+                                        <div class="list_details">
+                                          <p class="title">المدة المتبقية للطالب</p>
+                                          <p class="text">اسبوعين و 3ايام</p>
+                                        </div>
+                                        <div class="list_details">
+                                          <p class="title">المبلغ المستهلك</p>
+                                          <p class="text">100 ج.م</p>
+                                        </div>
+                                        <div class="list_details">
+                                          <p class="title">المبلغ المتبقي</p>
+                                          <p class="text">00 ج.م</p>
+                                        </div>
+                                        <div class="list_details">
+                                          <p class="title">عدد أيام الحضور</p>
+                                          <p class="text">اسبوعين و 3ايام</p>
+                                        </div>
+                                        <div class="list_details">
+                                          <p class="title">عدد أيام الغياب</p>
+                                          <p class="text">اسبوعين و 3ايام</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
-                            <!-- Student learn -->
-                            <ul class="student_learn">
-                            <h6 class="title">ماذا يتعلم الطلاب من الكورس</h6>
-                            <li>فهم اساسيات الديزاين</li>
-                            <li>فهم اساسيات الديزاين</li>
-                            <li>فهم اساسيات الديزاين</li>
-                            <li>فهم اساسيات الديزاين</li>
-                            </ul>
-                            <!-- Student learn -->
+                          </div>
+                          <!-- For loop card course student -->
+
+                          <!-- For loop card course student -->
+                          <div class="card_course_student">
+                            <div class="data">
+                              <img src="../../media/image/course.jpg" alt="course">
+                              <div class="info">
+                                <p class="course_name">كورس مادة المحاسبة المالية الترم الاول</p>
+                                <div class="d-flex">
+                                  <p class="name">أ/ أحمد عبد المنعم . </p>
+                                  <p class="type">كورس اونلاين</p>
+                                </div>
+                                <p class="date"><i class="fa-solid fa-calendar-days"></i> تاريخ الانضمام : 22 مايو 2022</p>
+                              </div>
+                            </div>
+                            <button class="btn SecondButton" data-bs-toggle="modal" data-bs-target="#studentModal">عرض التفاصيل</button>
+                          </div>
+                          <!-- For loop card course student -->
+
                         </div>
                         <!-- End details course -->
 
@@ -441,70 +512,51 @@
                             aria-labelledby="exams-tab"
                             tabindex="0"
                         >
-                            
-                        <div class="d-flex justify-content-between align-items-center mt-3">
-                            <h4 class="title">كل الفيديوهات ( 22 )</h4>
-                            <a href="#" class="btn PrimaryButton">إضافة فيديو جديد</a>
-                        </div>
-
-                            <!-- content of lesson -->
-                            <div class="content_lesson">
-
-                            <!-- For loop this card lesson -->
-                            <a href="#" class="card_content_lesson">
-                                <div class="poster_video">
-                                <img src="../../media/image/course.jpg" class="poster" alt="poster">
-                                <img src="../../media/image/icon/play.png" class="play" alt="play">
-                                </div>
-                                <div class="data">
-                                <h5 class="title">الفيديو الأول : في مقدمة مادة المحاسبة</h5>
-                                <p class="text">
-                                    هذا النص هو مثال لنص يمكن أن يستبدل في
-                                    نفس المساحة، لقد تم توليد هذا النص من
-                                    مولد النص العربى، حيث يمكنك أن تولد
-                                </p>
-                                <div class="info">
-                                    <i class="fa-regular fa-closed-captioning"></i>
-                                    <p class="title_info">رقم الفيديو : </p>
-                                    <p class="text_info">1</p>
-                                </div>
-                                <div class="info">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                    <p class="title_info">تاريخ نزول الفيديو : </p>
-                                    <p class="text_info"> 22مارس - 8:30 م</p>
-                                </div>
-                                </div>
-                            </a>
-                            <!-- For loop this card lesson -->
-
-                            <!-- For loop this card lesson -->
-                            <a href="#" class="card_content_lesson">
-                                <div class="poster_video">
-                                <img src="../../media/image/course.jpg" class="poster" alt="poster">
-                                <img src="../../media/image/icon/play.png" class="play" alt="play">
-                                </div>
-                                <div class="data">
-                                <h5 class="title">الفيديو الأول : في مقدمة مادة المحاسبة</h5>
-                                <p class="text">
-                                    هذا النص هو مثال لنص يمكن أن يستبدل في
-                                    نفس المساحة، لقد تم توليد هذا النص من
-                                    مولد النص العربى، حيث يمكنك أن تولد
-                                </p>
-                                <div class="info">
-                                    <i class="fa-regular fa-closed-captioning"></i>
-                                    <p class="title_info">رقم الفيديو : </p>
-                                    <p class="text_info">1</p>
-                                </div>
-                                <div class="info">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                    <p class="title_info">تاريخ نزول الفيديو : </p>
-                                    <p class="text_info"> 22مارس - 8:30 م</p>
-                                </div>
-                                </div>
-                            </a>
-                            <!-- For loop this card lesson -->
-                            </div>
-                            <!-- content of lesson -->
+                          <table class="table mt-4 table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">الامتحان</th>
+                                    <th scope="col">الدرجة</th>
+                                    <th scope="col">الكورس</th>
+                                    <th scope="col">الدكتور</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">امتحان على الدرس الأول  من كورس المحاسبة</th>
+                                    <td>50 / 80</td>
+                                    <td>كورس المحاسبة المالية</td>
+                                    <td>أحمد عادل</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">عرض نتائج الامتحان</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">امتحان على الدرس الأول  من كورس المحاسبة</th>
+                                  <td>50 / 80</td>
+                                  <td>كورس المحاسبة المالية</td>
+                                  <td>أحمد عادل</td>
+                                  <td>
+                                      <div class="dropdown">
+                                          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                                          </button>
+                                          <ul class="dropdown-menu">
+                                          <li><a class="dropdown-item" href="#">عرض نتائج الامتحان</a></li>
+                                          </ul>
+                                      </div>
+                                  </td>
+                              </tr>
+                            </tbody>
+                          </table>
                         </div>
                         <!-- End Lessons course -->
 
@@ -516,76 +568,76 @@
                             aria-labelledby="parents-tab"
                             tabindex="0"
                         >
-                            <table class="table mt-4 table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">ولي الامر</th>
-                                        <th scope="col">صلة القرابة</th>
-                                        <th scope="col">رقم الهاتف</th>
-                                        <th scope="col">تاريخ الانضمام</th>
-                                        <th scope="col"></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">أحمد ابراهيم</th>
-                                        <td>أب</td>
-                                        <td>0102545215477</td>
-                                        <td>يوليو22 , 2022</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">عرض كل الابناء</a></li>
-                                                <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
-                                                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">أحمد ابراهيم</th>
-                                        <td>أب</td>
-                                        <td>0102545215477</td>
-                                        <td>يوليو22 , 2022</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">عرض كل الابناء</a></li>
-                                                <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
-                                                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">أحمد ابراهيم</th>
-                                        <td>أب</td>
-                                        <td>0102545215477</td>
-                                        <td>يوليو22 , 2022</td>
-                                        <td>
-                                            <div class="dropdown">
-                                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">عرض كل الابناء</a></li>
-                                                <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
-                                                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                                <li><a class="dropdown-item" href="#">حذف</a></li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                          <table class="table mt-4 table-bordered">
+                              <thead>
+                                  <tr>
+                                      <th scope="col">ولي الامر</th>
+                                      <th scope="col">صلة القرابة</th>
+                                      <th scope="col">رقم الهاتف</th>
+                                      <th scope="col">تاريخ الانضمام</th>
+                                      <th scope="col"></th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <th scope="row">أحمد ابراهيم</th>
+                                      <td>أب</td>
+                                      <td>0102545215477</td>
+                                      <td>يوليو22 , 2022</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                              </button>
+                                              <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">عرض كل الابناء</a></li>
+                                              <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
+                                              <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                              <li><a class="dropdown-item" href="#">حذف</a></li>
+                                              </ul>
+                                          </div>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">أحمد ابراهيم</th>
+                                      <td>أب</td>
+                                      <td>0102545215477</td>
+                                      <td>يوليو22 , 2022</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                              </button>
+                                              <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">عرض كل الابناء</a></li>
+                                              <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
+                                              <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                              <li><a class="dropdown-item" href="#">حذف</a></li>
+                                              </ul>
+                                          </div>
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">أحمد ابراهيم</th>
+                                      <td>أب</td>
+                                      <td>0102545215477</td>
+                                      <td>يوليو22 , 2022</td>
+                                      <td>
+                                          <div class="dropdown">
+                                              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                              </button>
+                                              <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">عرض كل الابناء</a></li>
+                                              <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
+                                              <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                              <li><a class="dropdown-item" href="#">حذف</a></li>
+                                              </ul>
+                                          </div>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
                         </div>
                         <!-- End exam course -->
                         </div>
