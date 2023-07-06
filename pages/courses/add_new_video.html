@@ -516,34 +516,36 @@
                 <div class="form-group">
                   <label for="" class="d-block">نوع الفيديو</label>
                   <div class="form-group halls_type">
-                    <input type="radio" class="videoType" name="video" id="airConditioner" onclick="showDiv('record')" value="record" required hidden>
-                    <label for="airConditioner">مسجل</label>
+                    <input type="radio" class="videoType" name="video" id="recordRadio" value="record" required hidden>
+                    <label for="recordRadio">مسجل</label>
                   </div>
                   <div class="form-group halls_type me-3">
-                    <input type="radio" class="videoType" name="video" id="notAirConditioner" onclick="showDiv('live')" value="live" required hidden>
-                    <label for="notAirConditioner">لايف</label>
+                    <input type="radio" class="videoType" name="video" id="liveRadio" value="live" required hidden>
+                    <label for="liveRadio">لايف</label>
                   </div>
 
-                  <div id="record" style="display:none;">
-                    Content for option 1
+                  <div id="videorecord" class="desc">
+                    <div class="form-group w-100">
+                      <label for="">لينك الفيديو المسجل</label>
+                      <input type="text" name="" id="" class="form-control" required>
+                    </div>
                   </div>
-                  <div id="live" style="display:none;">
-                    Content for option 2
+                  <div id="videolive" class="desc" style="display:none;">
+                    <div class="form-group w-100">
+                      <label for="">لينك الفيديو اللايف</label>
+                      <input type="text" name="" id="" class="form-control" required>
+                    </div>
                   </div>
 
                   <script>
-                    function showDiv(divId) {
-                      var div = document.getElementById(divId);
-                      
-                      // Hide all divs
-                      var allDivs = document.querySelectorAll('div[id^="div"]');
-                      allDivs.forEach(function(div) {
-                        div.style.display = "none";
-                      });
-                      
-                      // Show the selected div
-                      div.style.display = "block";
-                    }
+                    $(document).ready(function() {
+                        $("input[name$='video']").click(function() {
+                            var test = $(this).val();
+
+                            $("div.desc").hide();
+                            $("#video" + test).show();
+                        });
+                    });
                   </script>
                 </div>
                 <div class="form-group">
