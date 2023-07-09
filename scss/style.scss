@@ -68,6 +68,14 @@ body {
     }
   }
 }
+.w-15 {
+  width: 15%;
+}
+.title_modal {
+  font-family: "semibold";
+  color: $PrimaryText;
+  margin-bottom: 1.5rem;
+}
 .bootstrap-select {
   .dropdown-toggle {
     padding: 0.8rem;
@@ -1983,7 +1991,7 @@ table {
                 background-color: #fff;
                 width: 48%;
                 display: inline-block;
-                padding: 2rem;
+                padding: 1.2rem;
                 margin-inline-end: 2%;
                 margin-bottom: 1rem;
                 &:nth-child(2n) {
@@ -2197,6 +2205,264 @@ table {
                 }
               }
             }
+          }
+        }
+      }
+      .modal_add_student {
+        .modal-dialog {
+          max-width: 60%;
+          .modal-body {
+            padding: 2rem;
+            .texts {
+              text-align: start;
+              .title {
+                font-family: "semibold";
+                color: $PrimaryText;
+              }
+              .text {
+                font-family: "regular";
+                color: $SecondText;
+                font-size: .9rem;
+              }
+            }
+            .table_data {
+              margin-top: 0;
+              padding: 0;
+              background-color: transparent;
+              height: 400px;
+              overflow-y: auto;
+              /* width */
+              &::-webkit-scrollbar {
+                width: 5px;
+              }
+              
+              /* Track */
+              &::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+                border-radius: 20px;
+              }
+              
+              /* Handle */
+              &::-webkit-scrollbar-thumb {
+                background: #bdbdbd; 
+                border-radius: 20px;
+              }
+
+              /* Handle on hover */
+              &::-webkit-scrollbar-thumb:hover {
+                background: #bdbdbd; 
+              }
+              .filter_table {
+                .form-group {
+                  width: 100%;
+                  .form-control {
+                    background-color: #F5F8FA;
+                  }
+                }
+              }
+              table {
+                font-size: .9rem;
+                tbody {
+                  tr {
+                    &:nth-child(odd) {
+                      background-color: transparent;
+                    }
+                    &:nth-child(even) {
+                      background-color: transparent;
+                    }
+                    th {
+                      text-align: start;
+                      padding-inline-start: 0 !important;
+                    }
+                    td {
+                      text-align: start;
+                      padding-inline-start: 0 !important;
+                      .form-check-input {
+                        width: 1.2em;
+                        height: 1.2em;
+                        &:checked {
+                          background-color: $SecondColor;
+                          border-color: $SecondColor;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .modal_choose_group {
+        .title {
+          font-family: "semibold";
+          color: $PrimaryText;
+          text-align: start;
+          margin-bottom: 1.5rem;
+        }
+        .card_group {
+          border: 1px solid #C9C9C9;
+          border-radius: 4px;
+          padding: 1rem;
+          margin-bottom: 1rem;
+          .name {
+            font-family: "semibold";
+            color: $PrimaryText;
+            svg {
+              margin-inline-end: .7rem;
+            }
+          }
+          .form-check-input {
+            &:checked {
+              background-color: $SecondColor;
+              border-color: $SecondColor;
+            }
+          }
+          .details {
+            display: flex;
+            background-color: transparent;
+            padding: 0;
+            .info {
+              display: flex;
+              margin-inline-end: 3rem;
+              svg {
+                margin-inline-end: .5rem;
+              }
+              .title {
+                font-family: "regular";
+                color: #5F666F;
+                font-size: .9rem;
+                margin-inline-end: .5rem;
+              }
+              .text {
+                font-family: "regular";
+                color: $PrimaryText;
+                font-size: .9rem;
+              }
+            }
+          }
+          .times {
+            display: flex;
+            flex-wrap: wrap;
+            .time {
+              font-family: "regular";
+              color: #535353;
+              font-size: .9rem;
+              width: 33%;
+              text-align: start;
+              svg {
+                color: $SecondColor;
+                margin-inline-end: .5rem;
+              }
+            }
+          }
+        }
+        .PrimaryButton {
+          display: block;
+          margin-inline-end: auto;
+        }
+      }
+      .modal_continue_data {
+        .modal-body {
+          padding: 2rem;
+          .title {
+            font-family: "semibold";
+            color: $PrimaryText;
+            text-align: start;
+            margin-bottom: 1.5rem;
+          }
+          .form-group {
+            margin-bottom: 1rem;
+            label {
+              text-align: start;
+              font-family: "semibold";
+              color: $PrimaryText;
+              margin-bottom: .8rem;
+            }
+            .price_type {
+              text-align: center;
+              padding: 0;
+              border-radius: 8px;
+              width: 47.5%;
+              display: inline-block;
+              label {
+                background-color: #f5f8fa;
+                color: #a1a1a1;
+                border: 1px solid #f5f8fa;
+                margin-bottom: 0;
+                padding: 1rem;
+                width: 100%;
+                cursor: pointer;
+                border-radius: 8px;
+                text-align: center;
+                font-size: .9rem;
+              }
+      
+              input[type="radio"]:checked + label {
+                border: 1px solid $SecondColor;
+                color: $PrimaryText;
+              }
+            }
+            .price_count {
+              display: inline-block;
+              width: 24%;
+              text-align: start;
+              .form-check-input {
+                float: right;
+                margin-inline-start: 0;
+                margin-inline-end: 0.5rem;
+                &:checked {
+                  background-color: $SecondColor;
+                  border-color: $SecondColor;
+                }
+              }
+            }
+            .form-control {
+              background-color: #f5f8fa;
+              color: #a1a1a1;
+              border-color: transparent;
+              font-family: "regular";
+              font-size: 0.9rem;
+              padding: 1rem;
+              resize: none;
+              &:focus {
+                border-color: transparent !important;
+              }
+              &::placeholder {
+                color: #a1a1a1;
+              }
+            }
+            .bootstrap-select {
+              padding: 0;
+              .dropdown-toggle {
+                background-color: transparent;
+                padding: 1rem;
+                &:hover {
+                  border-color: transparent !important;
+                }
+              }
+              .dropdown-menu {
+                li {
+                  a {
+                    text-align: start;
+                    font-family: "regular";
+                    font-size: 0.9rem;
+                  }
+                }
+              }
+              .filter-option-inner-inner {
+                text-align: start;
+                font-family: "regular";
+                font-size: 0.8rem;
+                color: #a1a1a1;
+              }
+            }
+          }
+          .BlueButton {
+            display: block;
+            width: fit-content;
+            margin-inline-end: auto;
+            padding: .75rem 3rem;
           }
         }
       }
@@ -2711,6 +2977,134 @@ table {
           .PrimaryButton {
             width: 100%;
             padding: 1rem;
+          }
+        }
+      }
+    }
+    .students {
+      .student_card {
+        display: flex;
+        background-color: #f5f8fa;
+        padding: 1.5rem;
+        border-radius: 5px;
+        margin-bottom: 1.5rem;
+        img {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          margin-inline-end: 1.5rem;
+        }
+        .student_data {
+          .name {
+            font-family: "semibold";
+            color: $PrimaryText;
+            margin-bottom: .5rem;
+          }
+          .phone {
+            font-family: "regular";
+            color: $SecondText;
+            font-size: .8rem;
+            margin-bottom: 1rem;
+          }
+          .info {
+            .title {
+              font-family: "regular";
+              color: #5F666F;
+              font-size: .8rem;
+            }
+            .text {
+              font-family: "regular";
+              color: $PrimaryText;
+              font-size: .8rem;
+            }
+            svg {
+              margin-inline-end: .5rem;
+              color: #5F666F;
+              font-size: .8rem;
+            }
+          }
+          .buttons {
+            display: flex;
+            align-items: center;
+            margin-top: 1rem;
+            .PrimaryButton {
+              margin-inline-start: .5rem;
+              padding: .75rem 2.5rem;
+            }
+            .BlueButton {
+              padding: .75rem 2.5rem;
+            }
+          }
+        }
+        .dropdown {
+          margin-inline-start: auto;
+          .dropdown-toggle {
+            &:hover {
+              border-color: transparent;
+            }
+            &::after {
+              content: unset;
+            }
+          }
+          .dropdown-menu {
+            .dropdown-item {
+              text-align: start;
+              font-family: "regular";
+              font-size: .8rem;
+            }
+          }
+        }
+        .modal {
+          .modal-dialog {
+            .modal-body {
+              padding: 2rem;
+            }
+          }
+          .title_section {
+            margin: 0;
+          }
+          .form-group {
+            .form-control {
+              padding: 0.75rem;
+              background-color: #F5F8FA;
+              border: 1px solid #F5F8FA;
+              width: 100%;
+              &:focus, &:hover {
+                border: 1px solid #F5F8FA;
+                border-color: #F5F8FA !important;
+              }
+            }
+            .bootstrap-select {
+              padding: 0;
+              background-color: transparent;
+              width: 100%;
+            }
+            .dropdown-toggle {
+              background-color: #F5F8FA;
+              &::after {
+                display: inline-block;
+                margin-left: 0.255em;
+                vertical-align: 0.255em;
+                content: "";
+                border-top: 0.3em solid;
+                border-right: 0.3em solid transparent;
+                border-bottom: 0;
+                border-left: 0.3em solid transparent;
+              }
+              &:hover {
+                background-color: #f2f8fc;
+              }
+            }
+            .bootstrap-select {
+              .dropdown-menu.inner {
+                .dropdown-item {
+                  .text {
+                    font-size: .9rem;
+                    width: 100%;
+                  }
+                }
+              }
+            }
           }
         }
       }

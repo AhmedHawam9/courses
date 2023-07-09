@@ -309,7 +309,176 @@
                           <p class="text">120 طالب</p>
                         </div>
                       </div>
-                      <a href="#" class="btn BlueButton">إضافة طلاب جديدة</a>
+                      <button class="btn BlueButton" data-bs-toggle="modal" data-bs-target="#addStudentGroupModal">إضافة طلاب جديدة</button>
+
+                      <!-- Modal add student to group -->
+                      <div class="modal modal_add_student fade" id="addStudentGroupModal" tabindex="-1" aria-labelledby="addStudentGroupModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <div class="d-flex justify-content-between align-items-start">
+                                <div class="texts">
+                                  <h4 class="title">اضافة طلاب جديدة للكورس</h4>
+                                  <p class="text">يمكنك اضافة المزيد من الطلاب الى الكورس من الطلاب المسجلين لديك </p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="table_data">
+                                <div class="filter_table">
+                                  <div class="form-group">
+                                      <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم القاعة , المكان">
+                                      <i class="fa-solid fa-magnifying-glass"></i>
+                                  </div>
+                                </div>
+                                <table class="table">
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">أحمد إبراهيم محمد</th>
+                                      <td>كلية التجارة عربي</td>
+                                      <td>الفرقة الاولى</td>
+                                      <td>جامعة المنصورة</td>
+                                      <td>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">أحمد إبراهيم محمد</th>
+                                      <td>كلية التجارة عربي</td>
+                                      <td>الفرقة الاولى</td>
+                                      <td>جامعة المنصورة</td>
+                                      <td>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">أحمد إبراهيم محمد</th>
+                                      <td>كلية التجارة عربي</td>
+                                      <td>الفرقة الاولى</td>
+                                      <td>جامعة المنصورة</td>
+                                      <td>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn PrimaryButton w-100" data-bs-toggle="modal" data-bs-target="#chooseGroupModal">تأكيد الانضمام</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal add student to group -->
+
+                      <!-- Modal choose group -->
+                      <div class="modal modal_choose_group fade" id="chooseGroupModal" tabindex="-1" aria-labelledby="chooseGroupModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <h4 class="title">لقد قمت باختيار 75 طالب من فضلك اختر المجموعة التي تريد نقل الطلاب اليها</h4>
+                              <!-- For loop card group -->
+                              <div class="card_group">
+                                <div class="form-check">
+                                  <label class="form-check-label w-100" for="group1">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                      <p class="name"><i class="fa-solid fa-book-open"></i> المجموعة الأولي</p>
+                                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="group1">
+                                    </div>
+                                  </label>
+                                </div>
+                                <div class="details">
+                                  <div class="info">
+                                    <i class="fa-solid fa-users"></i>
+                                    <p class="title">العدد الكلي للطلاب : </p>
+                                    <p class="text">200</p>
+                                  </div>
+                                  <div class="info">
+                                    <i class="fa-solid fa-users"></i>
+                                    <p class="title">العدد المتبقي : </p>
+                                    <p class="text">120</p>
+                                  </div>
+                                </div>
+                                <div class="times">
+                                  <p class="time"><i class="fa-solid fa-clock"></i> السبت  (ص 11 - 12م)</p>
+                                  <p class="time"><i class="fa-solid fa-clock"></i> السبت  (ص 11 - 12م)</p>
+                                  <p class="time"><i class="fa-solid fa-clock"></i> السبت  (ص 11 - 12م)</p>
+                                </div>
+                              </div>
+                              <!-- For loop card group -->
+
+                              <button class="btn PrimaryButton" data-bs-toggle="modal" data-bs-target="#continueDataGroupModal">تأكيد</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Modal choose group -->
+                      <!-- Modal -->
+                      <div class="modal modal_continue_data fade" id="continueDataGroupModal" tabindex="-1" aria-labelledby="continueDataGroupModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-body">
+                              <h4 class="title">متابعة الانضمام الى المجموعة</h4>
+                              <div class="form-group">
+                                <label for="" class="d-block">تكلفة الانضمام الى الكورس</label>
+                                <div class="form-group price_type">
+                                  <input type="radio" name="price_type" id="airConditioner" required hidden>
+                                  <label for="airConditioner">بتكلفة الكورس</label>
+                                </div>
+                                <div class="form-group price_type me-3">
+                                  <input type="radio" name="price_type" id="notAirConditioner" required hidden>
+                                  <label for="notAirConditioner">بسعر رمزي</label>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="" class="d-block">حدد التكلفة</label>
+                                <div class="form-check price_count">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                  <label class="form-check-label" for="flexRadioDefault1">
+                                    100
+                                  </label>
+                                </div>
+                                <div class="form-check price_count">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                  <label class="form-check-label" for="flexRadioDefault2">
+                                    200
+                                  </label>
+                                </div>
+                                <div class="form-check price_count">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                                  <label class="form-check-label" for="flexRadioDefault3">
+                                    300
+                                  </label>
+                                </div>
+                                <div class="form-check price_count">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                  <label class="form-check-label" for="flexRadioDefault4">
+                                    400
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label for="" class="d-block">برجاء ذكر السبب</label>
+                                <select name="" id="" class="form-control selectpicker" title="اذكر السبب">
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                    <option value="">تيست</option>
+                                </select>
+                              </div>
+                              <div class="form-group">
+                                <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب هنا"></textarea>
+                              </div>
+                              <button class="btn BlueButton">تأكيد</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -767,8 +936,9 @@
                                 <div class="d-flex justify-content-between align-items-center">
                                   <h6 class="title">تفاصيل الدرس</h6>
                                   <div class="actions">
-                                    <button class="btn"><i class="fa-solid fa-trash-can"></i></button>
-                                    <a href="#" class="btn"><i class="fa-solid fa-pen-to-square"></i></a>
+                                    <a href="#" class="btn p-1"><i class="fa-solid fa-eye"></i></a>
+                                    <button class="btn p-1"><i class="fa-solid fa-trash-can"></i></button>
+                                    <a href="#" class="btn p-1"><i class="fa-solid fa-pen-to-square"></i></a>
                                   </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-start">
@@ -833,8 +1003,9 @@
                                       </div>
                                     </div>
                                     <div class="actions d-flex">
-                                      <button onclick="window.location.href='https://w3docs.com';" class="btn btn-sm"><i class="fa-solid fa-pen-to-square"></i></button>
-                                      <button class="btn btn-sm mx-2"><i class="fa-solid fa-trash-can"></i></button>
+                                      <button onclick="window.location.href='https://w3docs.com';" class="btn btn-sm p-1"><i class="fa-solid fa-eye"></i></button>
+                                      <button onclick="window.location.href='https://w3docs.com';" class="btn btn-sm p-1"><i class="fa-solid fa-pen-to-square"></i></button>
+                                      <button class="btn btn-sm mx-2 p-1"><i class="fa-solid fa-trash-can"></i></button>
                                     </div>
                                   </a>
                                   <!-- For loop this card lesson -->
@@ -964,7 +1135,7 @@
                                 </div>
                                 <div class="buttons">
                                   <button class="btn BlueButton">قبول</button>
-                                  <button class="btn PrimaryButton">رفض</button>
+                                  <button class="btn PrimaryButton" data-bs-toggle="modal" data-bs-target="#exitStudentModal">رفض</button>
                                 </div>
                               </div>
                               <div class="dropdown">
@@ -973,13 +1144,29 @@
                                 </button>
                                 <ul class="dropdown-menu">
                                   <li><a class="dropdown-item" href="#">قبول الطالب</a></li>
-                                  <li><a class="dropdown-item" href="#">رفض الطالب</a></li>
+                                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exitStudentModal">رفض الطالب</a></li>
                                 </ul>
                               </div>
                             </div>
                           </div>
                           <!-- For loop student card -->
 
+                          <!-- Modal exit student -->
+                          <div class="modal fade" id="exitStudentModal" tabindex="-1" aria-labelledby="exitStudentModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-body p-4">
+                                  <h4 class="title_modal">استكمال خروج الطالب من الدرس</h4>
+                                  <div class="form-group">
+                                    <label for="">ادخل المبلغ المسترد للطالب </label>
+                                    <input type="text" name="" id="" class="form-control" placeholder="اكتب هنا ">
+                                  </div>
+                                  <button type="submit" class="btn BlueButton">تأكيد</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Modal exit student -->
                         </div>
                       </div>
                       <!-- End student course -->
@@ -1012,7 +1199,19 @@
                           <div class="tab-pane fade show active" id="pills-exams" role="tabpanel" aria-labelledby="pills-exams-tab" tabindex="0">
                             <!-- List card exam -->
                             <div class="card_exam_type">
-                              <p class="title">واجب  على الدرس الأول من مادة المحاسبة المالية</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <p class="title">واجب  على الدرس الأول من مادة المحاسبة المالية</p>
+                                <div class="dropdown">
+                                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">عرض</a></li>
+                                    <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                    <li><a class="dropdown-item" href="#">حذف</a></li>
+                                  </ul>
+                                </div>
+                              </div>
                               <ul class="info">
                                 <li>
                                   <i class="fa-regular fa-rectangle-list"></i>
@@ -1035,7 +1234,19 @@
 
                             <!-- List card exam -->
                             <div class="card_exam_type">
-                              <p class="title">واجب  على الدرس الأول من مادة المحاسبة المالية</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <p class="title">واجب  على الدرس الأول من مادة المحاسبة المالية</p>
+                                <div class="dropdown">
+                                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <i class="fa-solid fa-ellipsis-vertical"></i>
+                                  </button>
+                                  <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">عرض</a></li>
+                                    <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                    <li><a class="dropdown-item" href="#">حذف</a></li>
+                                  </ul>
+                                </div>
+                              </div>
                               <ul class="info">
                                 <li>
                                   <i class="fa-regular fa-rectangle-list"></i>
