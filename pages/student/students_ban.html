@@ -55,7 +55,11 @@
           id="menu"
         >
           <div class="image_logo">
-            <img src="../../media/image/logo.png" alt="logo_sidebar" class="logo" />
+            <img
+              src="../../media/image/logo.png"
+              alt="logo_sidebar"
+              class="logo"
+            />
           </div>
           <li class="nav-item">
             <a href="../home/index.html" class="nav-link align-middle">
@@ -96,7 +100,10 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="/pages/university/index.html" class="nav-link align-middle">
+            <a
+              href="/pages/university/index.html"
+              class="nav-link align-middle"
+            >
               <img src="../../media/image/icon/university.png" alt="icon" />
               <span>الجامعات</span>
             </a>
@@ -144,7 +151,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/pages/libraryVideo/index.html" class="nav-link align-middle">
+            <a
+              href="/pages/libraryVideo/index.html"
+              class="nav-link align-middle"
+            >
               <img src="../../media/image/icon/video.png" alt="icon" />
               <span>مكاتب فيدويوهات </span>
             </a>
@@ -268,87 +278,54 @@
         <section class="content">
           <div class="container">
             <div class="d-flex align-items-center justify-content-between">
-                <h4 class="title_section">الطلاب المحظورين</h4>
+              <h4 class="title_section mb-3">الطلاب المحظورين</h4>
             </div>
-            <div class="table_data">
-                <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th scope="col"># الرقم</th>
-                        <th scope="col">اسم الطالب</th>
-                        <th scope="col">الكورس</th>
-                        <th scope="col">الجامعة</th>
-                        <th scope="col">الكلية</th>
-                        <th scope="col">الحالة</th>
-                        <th scope="col"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>أحمد عادل</td>
-                        <td>مادة المحاسبة المالية</td>
-                        <td>جامعة المنصورة</td>
-                        <td>التجارة</td>
-                        <td>محظور</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">عرض تفاصيل الطالب</a></li>
-                                  <li><a class="dropdown-item" href="#">حظر الطالب</a></li>
-                                  <li><a class="dropdown-item" href="#">الغاء الحظر</a></li>
-                                  <li><a class="dropdown-item" href="#">إعادة تعيين الطالب</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>أحمد عادل</td>
-                        <td>مادة المحاسبة المالية</td>
-                        <td>جامعة المنصورة</td>
-                        <td>التجارة</td>
-                        <td>غير محظور</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">عرض تفاصيل الطالب</a></li>
-                                  <li><a class="dropdown-item" href="#">حظر الطالب</a></li>
-                                  <li><a class="dropdown-item" href="#">الغاء الحظر</a></li>
-                                  <li><a class="dropdown-item" href="#">إعادة تعيين الطالب</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>أحمد عادل</td>
-                        <td>مادة المحاسبة المالية</td>
-                        <td>جامعة المنصورة</td>
-                        <td>التجارة</td>
-                        <td>محظور</td>
-                        <td>
-                            <div class="dropdown">
-                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">عرض تفاصيل الطالب</a></li>
-                                  <li><a class="dropdown-item" href="#">حظر الطالب</a></li>
-                                  <li><a class="dropdown-item" href="#">الغاء الحظر</a></li>
-                                  <li><a class="dropdown-item" href="#">إعادة تعيين الطالب</a></li>
-                                </ul>
-                            </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                </table>
+            <div class="students">
+                <div class="row">
+                  <!-- For loop student card -->
+                  <div class="col-lg-4 col-md-6 col-12">
+                    <div class="student_card">
+                      <img src="../../media/image/7w7w.jpg" alt="student" />
+                      <div class="student_data">
+                        <p class="name">أحمد حمدي حوام</p>
+                        <p class="phone">010 2658 02251</p>
+                        <div class="info">
+                            <i class="fa-solid fa-chalkboard"></i>
+                            <span class="title">السبب : </span>
+                            <span class="text">تيست</span>
+                          </div>
+                        <div class="info">
+                          <i class="fa-solid fa-ticket"></i>
+                          <span class="title">تاريخ الحظر : </span>
+                          <span class="text">10/7/2023</span>
+                        </div>
+                        <div class="info">
+                          <i class="fa-solid fa-users"></i>
+                          <span class="title">المجموعة : </span>
+                          <span class="text"> المجموعة الثانية</span>
+                        </div>
+                        <div class="buttons">
+                          <button class="btn BlueButton">فك الحظر</button>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">فك الحظر</a></li>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- For loop student card -->
+                </div>
             </div>
           </div>
         </section>
