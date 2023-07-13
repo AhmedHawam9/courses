@@ -267,153 +267,94 @@
         <!-- ======= Start Content ======= -->
         <section class="content">
           <div class="container">
-            <h4 class="title_section">اضافة كورس جديد</h4>
+            <h4 class="title_section">اضافة امتحان جديد</h4>
             <form action="index.html" class="add_item">
-                <div class="row w-75">
-                    <div class="col-12">
+                <h4 class="title">إضافة البيانات الاساسية</h4>
+                <p class="text">اضف اسم الامتحان وتفاصيل عنه في كلمات مختصرة</p>
+                <div class="form-group">
+                    <label for="" class="d-block">أختر نوع الامتحان</label>
+                    <div class="form-group exam_type">
+                        <input type="radio" name="exam_type" id="exam" value="exam" checked hidden>
+                        <label for="exam">امتحان</label>
+                    </div>
+                    <div class="form-group exam_type me-3">
+                        <input type="radio" name="exam_type" id="homeWork" value="homeWork" hidden>
+                        <label for="homeWork"> واجب</label>
+                    </div>
+                    <div class="form-group exam_type me-3">
+                        <input type="radio" name="exam_type" id="sheet" value="sheet" hidden>
+                        <label for="sheet"> شيت</label>
+                    </div>
+
+                    <div id="typeexam" class="desc">
                         <div class="form-group w-100">
-                          <label for="">اسم الكورس</label>
-                          <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الكورس" required>
+                          <label for="">اسم الامتحان</label>
+                          <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الامتحان" required>
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="">تفاصيل الامتحان</label>
+                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل الامتحان كاملة"></textarea>
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="">مدة الامتحان</label>
+                            <input type="number" name="" id="" class="form-control" placeholder="ادخل مدة الامتحان" required>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-12">
+                    <div id="typehomeWork" class="desc" style="display:none;">
                         <div class="form-group w-100">
-                            <label for="">الجامعة</label>
-                            <select name="" id="" class="form-control selectpicker" title="اختر الجامعة">
-                                <option value="">تيست</option>
-                                <option value="">تيست</option>
-                                <option value="">تيست</option>
-                            </select>
+                            <label for="">اسم الواجب</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الواجب" required>
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="">تفاصيل الواجب</label>
+                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل الواجب كاملة"></textarea>
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="">مدة الواجب</label>
+                            <input type="number" name="" id="" class="form-control" placeholder="ادخل مدة الواجب" required>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-12">
+                    <div id="typesheet" class="desc" style="display:none;">
                         <div class="form-group w-100">
-                            <label for="">الكلية</label>
-                            <select name="" id="" class="form-control selectpicker" title="اختر الكلية">
-                                <option value="">تيست</option>
-                                <option value="">تيست</option>
-                                <option value="">تيست</option>
-                            </select>
+                            <label for="">اسم الشيت</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الشيت" required>
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="">تفاصيل الشيت</label>
+                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل الشيت كاملة"></textarea>
+                        </div>
+                        <div class="form-group w-100">
+                            <label for="">مدة الشيت</label>
+                            <input type="number" name="" id="" class="form-control" placeholder="ادخل مدة الشيت" required>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="form-group w-100">
-                            <label for="">الفرقة التعليمية</label>
-                            <select name="" id="" class="form-control selectpicker" title="اختر الفرقة">
-                                <option value="">تيست</option>
-                                <option value="">تيست</option>
-                                <option value="">تيست</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="form-group w-100">
-                            <label for="">المادة</label>
-                            <select name="" id="" class="form-control selectpicker" title="اختر المادة">
-                                <option value="">تيست</option>
-                                <option value="">تيست</option>
-                                <option value="">تيست</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group w-100">
-                            <label for="">المدرس</label>
-                            <select name="" id="" class="form-control selectpicker" title="اختر مدرس المادة">
-                                <option value="">تيست</option>
-                                <option value="">تيست</option>
-                                <option value="">تيست</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="form-group w-100">
-                            <label for="" class="d-block">نوع القاعة</label>
-                            <div class="form-group content_course">
-                                <input type="radio" name="content_course" id="online" required hidden>
-                                <label for="online"><i class="fa-solid fa-video"></i> أونلاين</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="form-group w-100">
-                            <label for="" class="d-block invisible">نوع القاعة</label>
-                            <div class="form-group content_course me-3">
-                                <input type="radio" name="content_course" id="center" required hidden>
-                                <label for="center"><i class="fa-solid fa-house-laptop"></i> داخل السنتر</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group w-100">
-                            <label for="">القاعة</label>
-                            <select name="" id="" class="form-control selectpicker" title="اختر القاعة">
-                                <option value="">تيست</option>
-                                <option value="">تيست</option>
-                                <option value="">تيست</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group w-100">
-                            <label for="">تفاصيل الكورس</label>
-                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="اكتب تفاصيل الكورس كاملة"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group w-100">
-                          <label for="">مهارات مكتسبة من الكورس</label>
-                          <input type="text" name="" id="" class="form-control" placeholder="ادخل بعض المهارات المكتسبة" required>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group w-100">
-                            <label for="">ماذا يتعلم الطلاب من الكورس ؟</label>
-                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="اكتب هنا"></textarea>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="form-group upload_file w-100">
-                          <label for="">اضف صورة الغلاف</label>
-                          <label for="imageCover" class="upload_file_label">
-                            <i class="fa-regular fa-image"></i>
-                            <p>اسحب صور المنتج هنا او قم باستخدام البراوزر</p>
-                            <span id="fileNameImage">1600 * 1400 , والحد الاقصي 10 ميجا</span>
-                          </label>
-                          <input type="file" name="" id="imageCover" class="form-control" accept="image/*" hidden>
-                        </div>
-                        <script>
-                            const fileInputImage = document.getElementById('imageCover');
-                            const fileNameImage = document.getElementById('fileNameImage');
-                        
-                            fileInputImage.addEventListener('change', (event) => {
-                              const file = event.target.files[0];
-                              fileNameImage.textContent = file.name;
+    
+                      <script>
+                        $(document).ready(function() {
+                            $("input[name$='exam_type']").click(function() {
+                                var test = $(this).val();
+    
+                                $("div.desc").hide();
+                                $("#type" + test).show();
                             });
-                        </script>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="form-group upload_file w-100">
-                          <label for="">اضف فيديو للمقدمة </label>
-                          <label for="introVideo" class="upload_file_label">
-                            <i class="fa-regular fa-image"></i>
-                            <p>اسحب صور المنتج هنا او قم باستخدام البراوزر</p>
-                            <span id="fileNameVideo">فيديو  (4:3 , mp4 ,60 secs )</span>
-                          </label>
-                          <input type="file" name="" id="introVideo" class="form-control" accept="video/*" hidden>
+                        });
+                      </script>
+                </div>
+                <button type="button" class="btn PrimaryButton" data-bs-toggle="modal" data-bs-target="#questionModal">الحفظ و المتابعة</button>
+                
+                <!-- Modal -->
+                <div class="modal fade videoEmptyModal" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-body">
+                            <img src="../../media/image/icon/empty.png" alt="empty">
+                            <h2 class="title">هل تريد اضافة الاسألة من بنك الاسألة المتاحة</h2>
+                            <div class="buttons">
+                              <button type="button" class="btn PrimaryButton" data-bs-toggle="modal" data-bs-target="#libraryVideoModal">نعم</button>
+                              <button type="button" class="btn SecondButton" data-bs-toggle="modal" data-bs-target="#newVideoModal">اضافة سؤال جديد</button>
+                            </div>
+                          </div>
                         </div>
-                        <script>
-                            const fileInputVideo = document.getElementById('introVideo');
-                            const fileNameVideo = document.getElementById('fileNameVideo');
-                        
-                            fileInputVideo.addEventListener('change', (event) => {
-                              const file = event.target.files[0];
-                              fileNameVideo.textContent = file.name;
-                            });
-                        </script>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn PrimaryButton w-100">الحفظ و المتابعة</button>
                     </div>
                 </div>
             </form>
