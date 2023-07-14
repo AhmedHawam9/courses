@@ -2158,102 +2158,151 @@ table {
                   }
                 }
               }
-              .modal {
-                .modal-dialog {
-                  max-width: 45%;
+            }
+          }
+        }
+      }
+      
+      .details_student_modal {
+        .modal-dialog {
+          max-width: 45% !important;
+        }
+        .student_image {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          margin-inline-end: 1.5rem;
+        }
+        .data {
+          display: flex;
+          flex-direction: column;
+          .name {
+            font-family: "semibold";
+            color: $PrimaryText;
+          }
+          .collage {
+            font-family: "semibold";
+            color: $SecondText;
+            font-size: .9rem;
+            margin-bottom: .5rem;
+          }
+          a {
+            font-family: "semibold";
+            color: $PrimaryText;
+          }
+        }
+        .course_student {
+          border: 1px solid #A2A2A2;
+          border-radius: 5px;
+          padding: 1rem;
+          .data_course {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img {
+              width: 80px;
+              height: 80px;
+              margin-inline-end: 1.5rem;
+            }
+            .info {
+              display: flex;
+              flex-direction: column;
+              .course_name {
+                font-family: "semibold";
+                color: $PrimaryText;
+                margin-bottom: .5rem;
+              }
+              .name {
+                display: inline-block;
+                width: fit-content;
+                font-family: "regular";
+                color: $SecondColor;
+                font-size: .8rem;
+                margin-bottom: 0.5rem;
+              }
+              .type {
+                display: inline-block;
+                width: fit-content;
+                font-family: "regular";
+                color: $SecondColor;
+                font-size: .8rem;
+                margin-bottom: 0.5rem;
+              }
+              .date {
+                font-family: "regular";
+                color: $SecondText;
+                font-size: .8rem;
+                margin-bottom: 0;
+                svg {
+                  margin-inline-end: .5rem;
                 }
-                .student_image {
-                  width: 80px;
-                  height: 80px;
-                  border-radius: 50%;
-                  margin-inline-end: 1.5rem;
-                }
-                .data {
-                  display: flex;
-                  flex-direction: column;
-                  .name {
-                    font-family: "semibold";
-                    color: $PrimaryText;
-                  }
-                  .collage {
-                    font-family: "semibold";
-                    color: $SecondText;
-                    font-size: .9rem;
-                    margin-bottom: .5rem;
-                  }
-                  a {
-                    font-family: "semibold";
-                    color: $PrimaryText;
-                  }
-                }
-                .course_student {
-                  border: 1px solid #A2A2A2;
-                  border-radius: 5px;
-                  padding: 1rem;
-                  .data_course {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    img {
-                      width: 80px;
-                      height: 80px;
-                      margin-inline-end: 1.5rem;
-                    }
-                    .info {
-                      display: flex;
-                      flex-direction: column;
-                      .course_name {
-                        font-family: "semibold";
-                        color: $PrimaryText;
-                        margin-bottom: .5rem;
-                      }
-                      .name {
-                        display: inline-block;
-                        width: fit-content;
-                        font-family: "regular";
-                        color: $SecondColor;
-                        font-size: .8rem;
-                        margin-bottom: 0.5rem;
-                      }
-                      .type {
-                        display: inline-block;
-                        width: fit-content;
-                        font-family: "regular";
-                        color: $SecondColor;
-                        font-size: .8rem;
-                        margin-bottom: 0.5rem;
-                      }
-                      .date {
-                        font-family: "regular";
-                        color: $SecondText;
-                        font-size: .8rem;
-                        margin-bottom: 0;
-                        svg {
-                          margin-inline-end: .5rem;
-                        }
-                      }
-                    }
-                  }
-                  .details {
-                    display: flex;
-                    flex-wrap: wrap;
-                    background-color: transparent;
-                    padding: 0;
-                    .list_details {
-                      width: 25%;
-                      margin-top: 1rem;
-                      .title {
-                        font-family: "regular";
-                        color: $SecondText;
-                        font-size: .8rem;
-                      }
-                      .text {
-                        font-family: "semibold";
-                        color: $PrimaryText;
-                        font-size: .9rem;
-                      }
-                    }
-                  }
+              }
+            }
+          }
+          .details {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: transparent;
+            padding: 0;
+            .list_details {
+              width: 25%;
+              margin-top: 1rem;
+              .title {
+                font-family: "regular";
+                color: $SecondText;
+                font-size: .8rem;
+              }
+              .text {
+                font-family: "semibold";
+                color: $PrimaryText;
+                font-size: .9rem;
+              }
+            }
+          }
+        }
+        .card_course_student {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 1rem;
+          .data {
+            display: flex;
+            flex-direction: row !important;
+            img {
+              width: 80px !important;
+              height: 80px;
+              margin-inline-end: 1.5rem;
+            }
+            .info {
+              display: flex;
+              flex-direction: column;
+              .course_name {
+                font-family: "semibold";
+                color: $PrimaryText;
+                margin-bottom: .5rem;
+              }
+              .name {
+                display: inline-block;
+                width: fit-content;
+                font-family: "regular";
+                color: $SecondColor;
+                font-size: .8rem;
+                margin-bottom: .5rem !important;
+              }
+              .type {
+                display: inline-block;
+                width: fit-content;
+                font-family: "regular";
+                color: $SecondColor;
+                font-size: .8rem;
+                margin-bottom: .5rem !important;
+              }
+              .date {
+                font-family: "regular";
+                color: $SecondText;
+                font-size: .8rem;
+                svg {
+                  margin-inline-end: .5rem;
                 }
               }
             }
