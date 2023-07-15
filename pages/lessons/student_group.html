@@ -126,7 +126,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="setting.html" class="nav-link align-middle">
+            <a href="/pages/exam/show.html" class="nav-link align-middle">
               <img src="../../media/image/icon/exams.png" alt="icon" />
               <span>الامتحانات</span>
             </a>
@@ -156,7 +156,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="setting.html" class="nav-link align-middle">
+            <a href="/pages/question_bank/show.html" class="nav-link align-middle">
               <img src="../../media/image/icon/questions.png" alt="icon" />
               <span>بنك الأسالة</span>
             </a>
@@ -270,6 +270,35 @@
             <div class="d-flex align-items-center justify-content-between">
                 <h4 class="title_section">طلاب المجموعة داخل الحصة</h4>
             </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="statistic_card">
+                        <i class="fa-regular fa-user"></i>
+                        <div class="data">
+                            <p class="title">اجمالى الطلاب</p>
+                            <p class="text">400</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="statistic_card">
+                        <i class="fa-regular fa-circle-xmark text-danger"></i>
+                        <div class="data">
+                            <p class="title">اجمالى الطلاب الغير حاضرين</p>
+                            <p class="text">400</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-12">
+                    <div class="statistic_card">
+                        <i class="fa-regular fa-circle-check text-primary"></i>
+                        <div class="data">
+                            <p class="title">اجمالى الطلاب الحاضرين</p>
+                            <p class="text">400</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="table_data">
                 <div class="filter_table">
                     <div class="form-group">
@@ -288,46 +317,118 @@
                         <th scope="col">الرقم  #</th>
                         <th scope="col">اسم الطالب</th>
                         <th scope="col">رقم الهاتف</th>
+                        <th scope="col">المرفقات</th>
                         <th scope="col">الحالة</th>
+                        <th scope="col"></th>
                         <th scope="col"></th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td>08:30 م</td>
-                        <td>120</td>
-                        <td>40</td>
+                        <td>أحمد عادل</td>
+                        <td>010254851222</td>
+                        <td><i class="fa-solid fa-circle-check text-success fa-xl"></i></td>
+                        <td><span class="status audience">تم الحضور</span></td>
+                        <td><button class="btn PrimaryButton px-3">تحضير الطالب</button></td>
                         <td>
                           <div class="dropdown">
                               <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                   <i class="fa-solid fa-ellipsis-vertical"></i>
                               </button>
                               <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">عرض الطلاب</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#studentModal">عرض تفاصيل الطالب</a></li>
+                                <li><a class="dropdown-item" href="#">الحصول على المذكرة</a></li>
                               </ul>
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <th scope="row">2</th>
-                        <td>08:30 م</td>
-                        <td>120</td>
-                        <td>40</td>
+                        <td>أحمد عادل</td>
+                        <td>010254851222</td>
+                        <td><i class="fa-solid fa-circle-xmark text-danger fa-xl"></i></td>
+                        <td><span class="status not_audience">لم يتم الحضور</span></td>
+                        <td><p class="d-flex align-items-center mb-0"><i class="fa-solid fa-circle-check text-success fa-lg mx-2"></i> حصل ع المزكرة</p></td>
                         <td>
                             <div class="dropdown">
                                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fa-solid fa-ellipsis-vertical"></i>
                                 </button>
                                 <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                  <li><a class="dropdown-item" href="#">حذف</a></li>
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#studentModal">عرض تفاصيل الطالب</a></li>
+                                    <li><a class="dropdown-item" href="#">الحصول على المذكرة</a></li>
                                 </ul>
                             </div>
                         </td>
                       </tr>
                     </tbody>
                 </table>
+
+                <!-- Modal student details -->
+                <div class="modal details_student_modal fade" id="studentModal" tabindex="-1" aria-labelledby="studentModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="d-flex justify-content-between">
+                            <h5 class="title">بيانات الطالب</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="d-flex align-items-center my-3">
+                            <img src="../../media/image/7w7w.jpg" class="student_image" alt="student">
+                            <div class="data">
+                              <h4 class="name">أحمد السيد محمد</h4>
+                              <p class="collage">الفرقة الأولى , كلية الحاسبات والمعلومات</p>
+                              <a href="tel:0102545412022" class="phone">0102545412022</a>
+                            </div>
+                          </div>
+                          <div class="course_student">
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="data_course">
+                                <img src="../../media/image/course.jpg" alt="course">
+                                <div class="info">
+                                  <p class="course_name">كورس مادة المحاسبة المالية الترم الاول</p>
+                                  <div class="d-flex">
+                                    <p class="name">أ/ أحمد عبد المنعم . </p>
+                                    <p class="type">كورس اونلاين</p>
+                                  </div>
+                                  <p class="date"><i class="fa-solid fa-calendar-days"></i> تاريخ الانضمام : 22 مايو 2022</p>
+                                </div>
+                              </div>
+                              <a href="history_session.html" class="btn BlueButton px-3">الحضور والانصراف للطالب</a>
+                            </div>
+                            <hr>
+                            <div class="details">
+                              <div class="list_details">
+                                <p class="title">مدة الكورس</p>
+                                <p class="text">اسبوعين و 3ايام</p>
+                              </div>
+                              <div class="list_details">
+                                <p class="title">المدة المتبقية للطالب</p>
+                                <p class="text">اسبوعين و 3ايام</p>
+                              </div>
+                              <div class="list_details">
+                                <p class="title">المبلغ المستهلك</p>
+                                <p class="text">100 ج.م</p>
+                              </div>
+                              <div class="list_details">
+                                <p class="title">المبلغ المتبقي</p>
+                                <p class="text">00 ج.م</p>
+                              </div>
+                              <div class="list_details">
+                                <p class="title">عدد أيام الحضور</p>
+                                <p class="text">اسبوعين و 3ايام</p>
+                              </div>
+                              <div class="list_details">
+                                <p class="title">عدد أيام الغياب</p>
+                                <p class="text">اسبوعين و 3ايام</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
             </div>
           </div>
         </section>

@@ -55,11 +55,7 @@
           id="menu"
         >
           <div class="image_logo">
-            <img
-              src="../../media/image/logo.png"
-              alt="logo_sidebar"
-              class="logo"
-            />
+            <img src="../../media/image/logo.png" alt="logo_sidebar" class="logo" />
           </div>
           <li class="nav-item">
             <a href="../home/index.html" class="nav-link align-middle">
@@ -100,10 +96,7 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a
-              href="/pages/university/index.html"
-              class="nav-link align-middle"
-            >
+            <a href="/pages/university/index.html" class="nav-link align-middle">
               <img src="../../media/image/icon/university.png" alt="icon" />
               <span>الجامعات</span>
             </a>
@@ -151,10 +144,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a
-              href="/pages/libraryVideo/index.html"
-              class="nav-link align-middle"
-            >
+            <a href="/pages/libraryVideo/index.html" class="nav-link align-middle">
               <img src="../../media/image/icon/video.png" alt="icon" />
               <span>مكاتب فيدويوهات </span>
             </a>
@@ -278,56 +268,84 @@
         <section class="content">
           <div class="container">
             <div class="d-flex align-items-center justify-content-between">
-              <h4 class="title_section mb-3">طلبات الانضمام</h4>
+                <h4 class="title_section">الواجبات</h4>
+                <a href="add.html" class="btn PrimaryButton">اضافة واجب جديد</a>
             </div>
-            <div class="students">
-                <div class="row">
-                  <!-- For loop student card -->
-                  <div class="col-lg-4 col-md-6 col-12">
-                    <div class="student_card">
-                      <img src="../../media/image/7w7w.jpg" alt="student" />
-                      <div class="student_data">
-                        <p class="name">أحمد حمدي حوام</p>
-                        <p class="phone">010 2658 02251</p>
-                        <div class="info">
-                            <i class="fa-solid fa-chalkboard"></i>
-                            <span class="title">اسم الكورس : </span>
-                            <span class="text">علوم حاسب</span>
-                          </div>
-                        <div class="info">
-                          <i class="fa-solid fa-ticket"></i>
-                          <span class="title">كود الانضمام : </span>
-                          <span class="text">52161316</span>
-                        </div>
-                        <div class="info">
-                          <i class="fa-solid fa-users"></i>
-                          <span class="title">المجموعة : </span>
-                          <span class="text"> المجموعة الثانية</span>
-                        </div>
-                        <div class="buttons">
-                          <button class="btn BlueButton">قبول</button>
-                          <button class="btn PrimaryButton">رفض</button>
-                        </div>
-                      </div>
-                      <div class="dropdown">
-                        <button
-                          class="btn dropdown-toggle"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </button>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">قبول الطالب</a></li>
-                          <li><a class="dropdown-item" href="#">رفض الطالب</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+            <div class="table_data">
+              <div class="filter_table">
+                  <div class="form-group">
+                      <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم القاعة , المكان">
+                      <i class="fa-solid fa-magnifying-glass"></i>
                   </div>
-                  <!-- For loop student card -->
-                </div>
+              </div>
+              <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col"># الرقم</th>
+                      <th scope="col">القاعة</th>
+                      <th scope="col">الدكتور</th>
+                      <th scope="col">الكورس</th>
+                      <th scope="col">تاريخ الامتحان</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>امتحان على الدرس الأول من كورس مادة المحاسبة المالية</td>
+                      <td>د/ أحمد عادل</td>
+                      <td>مادة المحاسبة المالية</td>
+                      <td>يوليو22 , 2022</td>
+                      <td>
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">تعديل</a></li>
+                            <li><a class="dropdown-item" href="#">حذف</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>امتحان على الدرس الأول من كورس مادة المحاسبة المالية</td>
+                      <td>د/ أحمد عادل</td>
+                      <td>مادة المحاسبة المالية</td>
+                      <td>يوليو22 , 2022</td>
+                      <td>
+                          <div class="dropdown">
+                              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                <li><a class="dropdown-item" href="#">حذف</a></li>
+                              </ul>
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>امتحان على الدرس الأول من كورس مادة المحاسبة المالية</td>
+                      <td>د/ أحمد عادل</td>
+                      <td>مادة المحاسبة المالية</td>
+                      <td>يوليو22 , 2022</td>
+                      <td>
+                          <div class="dropdown">
+                              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                <li><a class="dropdown-item" href="#">حذف</a></li>
+                              </ul>
+                          </div>
+                      </td>
+                    </tr>
+                  </tbody>
+              </table>
             </div>
           </div>
         </section>
