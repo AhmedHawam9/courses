@@ -156,7 +156,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="../question_bank/show.html" class="nav-link align-middle">
+            <a href="setting.html" class="nav-link align-middle">
               <img src="../../media/image/icon/questions.png" alt="icon" />
               <span>بنك الأسالة</span>
             </a>
@@ -267,149 +267,68 @@
         <!-- ======= Start Content ======= -->
         <section class="content">
           <div class="container">
-            <h4 class="title_section">اضافة امتحان جديد</h4>
-            <form action="index.html" class="add_item">
-                <h4 class="title">إضافة البيانات الاساسية</h4>
-                <p class="text">اضف اسم الامتحان وتفاصيل عنه في كلمات مختصرة</p>
-                <div class="form-group">
-                    <label for="" class="d-block">أختر نوع الامتحان</label>
-                    <div class="form-group exam_type">
-                        <input type="radio" name="exam_type" id="exam" value="exam" checked hidden>
-                        <label for="exam">امتحان</label>
+            <div class="d-flex align-items-center justify-content-between">
+                <h4 class="title_section">طلاب المجموعة داخل الحصة</h4>
+            </div>
+            <div class="table_data">
+                <div class="filter_table">
+                    <div class="form-group">
+                        <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم الجامعة , الموقع">
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <div class="form-group exam_type me-3">
-                        <input type="radio" name="exam_type" id="homeWork" value="homeWork" hidden>
-                        <label for="homeWork"> واجب</label>
-                    </div>
-                    <div class="form-group exam_type me-3">
-                        <input type="radio" name="exam_type" id="sheet" value="sheet" hidden>
-                        <label for="sheet"> شيت</label>
-                    </div>
-
-                    <div id="typeexam" class="desc">
-                        <div class="form-group w-100">
-                          <label for="">اسم الامتحان</label>
-                          <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الامتحان" required>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">تفاصيل الامتحان</label>
-                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل الامتحان كاملة"></textarea>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">مدة الامتحان</label>
-                            <input type="number" name="" id="" class="form-control" placeholder="ادخل مدة الامتحان" required>
-                        </div>
-                    </div>
-                    <div id="typehomeWork" class="desc" style="display:none;">
-                        <div class="form-group w-100">
-                            <label for="">اسم الواجب</label>
-                            <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الواجب" required>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">تفاصيل الواجب</label>
-                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل الواجب كاملة"></textarea>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">مدة الواجب</label>
-                            <input type="number" name="" id="" class="form-control" placeholder="ادخل مدة الواجب" required>
-                        </div>
-                    </div>
-                    <div id="typesheet" class="desc" style="display:none;">
-                        <div class="form-group w-100">
-                            <label for="">اسم الشيت</label>
-                            <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الشيت" required>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">تفاصيل الشيت</label>
-                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل الشيت كاملة"></textarea>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">مدة الشيت</label>
-                            <input type="number" name="" id="" class="form-control" placeholder="ادخل مدة الشيت" required>
-                        </div>
-                    </div>
-    
-                      <script>
-                        $(document).ready(function() {
-                            $("input[name$='exam_type']").click(function() {
-                                var test = $(this).val();
-    
-                                $("div.desc").hide();
-                                $("#type" + test).show();
-                            });
-                        });
-                      </script>
+                    <select name="" id="" class="form-control selectpicker" title="الطلاب">
+                        <option value="">تيست</option>
+                        <option value="">تيست</option>
+                        <option value="">تيست</option>
+                    </select>
                 </div>
-                <button type="button" class="btn PrimaryButton" data-bs-toggle="modal" data-bs-target="#questionModal">الحفظ و المتابعة</button>
-                
-                <!-- Modal -->
-                <div class="modal fade videoEmptyModal" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-body">
-                            <img src="../../media/image/icon/empty.png" alt="empty">
-                            <h2 class="title">هل تريد اضافة الاسألة من بنك الاسألة المتاحة</h2>
-                            <div class="buttons mt-4">
-                              <a href="#" class="btn PrimaryButton" data-bs-toggle="modal" data-bs-target="#questionBankModal">نعم</a>
-                              <a href="add_new_question.html" class="btn SecondButton">+ إضافة سؤال اخر</a>
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">الرقم  #</th>
+                        <th scope="col">اسم الطالب</th>
+                        <th scope="col">رقم الهاتف</th>
+                        <th scope="col">الحالة</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>08:30 م</td>
+                        <td>120</td>
+                        <td>40</td>
+                        <td>
+                          <div class="dropdown">
+                              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">عرض الطلاب</a></li>
+                              </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>08:30 م</td>
+                        <td>120</td>
+                        <td>40</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">تعديل</a></li>
+                                  <li><a class="dropdown-item" href="#">حذف</a></li>
+                                </ul>
                             </div>
-                          </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Modal -->
-                <div class="modal questionBankModal fade" id="questionBankModal" tabindex="-1" aria-labelledby="questionBankModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                      <div class="modal-body">
-                        <h2 class="title">اختر السؤالا ا الذي تريد اضافته من بنك الأسالة</h2>
-                        <p class="text">يمكنك الحصول على السؤال المناسب من خلال البحث باسم المادة او السؤال</p>
-                        <div class="table_data">
-                          <div class="filter_table">
-                              <div class="form-group">
-                                  <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم القاعة , المكان">
-                                  <i class="fa-solid fa-magnifying-glass"></i>
-                              </div>
-                          </div>
-                          <table class="table">
-                              <tbody>
-                                <tr>
-                                  <th scope="row">مادة المحاسبة المالية تعتبر مادة ....</th>
-                                  <td>اختياري</td>
-                                  <td>الإجابة: اساسية</td>
-                                  <td>الدرجة:50</td>
-                                  <td>
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">مادة المحاسبة المالية تعتبر مادة ....</th>
-                                  <td>اختياري</td>
-                                  <td>الإجابة: اساسية</td>
-                                  <td>الدرجة:50</td>
-                                  <td>
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <th scope="row">مادة المحاسبة المالية تعتبر مادة ....</th>
-                                  <td>اختياري</td>
-                                  <td>الإجابة: اساسية</td>
-                                  <td>الدرجة:50</td>
-                                  <td>
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                  </td>
-                                </tr>
-                              </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </form>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div>
           </div>
         </section>
         <!-- ======= End Content ======= -->

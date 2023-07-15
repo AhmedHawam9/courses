@@ -268,105 +268,65 @@
         <section class="content">
           <div class="container">
             <div class="d-flex align-items-center justify-content-between">
-                <h4 class="title_section">الكورسات</h4>
-                <a href="add.html" class="btn PrimaryButton">اضافة كورس جديد</a>
+                <h4 class="title_section">كل الحصص</h4>
             </div>
-            <div class="courses">
+            <div class="table_data">
                 <div class="filter_table">
                     <div class="form-group">
-                        <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم المادة , الدكتور">
+                        <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم الجامعة , الموقع">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                    <select name="" id="" class="form-control selectpicker" title="كل الاساتذة">
-                        <option value="">تيست</option>
-                        <option value="">تيست</option>
-                        <option value="">تيست</option>
-                    </select>
-                    <select name="" id="" class="form-control selectpicker" title="كل المواد">
+                    <select name="" id="" class="form-control selectpicker" title="كل الكليات">
                         <option value="">تيست</option>
                         <option value="">تيست</option>
                         <option value="">تيست</option>
                     </select>
                 </div>
-                <div class="row">
-                  <!-- For loop this course card -->
-                  <div class="col-lg-6 col-12">
-                    <div class="card_course">
-                        <div class="data_course">
-                            <img src="../../media/image/7w7w.jpg" alt="course">
-                            <div class="data">
-                                <p class="name">كورس مادة المحاسبة المالية الترم الاول</p>
-                                <p class="teacher_name">
-                                    <span class="name">أ/ أحمد عبد المنعم</span>
-                                    <span class="type_course">كورس اونلاين</span>
-                                </p>
-                                <div class="info">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                    <p><span class="title">تاريخ الاضافة</span> : 22 مايو 2022</p>
-                                </div>
-                                <div class="info">
-                                    <i class="fa-solid fa-users"></i>
-                                    <p><span class="title">عدد الطلاب المنضمين</span> : 150</p>
-                                </div>
-                                <div class="info">
-                                    <i class="fa-solid fa-money-bills"></i>
-                                    <p><span class="title">سعر الكورس</span> : 150 جنيها</p>
-                                </div>
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th scope="col">تاريخ الحصة</th>
+                        <th scope="col">الوقت</th>
+                        <th scope="col">عدد الطلاب الحاضرين</th>
+                        <th scope="col">عدد الطلاب الغائبين</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">2023 - 3 - 22</th>
+                        <td>08:30 م</td>
+                        <td>120</td>
+                        <td>40</td>
+                        <td>
+                          <div class="dropdown">
+                              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="student_group.html">عرض الطلاب</a></li>
+                              </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2023 - 3 - 22</th>
+                        <td>08:30 م</td>
+                        <td>120</td>
+                        <td>40</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="student_group.html">عرض الطلاب</a></li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="show.html">تفاصيل الكورس</a></li>
-                              <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
-                              <li><a class="dropdown-item" href="#">حذف الكورس</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                  </div>
-                  <!-- For loop this course card -->
-
-                  <!-- For loop this course card -->
-                  <div class="col-lg-6 col-12">
-                    <div class="card_course">
-                        <div class="data_course">
-                            <img src="../../media/image/7w7w.jpg" alt="course">
-                            <div class="data">
-                                <p class="name">كورس مادة المحاسبة المالية الترم الاول</p>
-                                <p class="teacher_name">
-                                    <span class="name">أ/ أحمد عبد المنعم</span>
-                                    <span class="type_course">كورس اونلاين</span>
-                                </p>
-                                <div class="info">
-                                    <i class="fa-solid fa-calendar-days"></i>
-                                    <p><span class="title">تاريخ الاضافة</span> : 22 مايو 2022</p>
-                                </div>
-                                <div class="info">
-                                    <i class="fa-solid fa-users"></i>
-                                    <p><span class="title">عدد الطلاب المنضمين</span> : 150</p>
-                                </div>
-                                <div class="info">
-                                    <i class="fa-solid fa-money-bills"></i>
-                                    <p><span class="title">سعر الكورس</span> : 150 جنيها</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="dropdown">
-                            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="show.html">تفاصيل الكورس</a></li>
-                              <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
-                              <li><a class="dropdown-item" href="#">حذف الكورس</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                  </div>
-                  <!-- For loop this course card -->
-                </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
             </div>
           </div>
         </section>
