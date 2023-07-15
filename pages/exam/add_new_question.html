@@ -269,93 +269,127 @@
           <div class="container">
             <h4 class="title_section">اضافة امتحان جديد</h4>
             <form action="index.html" class="add_item">
-                <h4 class="title">إضافة البيانات الاساسية</h4>
-                <p class="text">اضف اسم الامتحان وتفاصيل عنه في كلمات مختصرة</p>
-                <div class="form-group">
-                    <label for="" class="d-block">أختر نوع الامتحان</label>
-                    <div class="form-group exam_type">
-                        <input type="radio" name="exam_type" id="exam" value="exam" checked hidden>
-                        <label for="exam">امتحان</label>
+                <h4 class="title">الاسألة</h4>
+                <p class="text">قم بإدخال السؤال أولا ثم اضف الإجابات المتاحة للسؤال مع اختبار الإجابة الصحيحة</p>
+                <div id="AppendQuestion">
+                    <div class="form-group">
+                    <label for="">نوع السؤال</label>
+                    <select name="" id="" class="form-control selectpicker" title="نوع السؤال">
+                        <option value="">اختياري</option>
+                        <option value="">مقالي</option>
+                    </select>
                     </div>
-                    <div class="form-group exam_type me-3">
-                        <input type="radio" name="exam_type" id="homeWork" value="homeWork" hidden>
-                        <label for="homeWork"> واجب</label>
+                    <div class="form-group">
+                    <label for="">نص السؤال</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="اكتب نص السؤال">
+                    <div class="d-flex justify-content-between">
+                        <p id="fileName"></p>
+                        <small class="d-block text-start mt-2"><label for="image" class="cursor"> + إضافة صورة</label><input type="file" name="" id="image" hidden></small>
                     </div>
-                    <div class="form-group exam_type me-3">
-                        <input type="radio" name="exam_type" id="sheet" value="sheet" hidden>
-                        <label for="sheet"> شيت</label>
-                    </div>
-
-                    <div id="typeexam" class="desc">
-                        <div class="form-group w-100">
-                          <label for="">اسم الامتحان</label>
-                          <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الامتحان" required>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">تفاصيل الامتحان</label>
-                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل الامتحان كاملة"></textarea>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">مدة الامتحان</label>
-                            <input type="number" name="" id="" class="form-control" placeholder="ادخل مدة الامتحان" required>
-                        </div>
-                    </div>
-                    <div id="typehomeWork" class="desc" style="display:none;">
-                        <div class="form-group w-100">
-                            <label for="">اسم الواجب</label>
-                            <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الواجب" required>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">تفاصيل الواجب</label>
-                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل الواجب كاملة"></textarea>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">مدة الواجب</label>
-                            <input type="number" name="" id="" class="form-control" placeholder="ادخل مدة الواجب" required>
-                        </div>
-                    </div>
-                    <div id="typesheet" class="desc" style="display:none;">
-                        <div class="form-group w-100">
-                            <label for="">اسم الشيت</label>
-                            <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الشيت" required>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">تفاصيل الشيت</label>
-                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل الشيت كاملة"></textarea>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">مدة الشيت</label>
-                            <input type="number" name="" id="" class="form-control" placeholder="ادخل مدة الشيت" required>
-                        </div>
-                    </div>
-    
-                      <script>
-                        $(document).ready(function() {
-                            $("input[name$='exam_type']").click(function() {
-                                var test = $(this).val();
-    
-                                $("div.desc").hide();
-                                $("#type" + test).show();
-                            });
+                    <script>
+                        // Get file input element
+                        let fileInput = document.getElementById('image');
+                        let span = document.getElementById('fileName');
+                        // Fires on file upload
+                        fileInput.addEventListener('change', function(event){
+                            
+                            // Get file name
+                            let fileName = fileInput.files[0].name;
+                            
+                            // Update file name in span
+                            span.innerText = fileName;
                         });
-                      </script>
-                </div>
-                <button type="button" class="btn PrimaryButton" data-bs-toggle="modal" data-bs-target="#questionModal">الحفظ و المتابعة</button>
-                
-                <!-- Modal -->
-                <div class="modal fade videoEmptyModal" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-body">
-                            <img src="../../media/image/icon/empty.png" alt="empty">
-                            <h2 class="title">هل تريد اضافة الاسألة من بنك الاسألة المتاحة</h2>
-                            <div class="buttons mt-4">
-                              <a href="#" class="btn PrimaryButton">الحفظ و المتابعة</a>
-                              <a href="add_new_question.html" class="btn backButton">+ إضافة سؤال اخر</a>
-                            </div>
-                          </div>
-                        </div>
+                    </script>
                     </div>
+                    <div class="form-group">
+                        <label for="">الاجابات</label>
+                        <div id="AppendAnswer">
+                            <div class="d-flex align-items-center append_answer">
+                                <span class="mx-2">A</span>
+                                <input type="text" name="" id="" class="form-control" placeholder="">
+                                <button type="button" class="remove btn">x</button>
+                                <input type="radio" class="form-check-input" name="radioAnswer" id="" checked>
+                            </div>
+                        </div>
+                        <small class="d-block text-start"><button id="btnAdd" class="btn btnAdd" type="button">+ إضافة إجابة اخري</button></small>
+                        <script>
+                            $(function () {
+                                $("#btnAdd").bind("click", function () {
+                                    var div = $("<div />");
+                                    div.html(GetDynamicNewAnswer(""));
+                                    $("#AppendAnswer").append(div);
+                                });
+                                $("body").on("click", ".remove", function () {
+                                    $(this).closest("div").remove();
+                                });
+                            });
+                            function GetDynamicNewAnswer(value) {
+                                return '<div class="d-flex align-items-center append_answer">' + '<span class="mx-2">A</span>' + '<input type="text" name="" id="" class="form-control" placeholder="">' +'<button type="button" class="remove btn">x</button>' + '<input type="radio" class="form-check-input" name="radioAnswer" id="">' + '</div>' 
+                            }
+                        </script>
+                    </div>
+                    <div class="form-group">
+                        <label for="">النقاط</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="ادخل نقاط السؤال">
+                    </div>
+                    <div class="form-group">
+                        <label for="">مدة السؤال</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="ادخل مدة السؤال بالدقيقة">
+                    </div>
+                </div>
+                <button class="btn TransparentBlueButton" type="button" id="AddNewQuestion">+ إضافة سؤال اخر</button>
+                <script>
+                    $(function () {
+                        $("#AddNewQuestion").bind("click", function () {
+                            var div = $("<div />");
+                            div.html(GetDynamicNewQuestion(""));
+                            $("#AppendQuestion").append(div);
+                        });
+                        $("body").on("click", ".removeQuestion", function () {
+                            $(this).closest("div").remove();
+                        });
+                    });
+                    function GetDynamicNewQuestion(value) {
+                        return `<div class="form-group">
+                    <label for="">نوع السؤال</label>
+                    <select name="" id="" class="form-control selectpicker" title="نوع السؤال">
+                        <option value="">اختياري</option>
+                        <option value="">مقالي</option>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                    <label for="">نص السؤال</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="اكتب نص السؤال">
+                    <div class="d-flex justify-content-between">
+                        <p id="fileName"></p>
+                        <small class="d-block text-start mt-2"><label for="image" class="cursor"> + إضافة صورة</label><input type="file" name="" id="image" hidden></small>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">الاجابات</label>
+                        <div id="AppendAnswer">
+                            <div class="d-flex align-items-center append_answer">
+                                <span class="mx-2">A</span>
+                                <input type="text" name="" id="" class="form-control" placeholder="">
+                                <button type="button" class="remove btn">x</button>
+                                <input type="radio" class="form-check-input" name="radioAnswer" id="" checked>
+                            </div>
+                        </div>
+                        <small class="d-block text-start"><button id="btnAdd" class="btn btnAdd" type="button">+ إضافة إجابة اخري</button></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="">النقاط</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="ادخل نقاط السؤال">
+                    </div>
+                    <div class="form-group">
+                        <label for="">مدة السؤال</label>
+                        <input type="text" name="" id="" class="form-control" placeholder="ادخل مدة السؤال بالدقيقة">
+                    </div>` 
+                    }
+                </script>
+                <div class="buttons mt-4">
+                    <a href="question.html" class="btn PrimaryButton">الحفظ و المتابعة</a>
+                    <a href="add.html" class="btn backButton">العودة</a>
                 </div>
             </form>
           </div>

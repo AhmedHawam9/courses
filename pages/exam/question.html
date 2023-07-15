@@ -269,93 +269,53 @@
           <div class="container">
             <h4 class="title_section">اضافة امتحان جديد</h4>
             <form action="index.html" class="add_item">
-                <h4 class="title">إضافة البيانات الاساسية</h4>
-                <p class="text">اضف اسم الامتحان وتفاصيل عنه في كلمات مختصرة</p>
-                <div class="form-group">
-                    <label for="" class="d-block">أختر نوع الامتحان</label>
-                    <div class="form-group exam_type">
-                        <input type="radio" name="exam_type" id="exam" value="exam" checked hidden>
-                        <label for="exam">امتحان</label>
-                    </div>
-                    <div class="form-group exam_type me-3">
-                        <input type="radio" name="exam_type" id="homeWork" value="homeWork" hidden>
-                        <label for="homeWork"> واجب</label>
-                    </div>
-                    <div class="form-group exam_type me-3">
-                        <input type="radio" name="exam_type" id="sheet" value="sheet" hidden>
-                        <label for="sheet"> شيت</label>
-                    </div>
-
-                    <div id="typeexam" class="desc">
-                        <div class="form-group w-100">
-                          <label for="">اسم الامتحان</label>
-                          <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الامتحان" required>
+                <h4 class="title">الاسألة</h4>
+                <p class="text">ابدأ بإضافة الاسألة على الجزء المختار الآن</p>
+                <div class="question_exam">
+                    <div class="card_question_exam">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="title">السؤال الاول</h6>
+                            <a href="#" class="colorPrimary"><i class="fa-solid fa-pen-to-square"></i></a>
                         </div>
-                        <div class="form-group w-100">
-                            <label for="">تفاصيل الامتحان</label>
-                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل الامتحان كاملة"></textarea>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">مدة الامتحان</label>
-                            <input type="number" name="" id="" class="form-control" placeholder="ادخل مدة الامتحان" required>
-                        </div>
-                    </div>
-                    <div id="typehomeWork" class="desc" style="display:none;">
-                        <div class="form-group w-100">
-                            <label for="">اسم الواجب</label>
-                            <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الواجب" required>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">تفاصيل الواجب</label>
-                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل الواجب كاملة"></textarea>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">مدة الواجب</label>
-                            <input type="number" name="" id="" class="form-control" placeholder="ادخل مدة الواجب" required>
-                        </div>
-                    </div>
-                    <div id="typesheet" class="desc" style="display:none;">
-                        <div class="form-group w-100">
-                            <label for="">اسم الشيت</label>
-                            <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الشيت" required>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">تفاصيل الشيت</label>
-                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="اكتب تفاصيل الشيت كاملة"></textarea>
-                        </div>
-                        <div class="form-group w-100">
-                            <label for="">مدة الشيت</label>
-                            <input type="number" name="" id="" class="form-control" placeholder="ادخل مدة الشيت" required>
-                        </div>
-                    </div>
-    
-                      <script>
-                        $(document).ready(function() {
-                            $("input[name$='exam_type']").click(function() {
-                                var test = $(this).val();
-    
-                                $("div.desc").hide();
-                                $("#type" + test).show();
-                            });
-                        });
-                      </script>
-                </div>
-                <button type="button" class="btn PrimaryButton" data-bs-toggle="modal" data-bs-target="#questionModal">الحفظ و المتابعة</button>
-                
-                <!-- Modal -->
-                <div class="modal fade videoEmptyModal" id="questionModal" tabindex="-1" aria-labelledby="questionModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
-                          <div class="modal-body">
-                            <img src="../../media/image/icon/empty.png" alt="empty">
-                            <h2 class="title">هل تريد اضافة الاسألة من بنك الاسألة المتاحة</h2>
-                            <div class="buttons mt-4">
-                              <a href="#" class="btn PrimaryButton">الحفظ و المتابعة</a>
-                              <a href="add_new_question.html" class="btn backButton">+ إضافة سؤال اخر</a>
+                        <h6 class="title_name">تعتبر مادة المحاسبة المالية مادة </h6>
+                        <p class="category">اختياري</p>
+                        <div class="question_data">
+                            <div class="data">
+                                <i class="fa-regular fa-clock"></i>
+                                <p class="title">مدة السؤال : </p>
+                                <p class="text">20 دقيقة</p>
                             </div>
-                          </div>
+                            <div class="data">
+                                <i class="fa-regular fa-star"></i>
+                                <p class="title">درجة السؤال : </p>
+                                <p class="text">20</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="card_question_exam">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h6 class="title">السؤال الاول</h6>
+                            <a href="#" class="colorPrimary"><i class="fa-solid fa-pen-to-square"></i></a>
+                        </div>
+                        <h6 class="title_name">تعتبر مادة المحاسبة المالية مادة </h6>
+                        <p class="category">اختياري</p>
+                        <div class="question_data">
+                            <div class="data">
+                                <i class="fa-regular fa-clock"></i>
+                                <p class="title">مدة السؤال : </p>
+                                <p class="text">20 دقيقة</p>
+                            </div>
+                            <div class="data">
+                                <i class="fa-regular fa-star"></i>
+                                <p class="title">درجة السؤال : </p>
+                                <p class="text">20</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons mt-4">
+                    <button type="button" class="btn PrimaryButton">الحفظ و المتابعة</button>
+                    <a href="add_new_question.html" type="button" class="btn SecondButton">اضافة سؤال جديد</a>
                 </div>
             </form>
           </div>
