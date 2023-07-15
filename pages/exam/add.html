@@ -350,12 +350,64 @@
                             <img src="../../media/image/icon/empty.png" alt="empty">
                             <h2 class="title">هل تريد اضافة الاسألة من بنك الاسألة المتاحة</h2>
                             <div class="buttons mt-4">
-                              <a href="#" class="btn PrimaryButton">الحفظ و المتابعة</a>
-                              <a href="add_new_question.html" class="btn backButton">+ إضافة سؤال اخر</a>
+                              <a href="#" class="btn PrimaryButton" data-bs-toggle="modal" data-bs-target="#questionBankModal">نعم</a>
+                              <a href="add_new_question.html" class="btn SecondButton">+ إضافة سؤال اخر</a>
                             </div>
                           </div>
                         </div>
                     </div>
+                </div>
+
+
+                <!-- Modal -->
+                <div class="modal questionBankModal fade" id="questionBankModal" tabindex="-1" aria-labelledby="questionBankModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <h2 class="title">اختر السؤالا ا الذي تريد اضافته من بنك الأسالة</h2>
+                        <p class="text">يمكنك الحصول على السؤال المناسب من خلال البحث باسم المادة او السؤال</p>
+                        <div class="table_data">
+                          <div class="filter_table">
+                              <div class="form-group">
+                                  <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم القاعة , المكان">
+                                  <i class="fa-solid fa-magnifying-glass"></i>
+                              </div>
+                          </div>
+                          <table class="table">
+                              <tbody>
+                                <tr>
+                                  <th scope="row">مادة المحاسبة المالية تعتبر مادة ....</th>
+                                  <td>اختياري</td>
+                                  <td>الإجابة: اساسية</td>
+                                  <td>الدرجة:50</td>
+                                  <td>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">مادة المحاسبة المالية تعتبر مادة ....</th>
+                                  <td>اختياري</td>
+                                  <td>الإجابة: اساسية</td>
+                                  <td>الدرجة:50</td>
+                                  <td>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">مادة المحاسبة المالية تعتبر مادة ....</th>
+                                  <td>اختياري</td>
+                                  <td>الإجابة: اساسية</td>
+                                  <td>الدرجة:50</td>
+                                  <td>
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                  </td>
+                                </tr>
+                              </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
             </form>
           </div>
