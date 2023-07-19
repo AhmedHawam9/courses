@@ -68,7 +68,7 @@ body {
     .dropdown-item {
       text-align: start;
       font-family: "regular";
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 }
@@ -423,13 +423,13 @@ table {
     .statistic_card {
       display: flex;
       align-items: center;
-      background-color: #F7F7F7;
+      background-color: #f7f7f7;
       padding: 2rem;
       border-radius: 3px;
       svg {
         margin-inline-end: 1.5rem;
         background-color: #fff;
-        color: #292D32;
+        color: #292d32;
         padding: 1.5rem;
         width: 15px;
         height: 15px;
@@ -438,12 +438,12 @@ table {
       .data {
         .title {
           font-family: "semibold";
-          color: #5F666F;
-          margin-bottom: .5rem;
+          color: #5f666f;
+          margin-bottom: 0.5rem;
         }
         .text {
           font-family: "semibold";
-          color: #2E0C06;
+          color: #2e0c06;
           margin-bottom: 0;
           font-size: 1.2rem;
         }
@@ -463,12 +463,12 @@ table {
       border-radius: 5px;
       margin-top: 2rem;
       .status {
-        padding: .5rem 1.5rem;
+        padding: 0.5rem 1.5rem;
         border-radius: 30px;
-        font-size: .9rem;
+        font-size: 0.9rem;
         &.audience {
-          color: #1C1494;
-          background-color: rgba($color: #1C1494, $alpha: 0.1);
+          color: #1c1494;
+          background-color: rgba($color: #1c1494, $alpha: 0.1);
         }
         &.not_audience {
           color: #942714;
@@ -495,8 +495,8 @@ table {
           .collage {
             font-family: "semibold";
             color: $SecondText;
-            font-size: .9rem;
-            margin-bottom: .5rem;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
           }
           a {
             font-family: "semibold";
@@ -504,7 +504,7 @@ table {
           }
         }
         .course_student {
-          border: 1px solid #A2A2A2;
+          border: 1px solid #a2a2a2;
           border-radius: 5px;
           padding: 1rem;
           .data_course {
@@ -522,14 +522,14 @@ table {
               .course_name {
                 font-family: "semibold";
                 color: $PrimaryText;
-                margin-bottom: .5rem;
+                margin-bottom: 0.5rem;
               }
               .name {
                 display: inline-block;
                 width: fit-content;
                 font-family: "regular";
                 color: $SecondColor;
-                font-size: .8rem;
+                font-size: 0.8rem;
                 margin-bottom: 0.5rem;
               }
               .type {
@@ -537,16 +537,16 @@ table {
                 width: fit-content;
                 font-family: "regular";
                 color: $SecondColor;
-                font-size: .8rem;
+                font-size: 0.8rem;
                 margin-bottom: 0.5rem;
               }
               .date {
                 font-family: "regular";
                 color: $SecondText;
-                font-size: .8rem;
+                font-size: 0.8rem;
                 margin-bottom: 0;
                 svg {
-                  margin-inline-end: .5rem;
+                  margin-inline-end: 0.5rem;
                 }
               }
             }
@@ -562,12 +562,12 @@ table {
               .title {
                 font-family: "regular";
                 color: $SecondText;
-                font-size: .8rem;
+                font-size: 0.8rem;
               }
               .text {
                 font-family: "semibold";
                 color: $PrimaryText;
-                font-size: .9rem;
+                font-size: 0.9rem;
               }
             }
           }
@@ -591,30 +591,30 @@ table {
               .course_name {
                 font-family: "semibold";
                 color: $PrimaryText;
-                margin-bottom: .5rem;
+                margin-bottom: 0.5rem;
               }
               .name {
                 display: inline-block;
                 width: fit-content;
                 font-family: "regular";
                 color: $SecondColor;
-                font-size: .8rem;
-                margin-bottom: .5rem !important;
+                font-size: 0.8rem;
+                margin-bottom: 0.5rem !important;
               }
               .type {
                 display: inline-block;
                 width: fit-content;
                 font-family: "regular";
                 color: $SecondColor;
-                font-size: .8rem;
-                margin-bottom: .5rem !important;
+                font-size: 0.8rem;
+                margin-bottom: 0.5rem !important;
               }
               .date {
                 font-family: "regular";
                 color: $SecondText;
-                font-size: .8rem;
+                font-size: 0.8rem;
                 svg {
-                  margin-inline-end: .5rem;
+                  margin-inline-end: 0.5rem;
                 }
               }
             }
@@ -627,6 +627,55 @@ table {
       border-radius: 5px;
       margin: 1.5rem 0;
       padding: 2rem;
+      .avatar-upload {
+        position: relative;
+        max-width: 205px;
+        margin: 50px auto;
+        .avatar-edit {
+          position: absolute;
+          right: 12px;
+          z-index: 1;
+          top: 10px;
+          input {
+            display: none;
+            + label {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 34px;
+              height: 34px;
+              margin-bottom: 0;
+              border-radius: 100%;
+              background: #ffffff;
+              border: 1px solid transparent;
+              box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+              cursor: pointer;
+              font-weight: normal;
+              transition: all 0.2s ease-in-out;
+              &:hover {
+                background: #f1f1f1;
+                border-color: #d6d6d6;
+              }
+            }
+          }
+        }
+        .avatar-preview {
+          width: 192px;
+          height: 192px;
+          position: relative;
+          border-radius: 100%;
+          border: 6px solid #f8f8f8;
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+          > div {
+            width: 100%;
+            height: 100%;
+            border-radius: 100%;
+            background-size: unset;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
       .backButton {
         color: $SecondColor;
         &:hover {
@@ -634,7 +683,7 @@ table {
         }
       }
       .btnAdd {
-        font-size: .9rem;
+        font-size: 0.9rem;
         padding: 0;
         &:hover {
           border-color: transparent;
@@ -644,7 +693,7 @@ table {
         margin-bottom: 1rem;
         position: relative;
         .form-control {
-          border-radius: 0 .375rem .375rem 0;
+          border-radius: 0 0.375rem 0.375rem 0;
         }
         .remove {
           &.btn {
@@ -652,12 +701,12 @@ table {
             display: block;
             padding: 0.85rem;
             margin: 0;
-            border-radius: .375rem 0 0 .375rem;
+            border-radius: 0.375rem 0 0 0.375rem;
             border: transparent;
-            border-inline-start: 1px solid #CDCDCD;
+            border-inline-start: 1px solid #cdcdcd;
             &:hover {
               border-color: transparent;
-              border-inline-start: 1px solid #CDCDCD;
+              border-inline-start: 1px solid #cdcdcd;
             }
           }
         }
@@ -677,16 +726,16 @@ table {
       }
       .buttons {
         .PrimaryButton {
-          font-size: .8rem;
+          font-size: 0.8rem;
           padding: 0.75rem 3rem;
         }
       }
       .question_exam {
-        border: 1px solid #D6D6D6;
+        border: 1px solid #d6d6d6;
         border-radius: 9px;
         width: 60%;
         .card_question_exam {
-          border-bottom: 1px solid #D6D6D6;
+          border-bottom: 1px solid #d6d6d6;
           padding: 1.5rem 0;
           margin: 0 1.5rem;
           .colorPrimary {
@@ -702,7 +751,7 @@ table {
             margin-top: 1.3rem;
           }
           .category {
-            font-size: .8rem;
+            font-size: 0.8rem;
             font-family: "regular";
             color: $SecondColor;
           }
@@ -713,9 +762,10 @@ table {
               align-items: center;
               margin-inline-end: 3rem;
               svg {
-                margin-inline-end: .5rem;
+                margin-inline-end: 0.5rem;
               }
-              .title, .text {
+              .title,
+              .text {
                 margin-bottom: 0;
               }
             }
@@ -760,7 +810,9 @@ table {
       }
       .form-group {
         margin-bottom: 1.5rem;
-        width: 55%;
+        width: 47%;
+        display: inline-block;
+        margin-inline-end: 1.5%;
         label {
           font-family: "semibold";
           color: $PrimaryColor;
@@ -848,8 +900,7 @@ table {
             &:focus {
               background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
               border-color: $SecondColor;
-              box-shadow: 0 0 0 0.25rem
-                rgba($color: $SecondColor, $alpha: 0.25);
+              box-shadow: 0 0 0 0.25rem rgba($color: $SecondColor, $alpha: 0.25);
             }
           }
           .form-check-label {
@@ -927,7 +978,7 @@ table {
           background-color: rgba($color: $SecondColor, $alpha: 0.06);
           border: 1px solid $SecondColor;
           border-radius: 8px;
-          color: #2E0C06;
+          color: #2e0c06;
         }
       }
       .content_course {
@@ -1474,10 +1525,10 @@ table {
           .status {
             border-radius: 32px;
             font-family: "regular";
-            font-size: .8rem;
+            font-size: 0.8rem;
             &.open {
-              background-color: rgba($color: #50C26B, $alpha: 0.1);
-              color: #50C26B;
+              background-color: rgba($color: #50c26b, $alpha: 0.1);
+              color: #50c26b;
             }
           }
         }
@@ -1516,7 +1567,7 @@ table {
                 &.title {
                   font-family: "regular";
                   color: #595959;
-                  font-size: .9rem;
+                  font-size: 0.9rem;
                 }
                 &.text {
                   font-family: "medium";
@@ -1544,24 +1595,24 @@ table {
             align-items: center;
             margin-bottom: 1rem;
             margin-inline-end: 1rem;
-            padding: .5rem;
+            padding: 0.5rem;
             width: fit-content;
             background-color: rgba($color: $SecondColor, $alpha: 0.1);
             svg {
               color: $SecondColor;
-              margin-inline-end: .5rem;
+              margin-inline-end: 0.5rem;
             }
             .title {
               font-family: "regular";
               color: $SecondText;
               margin-bottom: 0;
-              font-size: .8rem;
+              font-size: 0.8rem;
             }
             .text {
               font-family: "regular";
               color: $PrimaryText;
               margin-bottom: 0;
-              font-size: .8rem;
+              font-size: 0.8rem;
             }
           }
         }
@@ -1870,18 +1921,18 @@ table {
                     padding: 0;
                     .dropdown-toggle {
                       background-color: #f5f8fa;
-                      border: 1px solid #A8A8A8;
+                      border: 1px solid #a8a8a8;
                       padding: 1rem;
                       &:hover {
-                        border: 1px solid #A8A8A8;
-                        border-color: #A8A8A8 !important;
+                        border: 1px solid #a8a8a8;
+                        border-color: #a8a8a8 !important;
                       }
                     }
                     .dropdown-menu {
                       li {
                         a {
                           .text {
-                            font-size: .8rem;
+                            font-size: 0.8rem;
                           }
                         }
                       }
@@ -2148,29 +2199,29 @@ table {
                   .name {
                     font-family: "semibold";
                     color: $PrimaryText;
-                    margin-bottom: .5rem;
+                    margin-bottom: 0.5rem;
                   }
                   .phone {
                     font-family: "regular";
                     color: $SecondText;
-                    font-size: .8rem;
+                    font-size: 0.8rem;
                     margin-bottom: 1rem;
                   }
                   .info {
                     .title {
                       font-family: "regular";
-                      color: #5F666F;
-                      font-size: .8rem;
+                      color: #5f666f;
+                      font-size: 0.8rem;
                     }
                     .text {
                       font-family: "regular";
                       color: $PrimaryText;
-                      font-size: .8rem;
+                      font-size: 0.8rem;
                     }
                     svg {
-                      margin-inline-end: .5rem;
-                      color: #5F666F;
-                      font-size: .8rem;
+                      margin-inline-end: 0.5rem;
+                      color: #5f666f;
+                      font-size: 0.8rem;
                     }
                   }
                   .buttons {
@@ -2178,11 +2229,11 @@ table {
                     align-items: center;
                     margin-top: 1rem;
                     .PrimaryButton {
-                      margin-inline-start: .5rem;
-                      padding: .75rem 2.5rem;
+                      margin-inline-start: 0.5rem;
+                      padding: 0.75rem 2.5rem;
                     }
                     .BlueButton {
-                      padding: .75rem 2.5rem;
+                      padding: 0.75rem 2.5rem;
                     }
                   }
                 }
@@ -2200,7 +2251,7 @@ table {
                     .dropdown-item {
                       text-align: start;
                       font-family: "regular";
-                      font-size: .8rem;
+                      font-size: 0.8rem;
                     }
                   }
                 }
@@ -2216,12 +2267,13 @@ table {
                   .form-group {
                     .form-control {
                       padding: 0.75rem;
-                      background-color: #F5F8FA;
-                      border: 1px solid #F5F8FA;
+                      background-color: #f5f8fa;
+                      border: 1px solid #f5f8fa;
                       width: 100%;
-                      &:focus, &:hover {
-                        border: 1px solid #F5F8FA;
-                        border-color: #F5F8FA !important;
+                      &:focus,
+                      &:hover {
+                        border: 1px solid #f5f8fa;
+                        border-color: #f5f8fa !important;
                       }
                     }
                     .bootstrap-select {
@@ -2230,7 +2282,7 @@ table {
                       width: 100%;
                     }
                     .dropdown-toggle {
-                      background-color: #F5F8FA;
+                      background-color: #f5f8fa;
                       &::after {
                         display: inline-block;
                         margin-left: 0.255em;
@@ -2249,7 +2301,7 @@ table {
                       .dropdown-menu.inner {
                         .dropdown-item {
                           .text {
-                            font-size: .9rem;
+                            font-size: 0.9rem;
                             width: 100%;
                           }
                         }
@@ -2262,17 +2314,17 @@ table {
                 width: 20%;
                 .dropdown-toggle {
                   background-color: #f5f8fa;
-                  border: 1px solid #A8A8A8;
+                  border: 1px solid #a8a8a8;
                   &:hover {
-                    border: 1px solid #A8A8A8;
-                    border-color: #A8A8A8 !important;
+                    border: 1px solid #a8a8a8;
+                    border-color: #a8a8a8 !important;
                   }
                 }
                 .dropdown-menu {
                   li {
                     a {
                       .text {
-                        font-size: .8rem;
+                        font-size: 0.8rem;
                       }
                     }
                   }
@@ -2349,14 +2401,14 @@ table {
                 margin-inline-end: 1.5rem;
                 .nav-link {
                   background-color: #fff;
-                  color: #5F666F;
+                  color: #5f666f;
                   font-family: "medium";
                   padding: 1rem 4rem;
                   border: 1px solid transparent;
                   &.active {
                     background-color: rgba($color: $SecondColor, $alpha: 0.1);
                     border: 1px solid $SecondColor;
-                    color: #2E0C06;
+                    color: #2e0c06;
                   }
                 }
               }
@@ -2383,21 +2435,21 @@ table {
                     // display: flex;
                     // align-items: center;
                     width: 100%;
-                    margin-bottom: .5rem;
+                    margin-bottom: 0.5rem;
                     svg {
                       color: $SecondColor;
-                      margin-inline-end: .5rem;
+                      margin-inline-end: 0.5rem;
                       font-size: 1.2rem;
                     }
                     .title {
                       width: fit-content;
                       font-family: "regular";
-                      color: #5F666F;
+                      color: #5f666f;
                     }
                     .text {
                       width: fit-content;
                       font-family: "medium";
-                      color: #2E0C06;
+                      color: #2e0c06;
                     }
                   }
                 }
@@ -2407,7 +2459,7 @@ table {
               thead {
                 background-color: transparent;
                 color: #000;
-                font-size: .8rem;
+                font-size: 0.8rem;
                 tr {
                   th {
                     padding: 1rem 0.5rem !important;
@@ -2415,9 +2467,10 @@ table {
                 }
               }
               tbody {
-                font-size: .8rem;
+                font-size: 0.8rem;
                 tr {
-                  &:nth-child(odd), &:nth-child(even) {
+                  &:nth-child(odd),
+                  &:nth-child(even) {
                     background-color: transparent;
                   }
                   th {
@@ -2428,7 +2481,7 @@ table {
                     .dropdown {
                       .dropdown-menu {
                         .dropdown-item {
-                          font-size: .8rem;
+                          font-size: 0.8rem;
                         }
                       }
                     }
@@ -2453,14 +2506,14 @@ table {
                   .course_name {
                     font-family: "semibold";
                     color: $PrimaryText;
-                    margin-bottom: .5rem;
+                    margin-bottom: 0.5rem;
                   }
                   .name {
                     display: inline-block;
                     width: fit-content;
                     font-family: "regular";
                     color: $SecondColor;
-                    font-size: .8rem;
+                    font-size: 0.8rem;
                     margin-bottom: 1.5rem;
                   }
                   .type {
@@ -2468,15 +2521,15 @@ table {
                     width: fit-content;
                     font-family: "regular";
                     color: $SecondColor;
-                    font-size: .8rem;
+                    font-size: 0.8rem;
                     margin-bottom: 1.5rem;
                   }
                   .date {
                     font-family: "regular";
                     color: $SecondText;
-                    font-size: .8rem;
+                    font-size: 0.8rem;
                     svg {
-                      margin-inline-end: .5rem;
+                      margin-inline-end: 0.5rem;
                     }
                   }
                 }
@@ -2485,7 +2538,7 @@ table {
           }
         }
       }
-      
+
       .details_student_modal {
         .modal-dialog {
           max-width: 45% !important;
@@ -2506,8 +2559,8 @@ table {
           .collage {
             font-family: "semibold";
             color: $SecondText;
-            font-size: .9rem;
-            margin-bottom: .5rem;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
           }
           a {
             font-family: "semibold";
@@ -2515,7 +2568,7 @@ table {
           }
         }
         .course_student {
-          border: 1px solid #A2A2A2;
+          border: 1px solid #a2a2a2;
           border-radius: 5px;
           padding: 1rem;
           .data_course {
@@ -2533,14 +2586,14 @@ table {
               .course_name {
                 font-family: "semibold";
                 color: $PrimaryText;
-                margin-bottom: .5rem;
+                margin-bottom: 0.5rem;
               }
               .name {
                 display: inline-block;
                 width: fit-content;
                 font-family: "regular";
                 color: $SecondColor;
-                font-size: .8rem;
+                font-size: 0.8rem;
                 margin-bottom: 0.5rem;
               }
               .type {
@@ -2548,16 +2601,16 @@ table {
                 width: fit-content;
                 font-family: "regular";
                 color: $SecondColor;
-                font-size: .8rem;
+                font-size: 0.8rem;
                 margin-bottom: 0.5rem;
               }
               .date {
                 font-family: "regular";
                 color: $SecondText;
-                font-size: .8rem;
+                font-size: 0.8rem;
                 margin-bottom: 0;
                 svg {
-                  margin-inline-end: .5rem;
+                  margin-inline-end: 0.5rem;
                 }
               }
             }
@@ -2573,12 +2626,12 @@ table {
               .title {
                 font-family: "regular";
                 color: $SecondText;
-                font-size: .8rem;
+                font-size: 0.8rem;
               }
               .text {
                 font-family: "semibold";
                 color: $PrimaryText;
-                font-size: .9rem;
+                font-size: 0.9rem;
               }
             }
           }
@@ -2602,30 +2655,30 @@ table {
               .course_name {
                 font-family: "semibold";
                 color: $PrimaryText;
-                margin-bottom: .5rem;
+                margin-bottom: 0.5rem;
               }
               .name {
                 display: inline-block;
                 width: fit-content;
                 font-family: "regular";
                 color: $SecondColor;
-                font-size: .8rem;
-                margin-bottom: .5rem !important;
+                font-size: 0.8rem;
+                margin-bottom: 0.5rem !important;
               }
               .type {
                 display: inline-block;
                 width: fit-content;
                 font-family: "regular";
                 color: $SecondColor;
-                font-size: .8rem;
-                margin-bottom: .5rem !important;
+                font-size: 0.8rem;
+                margin-bottom: 0.5rem !important;
               }
               .date {
                 font-family: "regular";
                 color: $SecondText;
-                font-size: .8rem;
+                font-size: 0.8rem;
                 svg {
-                  margin-inline-end: .5rem;
+                  margin-inline-end: 0.5rem;
                 }
               }
             }
@@ -2646,7 +2699,7 @@ table {
               .text {
                 font-family: "regular";
                 color: $SecondText;
-                font-size: .9rem;
+                font-size: 0.9rem;
               }
             }
             .table_data {
@@ -2659,33 +2712,33 @@ table {
               &::-webkit-scrollbar {
                 width: 5px;
               }
-              
+
               /* Track */
               &::-webkit-scrollbar-track {
-                background: #f1f1f1; 
+                background: #f1f1f1;
                 border-radius: 20px;
               }
-              
+
               /* Handle */
               &::-webkit-scrollbar-thumb {
-                background: #bdbdbd; 
+                background: #bdbdbd;
                 border-radius: 20px;
               }
 
               /* Handle on hover */
               &::-webkit-scrollbar-thumb:hover {
-                background: #bdbdbd; 
+                background: #bdbdbd;
               }
               .filter_table {
                 .form-group {
                   width: 100%;
                   .form-control {
-                    background-color: #F5F8FA;
+                    background-color: #f5f8fa;
                   }
                 }
               }
               table {
-                font-size: .9rem;
+                font-size: 0.9rem;
                 tbody {
                   tr {
                     &:nth-child(odd) {
@@ -2725,7 +2778,7 @@ table {
           margin-bottom: 1.5rem;
         }
         .card_group {
-          border: 1px solid #C9C9C9;
+          border: 1px solid #c9c9c9;
           border-radius: 4px;
           padding: 1rem;
           margin-bottom: 1rem;
@@ -2733,7 +2786,7 @@ table {
             font-family: "semibold";
             color: $PrimaryText;
             svg {
-              margin-inline-end: .7rem;
+              margin-inline-end: 0.7rem;
             }
           }
           .form-check-input {
@@ -2750,18 +2803,18 @@ table {
               display: flex;
               margin-inline-end: 3rem;
               svg {
-                margin-inline-end: .5rem;
+                margin-inline-end: 0.5rem;
               }
               .title {
                 font-family: "regular";
-                color: #5F666F;
-                font-size: .9rem;
-                margin-inline-end: .5rem;
+                color: #5f666f;
+                font-size: 0.9rem;
+                margin-inline-end: 0.5rem;
               }
               .text {
                 font-family: "regular";
                 color: $PrimaryText;
-                font-size: .9rem;
+                font-size: 0.9rem;
               }
             }
           }
@@ -2771,12 +2824,12 @@ table {
             .time {
               font-family: "regular";
               color: #535353;
-              font-size: .9rem;
+              font-size: 0.9rem;
               width: 33%;
               text-align: start;
               svg {
                 color: $SecondColor;
-                margin-inline-end: .5rem;
+                margin-inline-end: 0.5rem;
               }
             }
           }
@@ -2801,7 +2854,7 @@ table {
               text-align: start;
               font-family: "semibold";
               color: $PrimaryText;
-              margin-bottom: .8rem;
+              margin-bottom: 0.8rem;
             }
             .price_type {
               text-align: center;
@@ -2819,9 +2872,9 @@ table {
                 cursor: pointer;
                 border-radius: 8px;
                 text-align: center;
-                font-size: .9rem;
+                font-size: 0.9rem;
               }
-      
+
               input[type="radio"]:checked + label {
                 border: 1px solid $SecondColor;
                 color: $PrimaryText;
@@ -2886,7 +2939,7 @@ table {
             display: block;
             width: fit-content;
             margin-inline-end: auto;
-            padding: .75rem 3rem;
+            padding: 0.75rem 3rem;
           }
         }
       }
@@ -2911,7 +2964,7 @@ table {
       .card_video {
         display: block;
         border-radius: 10px;
-        border: 1px solid #D4D4D4;
+        border: 1px solid #d4d4d4;
         margin-bottom: 1.5rem;
         .video_cover {
           position: relative;
@@ -2944,7 +2997,7 @@ table {
             font-family: "regular";
             color: $SecondText;
             svg {
-              margin-inline-end: .5rem;
+              margin-inline-end: 0.5rem;
             }
           }
           .dropdown {
@@ -2960,7 +3013,7 @@ table {
               .dropdown-item {
                 text-align: start;
                 font-family: "regular";
-                font-size: .9rem;
+                font-size: 0.9rem;
               }
             }
           }
@@ -3016,7 +3069,7 @@ table {
         -moz-animation: click-radio-wave 0.65s;
         animation: click-radio-wave 0.65s;
         background: #000000;
-        content: '';
+        content: "";
         display: block;
         position: relative;
         z-index: 100;
@@ -3038,12 +3091,12 @@ table {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color: #F5F8FA;
+            background-color: #f5f8fa;
             width: fit-content;
             padding: 1.5rem;
             border-radius: 8px;
             width: 100%;
-            border: 1px solid #F5F8FA;
+            border: 1px solid #f5f8fa;
             &:focus-within {
               border: 1px solid $SecondColor;
             }
@@ -3066,7 +3119,7 @@ table {
                   font-family: "regular";
                   color: $SecondText;
                   margin-bottom: 0;
-                  font-size: .8rem;
+                  font-size: 0.8rem;
                 }
               }
             }
@@ -3167,11 +3220,13 @@ table {
       .form-wizard-steps li:last-child::after {
         width: 50%;
       }
-      .form-wizard-steps li.active span, .form-wizard-steps li.activated span {
+      .form-wizard-steps li.active span,
+      .form-wizard-steps li.activated span {
         background-color: $PrimaryColor;
         color: #ffffff;
       }
-      .form-wizard-steps li.active::after, .form-wizard-steps li.activated::after {
+      .form-wizard-steps li.active::after,
+      .form-wizard-steps li.activated::after {
         background-color: $PrimaryColor;
         right: 0%;
         width: 50%;
@@ -3219,7 +3274,7 @@ table {
           height: 60px;
           margin-left: -15px;
           margin-top: -15px;
-          opacity: 0.0;
+          opacity: 0;
         }
       }
       @media screen and (max-width: 767px) {
@@ -3270,12 +3325,12 @@ table {
           input {
             font-family: "regular";
             color: $SecondText;
-            font-size: .8rem;
-            padding: .75rem;
+            font-size: 0.8rem;
+            padding: 0.75rem;
             margin-bottom: 1.5rem;
           }
           .card_video {
-            border: 1px solid #D4D4D4;
+            border: 1px solid #d4d4d4;
             border-radius: 10px;
             margin-bottom: 2rem;
             .video_cover {
@@ -3314,10 +3369,10 @@ table {
                   color: $SecondText;
                   font-size: 0.8rem;
                   svg {
-                    margin-inline-end: .5rem;
+                    margin-inline-end: 0.5rem;
                   }
                 }
-              } 
+              }
               .dropdown {
                 .dropdown-toggle {
                   &:hover {
@@ -3355,16 +3410,16 @@ table {
             margin-bottom: 1.5rem;
             label {
               font-family: "semibold";
-              color: #323A46;
-              margin-bottom: .8rem;
+              color: #323a46;
+              margin-bottom: 0.8rem;
             }
             .form-control {
               font-family: "semibold";
               color: $PrimaryText;
               border-color: transparent;
               background-color: #f8f9fa;
-              font-size: .8rem;
-              padding: .75rem;
+              font-size: 0.8rem;
+              padding: 0.75rem;
               resize: none;
             }
             iframe {
@@ -3422,29 +3477,29 @@ table {
           .name {
             font-family: "semibold";
             color: $PrimaryText;
-            margin-bottom: .5rem;
+            margin-bottom: 0.5rem;
           }
           .phone {
             font-family: "regular";
             color: $SecondText;
-            font-size: .8rem;
+            font-size: 0.8rem;
             margin-bottom: 1rem;
           }
           .info {
             .title {
               font-family: "regular";
-              color: #5F666F;
-              font-size: .8rem;
+              color: #5f666f;
+              font-size: 0.8rem;
             }
             .text {
               font-family: "regular";
               color: $PrimaryText;
-              font-size: .8rem;
+              font-size: 0.8rem;
             }
             svg {
-              margin-inline-end: .5rem;
-              color: #5F666F;
-              font-size: .8rem;
+              margin-inline-end: 0.5rem;
+              color: #5f666f;
+              font-size: 0.8rem;
             }
           }
           .buttons {
@@ -3452,11 +3507,11 @@ table {
             align-items: center;
             margin-top: 1rem;
             .PrimaryButton {
-              margin-inline-start: .5rem;
-              padding: .75rem 2.5rem;
+              margin-inline-start: 0.5rem;
+              padding: 0.75rem 2.5rem;
             }
             .BlueButton {
-              padding: .75rem 2.5rem;
+              padding: 0.75rem 2.5rem;
             }
           }
         }
@@ -3474,7 +3529,7 @@ table {
             .dropdown-item {
               text-align: start;
               font-family: "regular";
-              font-size: .8rem;
+              font-size: 0.8rem;
             }
           }
         }
@@ -3490,12 +3545,13 @@ table {
           .form-group {
             .form-control {
               padding: 0.75rem;
-              background-color: #F5F8FA;
-              border: 1px solid #F5F8FA;
+              background-color: #f5f8fa;
+              border: 1px solid #f5f8fa;
               width: 100%;
-              &:focus, &:hover {
-                border: 1px solid #F5F8FA;
-                border-color: #F5F8FA !important;
+              &:focus,
+              &:hover {
+                border: 1px solid #f5f8fa;
+                border-color: #f5f8fa !important;
               }
             }
             .bootstrap-select {
@@ -3504,7 +3560,7 @@ table {
               width: 100%;
             }
             .dropdown-toggle {
-              background-color: #F5F8FA;
+              background-color: #f5f8fa;
               &::after {
                 display: inline-block;
                 margin-left: 0.255em;
@@ -3523,7 +3579,7 @@ table {
               .dropdown-menu.inner {
                 .dropdown-item {
                   .text {
-                    font-size: .9rem;
+                    font-size: 0.9rem;
                     width: 100%;
                   }
                 }

@@ -299,95 +299,45 @@
         <!-- ======= Start Content ======= -->
         <section class="content">
           <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <h4 class="title_section">بنك الأسئلة</h4>
-                <a href="add.html" class="btn PrimaryButton">اضافة سؤال جديد</a>
-            </div>
-            <div class="table_data">
-                <div class="filter_table">
-                    <div class="form-group">
-                        <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم السؤال">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+            <h4 class="title_section">اضافة هيدر</h4>
+            <form action="#" class="add_item">
+                <div class="avatar-upload">
+                    <div class="avatar-edit">
+                        <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                        <label for="imageUpload"><i class="fa-solid fa-camera-retro"></i></label>
                     </div>
-                    <select name="" id="" class="form-control selectpicker" title="كل الكليات">
-                        <option value="">تيست</option>
-                        <option value="">تيست</option>
-                        <option value="">تيست</option>
-                    </select>
+                    <div class="avatar-preview">
+                        <div id="imagePreview" style="background-image: url('../../media/image/logo.png');">
+                        </div>
+                    </div>
+
+                    <script>
+                        function readURL(input) {
+                            if (input.files && input.files[0]) {
+                                var reader = new FileReader();
+                                reader.onload = function(e) {
+                                    $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                                    $('#imagePreview').hide();
+                                    $('#imagePreview').fadeIn(650);
+                                }
+                                reader.readAsDataURL(input.files[0]);
+                            }
+                        }
+                        $("#imageUpload").change(function() {
+                            readURL(this);
+                        });
+                    </script>
                 </div>
-                <table class="table table-bordered">
-                    <thead>
-                      <tr>
-                        <th scope="col"># الرقم</th>
-                        <th scope="col">السؤال</th>
-                        <th scope="col">الاجابة الاولى</th>
-                        <th scope="col">الاجابة الثانية</th>
-                        <th scope="col">الاجابة الثالثة</th>
-                        <th scope="col">الاجابة الرابعة</th>
-                        <th scope="col"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>ماهو المقصود بمادة المحاسبة المالية؟</td>
-                        <td>اجابة 1</td>
-                        <td>اجابة 2</td>
-                        <td>اجابة 3</td>
-                        <td>اجابة 4</td>
-                        <td>
-                          <div class="dropdown">
-                              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                <li><a class="dropdown-item" href="#">حذف</a></li>
-                              </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>ماهو المقصود بمادة المحاسبة المالية؟</td>
-                        <td>اجابة 1</td>
-                        <td>اجابة 2</td>
-                        <td>اجابة 3</td>
-                        <td>اجابة 4</td>
-                        <td>
-                          <div class="dropdown">
-                              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                <li><a class="dropdown-item" href="#">حذف</a></li>
-                              </ul>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>ماهو المقصود بمادة المحاسبة المالية؟</td>
-                        <td>اجابة 1</td>
-                        <td>اجابة 2</td>
-                        <td>اجابة 3</td>
-                        <td>اجابة 4</td>
-                        <td>
-                          <div class="dropdown">
-                              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="fa-solid fa-ellipsis-vertical"></i>
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">تعديل</a></li>
-                                <li><a class="dropdown-item" href="#">حذف</a></li>
-                              </ul>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                </table>
-            </div>
+                <div class="form-group">
+                  <label for="">العنوان</label>
+                  <input type="text" name="" id="" class="form-control" placeholder="العنوان" required>
+                </div>
+                <div class="form-group">
+                    <label for="">الوصف</label>
+                    <input type="text" name="" id="" class="form-control" placeholder="الوصف" required>
+                </div>
+                <button type="submit" class="btn PrimaryButton">حفظ</button>
+            </form>
           </div>
         </section>
         <!-- ======= End Content ======= -->
