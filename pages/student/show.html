@@ -603,7 +603,7 @@
                                                 <i class="fa-solid fa-ellipsis-vertical"></i>
                                             </button>
                                             <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">عرض نتائج الامتحان</a></li>
+                                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#resultExamModal">عرض نتائج الامتحان</a></li>
                                             </ul>
                                         </div>
                                     </td>
@@ -619,10 +619,64 @@
                                               <i class="fa-solid fa-ellipsis-vertical"></i>
                                           </button>
                                           <ul class="dropdown-menu">
-                                          <li><a class="dropdown-item" href="#">عرض نتائج الامتحان</a></li>
+                                          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#resultExamModal">عرض نتائج الامتحان</a></li>
                                           </ul>
                                       </div>
                                   </td>
+
+                                  <!-- Modal -->
+                                  <div class="modal modal_details_exam_student fade" id="resultExamModal" tabindex="-1" aria-labelledby="resultExamModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-body">
+                                          <h4 class="title_modal">تفاصيل الاختبار للطالب</h4>
+                                          <div class="card_details_lesson">
+                                            <p class="title">امتحان على الدرس الأول  من كورس المحاسبة</p>
+                                            <ul class="details_exam">
+                                              <li>
+                                                <i class="fa-regular fa-user"></i>
+                                                <p class="title">المدرس: </p>
+                                                <p class="text"> أحمد عادل</p>
+                                              </li>
+                                              <li>
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                                <p class="title">تاريخ الاختبار : </p>
+                                                <p class="text"> 22 مارس - 8:30 م</p>
+                                              </li>
+                                              <li>
+                                                <i class="fa-regular fa-circle-check"></i>
+                                                <p class="title">الإجابات الصحيحة : </p>
+                                                <p class="text">10</p>
+                                              </li>
+                                              <li>
+                                                <i class="fa-solid fa-trophy"></i>
+                                                <p class="title">الدرجة النهائية : </p>
+                                                <p class="text">30/40</p>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                          <div class="progressContainer">
+                                            <p class="title">كل الأسألة ( 4 )</p>
+                                            <ul class="progress">
+                                              <li class="progress__item">
+                                                <p class="progress__title">السؤال الأول : ماهو تعريف مادة المحاسبة المالية</p>
+                                                <p class="progress__info wrong_answer">هي مادة خاصة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...</p>
+                                                <p class="progress__info true_answer">الإجابة الصحيحة : هي مادة خاصة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...</p>
+                                              </li>
+                                              <li class="progress__item">
+                                                <p class="progress__title">السؤال الثاني : ماهو تعريف مادة المحاسبة المالية</p>
+                                                <p class="progress__info true_answer">الإجابة الصحيحة : هي مادة خاصة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...</p>
+                                              </li>
+                                              <li class="progress__item">
+                                                <p class="progress__title">السؤال الثالث : ماهو تعريف مادة المحاسبة المالية</p>
+                                                <p class="progress__info true_answer">الإجابة الصحيحة : هي مادة خاصة هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى ...</p>
+                                              </li>
+                                            </ul>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                               </tr>
                             </tbody>
                           </table>

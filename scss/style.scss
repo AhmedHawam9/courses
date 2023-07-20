@@ -235,6 +235,10 @@ a {
   margin-bottom: 0;
 }
 
+.ColorPrimary {
+  color: $SecondColor;
+}
+
 .PrimaryButton {
   background-color: $SecondColor;
   color: #fff;
@@ -2940,6 +2944,151 @@ table {
             width: fit-content;
             margin-inline-end: auto;
             padding: 0.75rem 3rem;
+          }
+        }
+      }
+    }
+    
+    .modal_details_exam_student {
+      .modal-dialog {
+        max-width: 60% !important;
+        .modal-body {
+          padding: 2rem;
+          .title_modal {
+            font-family: "semibold";
+            color: $PrimaryText;
+            margin-bottom: 1.5rem;
+          }
+          .card_details_lesson {
+            background-color: #FAFAFA;
+            padding: 1.5rem;
+            .details_exam {
+              list-style: none;
+              display: flex;
+              margin-top: 1.5rem;
+              li {
+                display: flex;
+                width: 25%;
+                svg {
+                  color: $SecondColor;
+                  margin-inline-end: .5rem;
+                }
+                .title {
+                  font-family: "regular";
+                  color: #7F7F7F;
+                  font-size: .8rem;
+                  margin-inline-end: .5rem;
+                  margin-bottom: 0 !important;
+                  width: fit-content;
+                }
+                .text {
+                  font-family: "semibold";
+                  color: $PrimaryText;
+                  font-size: .8rem;
+                  margin-bottom: 0 !important;
+                  width: fit-content !important;
+                }
+              }
+            }
+          }
+          .progressContainer {
+            position: relative;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 2rem;
+            color: #000;
+          }
+          .progress {
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            position: relative;
+            padding: 0 3.5rem 0 1rem;
+            margin: 2rem 0 0;
+            list-style: none;
+            background-color: transparent;
+          }
+          
+          .progress__item {
+            position: relative;
+            min-height: 75px;
+            counter-increment: list;
+            padding-inline-start: 2.5rem;
+            margin-bottom: 2rem;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            &:before {
+              content: "";
+              position: absolute;
+              right: -0.8rem;
+              top: 50px;
+              height: 100%;
+              width: 1px;
+              border-left: 1px dashed #000;
+            }
+            &:after {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              content: counter(list);
+              position: absolute;
+              top: 0;
+              right: -2.5rem;
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              background: #F7F7F7;
+              color: $PrimaryText;
+              font-weight: 400;
+              font-size: 1rem;
+              text-align: center;
+            }
+            //Hide border for Last Step
+            &:last-child {
+              &:before {
+                border: none;
+              }
+            }
+            //Completed
+            &.progress__item--completed {
+              opacity: 0.6;
+              color: #fff;
+              &:after {
+                content: "\2713";
+                font-weight: 400;
+                background: #fff;
+                color: #392A60;
+              }
+            }
+            //Active
+            &.progress__item--active {
+              &:after {
+                background: #fff;
+                color: #392A60;
+              }
+            }
+          }
+          
+          .progress__title {
+            padding: 0.4rem 0 0.5rem;
+            margin: 0;
+            font-size: .9rem;
+            color: $PrimaryText;
+            font-family: "semibold";
+          }
+          
+          .progress__info {
+            font-size: .9rem;
+            font-family: "medium";
+            &.wrong_answer {
+              color: #E63232;
+            }
+            &.true_answer {
+              color: #11B905;
+              margin-bottom: 0;
+            }
           }
         }
       }
