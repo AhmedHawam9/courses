@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html id="langHtml" lang="ar">
+  <head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- ? Required meta tags -->
+
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../scss/style.min.css" />
+    <!-- ? Main CSS -->
+
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap-select.min.css" />
+    <!-- ? Custom CSS -->
+
+    <!-- ? Main JavaScript -->
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/all.min.js"></script>
+    <script src="../../js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+
+    <!-- ? Custom JavaScript -->
+    <script src="../../js/bootstrap-select.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <!-- ? Title -->
+    <title>Courses</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="../../media/image/favicon.ico" type="image" />
+    <!-- ? Favicon -->
+
+    <script>
+      console.log(
+        "%c <== 7w7w++ ==>  ",
+        "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;"
+      );
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img
+              src="../../media/image/logo.png"
+              alt="logo_sidebar"
+              class="logo"
+            />
+          </div>
+          <li class="nav-item">
+            <a href="../home/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/home.png" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#submenulibrary"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="../../media/image/icon/courses.png" alt="icon" />
+              <span>الكورسات</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenulibrary"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <li>
+                <a href="/pages/courses/index.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>الكورسات</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>طلبات الانضمام</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              href="/pages/university/index.html"
+              class="nav-link align-middle"
+            >
+              <img src="../../media/image/icon/university.png" alt="icon" />
+              <span>الجامعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/collage/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/collage.png" alt="icon" />
+              <span>الكليات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/teachers/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/teachers.png" alt="icon" />
+              <span>المدرسين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="messages.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/subject.png" alt="icon" />
+              <span>المواد التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../halls/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/hall.png" alt="icon" />
+              <span>القاعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/exam/show.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/exams.png" alt="icon" />
+              <span>الامتحانات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/students.png" alt="icon" />
+              <span>الطلاب</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/intro/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/intro.png" alt="icon" />
+              <span>مكاتب INTRO</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="/pages/libraryVideo/index.html"
+              class="nav-link align-middle"
+            >
+              <img src="../../media/image/icon/video.png" alt="icon" />
+              <span>مكاتب فيدويوهات </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/lessons.png" alt="icon" />
+              <span>الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="/pages/question_bank/show.html"
+              class="nav-link align-middle"
+            >
+              <img src="../../media/image/icon/questions.png" alt="icon" />
+              <span>بنك الأسالة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/blogs.png" alt="icon" />
+              <span>المدونة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/financial.png" alt="icon" />
+              <span>المعاملات المالية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#submenuWebsite"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="../../media/image/icon/courses.png" alt="icon" />
+              <span>الموقع</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuWebsite"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <li>
+                <a href="/pages/website/header.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>الهيدر</span></a
+                >
+              </li>
+              <li>
+                <a href="/pages/website/aboutus.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>عن الموقع</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/settings.png" alt="icon" />
+              <span>الاعدادات العامة</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <!-- ======= Main ======= -->
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="d-flex w-25">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="search"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Search…"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="changelocal d-inline-block">
+              <div class="dropdown lang">
+                <a
+                  class="btn dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- lang -->
+                  <i class="fa-solid fa-earth-americas px-2"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item">
+                      <img
+                        src="../../media/image/saudi-arabia.png"
+                        alt="saudi-arabia"
+                      />
+                      Arabic
+                    </a>
+                    <a class="dropdown-item">
+                      <img
+                        src="../../media/image/united-kingdom.png"
+                        alt="united-kingdom"
+                      />
+                      English
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown d-inline-block">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="../../media/image/7w7w.jpg"
+                  class="admin_img"
+                  alt="person"
+                />
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="reports.html">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="setting.html">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
+
+        <!-- ======= Start Content ======= -->
+        <section class="content">
+          <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+              <h4 class="title_section">الشكاوي</h4>
+            </div>
+            <div class="table_data">
+              <div class="filter_table">
+                <div class="form-group">
+                  <input
+                    type="search"
+                    name=""
+                    id=""
+                    class="form-control"
+                    placeholder="ابحث بإسم الجامعة , الموقع"
+                  />
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <select
+                  name=""
+                  id=""
+                  class="form-control selectpicker"
+                  title="كل الكليات"
+                >
+                  <option value="">تيست</option>
+                  <option value="">تيست</option>
+                  <option value="">تيست</option>
+                </select>
+              </div>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col"># الرقم</th>
+                    <th scope="col">بواسطة</th>
+                    <th scope="col">نص الشكوي</th>
+                    <th scope="col">تاريخ الشكوي</th>
+                    <th scope="col">الصورة</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>أحمد ابراهيم</td>
+                    <td>لم يتلقي الطالب احمد محمد إبراهيم الامتحان على مادة المحاسبة المالية للفرقة الأولى  </td>
+                    <td>مايو 22 , 2023 - 8:30 ص</td>
+                    <td><img src="./media/image/logo.png" alt="notifcation" /></td>
+                    <td>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
+                          <li><a class="dropdown-item" href="#">حذف</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>أحمد ابراهيم</td>
+                    <td>لم يتلقي الطالب احمد محمد إبراهيم الامتحان على مادة المحاسبة المالية للفرقة الأولى  </td>
+                    <td>مايو 22 , 2023 - 8:30 ص</td>
+                    <td><img src="./media/image/logo.png" alt="notifcation" /></td>
+                    <td>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
+                          <li><a class="dropdown-item" href="#">حذف</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>أحمد ابراهيم</td>
+                    <td>لم يتلقي الطالب احمد محمد إبراهيم الامتحان على مادة المحاسبة المالية للفرقة الأولى  </td>
+                    <td>مايو 22 , 2023 - 8:30 ص</td>
+                    <td><img src="./media/image/logo.png" alt="notifcation" /></td>
+                    <td>
+                      <div class="dropdown">
+                        <button
+                          class="btn dropdown-toggle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">ارسال رسالة</a></li>
+                          <li><a class="dropdown-item" href="#">حذف</a></li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        <!-- ======= End Content ======= -->
+      </section>
+      <!-- ======= Main ======= -->
+    </div>
+    <!-- ? ======= footer =========== -->
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>
