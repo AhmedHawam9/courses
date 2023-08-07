@@ -55,7 +55,7 @@ body {
 .cursor {
   cursor: pointer;
 }
-button[type=submit] {
+button[type="submit"] {
   display: block;
 }
 .dropdown {
@@ -2545,6 +2545,136 @@ table {
             }
           }
         }
+
+        .type_pdf_content {
+          .card_pdf_type {
+            display: flex;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-bottom: 1.5rem;
+            img {
+              width: 70px;
+              height: 70px;
+              border-radius: 50%;
+              margin-inline-end: 1.5rem;
+            }
+            .pdf_data {
+              .name {
+                font-family: "semibold";
+                color: $PrimaryText;
+                margin-bottom: 0.5rem;
+              }
+              .phone {
+                font-family: "regular";
+                color: $SecondText;
+                font-size: 0.8rem;
+                margin-bottom: 1rem;
+              }
+              .info {
+                .title {
+                  font-family: "regular";
+                  color: #5f666f;
+                  font-size: 0.8rem;
+                }
+                .text {
+                  font-family: "regular";
+                  color: $PrimaryText;
+                  font-size: 0.8rem;
+                }
+                svg {
+                  margin-inline-end: 0.5rem;
+                  color: #5f666f;
+                  font-size: 0.8rem;
+                }
+              }
+              .buttons {
+                display: flex;
+                align-items: center;
+                margin-top: 1rem;
+                .PrimaryButton {
+                  margin-inline-start: 0.5rem;
+                  padding: 0.75rem 2.5rem;
+                }
+                .BlueButton {
+                  padding: 0.75rem 2.5rem;
+                }
+              }
+            }
+            .dropdown {
+              margin-inline-start: auto;
+              .dropdown-toggle {
+                &:hover {
+                  border-color: transparent;
+                }
+                &::after {
+                  content: unset;
+                }
+              }
+              .dropdown-menu {
+                .dropdown-item {
+                  text-align: start;
+                  font-family: "regular";
+                  font-size: 0.8rem;
+                }
+              }
+            }
+            .modal {
+              .modal-dialog {
+                .modal-body {
+                  padding: 2rem;
+                }
+              }
+              .title_section {
+                margin: 0;
+              }
+              .form-group {
+                .form-control {
+                  padding: 0.75rem;
+                  background-color: #f5f8fa;
+                  border: 1px solid #f5f8fa;
+                  width: 100%;
+                  &:focus,
+                  &:hover {
+                    border: 1px solid #f5f8fa;
+                    border-color: #f5f8fa !important;
+                  }
+                }
+                .bootstrap-select {
+                  padding: 0;
+                  background-color: transparent;
+                  width: 100%;
+                }
+                .dropdown-toggle {
+                  background-color: #f5f8fa;
+                  &::after {
+                    display: inline-block;
+                    margin-left: 0.255em;
+                    vertical-align: 0.255em;
+                    content: "";
+                    border-top: 0.3em solid;
+                    border-right: 0.3em solid transparent;
+                    border-bottom: 0;
+                    border-left: 0.3em solid transparent;
+                  }
+                  &:hover {
+                    background-color: #f2f8fc;
+                  }
+                }
+                .bootstrap-select {
+                  .dropdown-menu.inner {
+                    .dropdown-item {
+                      .text {
+                        font-size: 0.9rem;
+                        width: 100%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
 
       .details_student_modal {
@@ -2952,7 +3082,7 @@ table {
         }
       }
     }
-    
+
     .modal_details_exam_student {
       .modal-dialog {
         max-width: 60% !important;
@@ -2964,7 +3094,7 @@ table {
             margin-bottom: 1.5rem;
           }
           .card_details_lesson {
-            background-color: #FAFAFA;
+            background-color: #fafafa;
             padding: 1.5rem;
             .details_exam {
               list-style: none;
@@ -2975,20 +3105,20 @@ table {
                 width: 25%;
                 svg {
                   color: $SecondColor;
-                  margin-inline-end: .5rem;
+                  margin-inline-end: 0.5rem;
                 }
                 .title {
                   font-family: "regular";
-                  color: #7F7F7F;
-                  font-size: .8rem;
-                  margin-inline-end: .5rem;
+                  color: #7f7f7f;
+                  font-size: 0.8rem;
+                  margin-inline-end: 0.5rem;
                   margin-bottom: 0 !important;
                   width: fit-content;
                 }
                 .text {
                   font-family: "semibold";
                   color: $PrimaryText;
-                  font-size: .8rem;
+                  font-size: 0.8rem;
                   margin-bottom: 0 !important;
                   width: fit-content !important;
                 }
@@ -3013,7 +3143,7 @@ table {
             list-style: none;
             background-color: transparent;
           }
-          
+
           .progress__item {
             position: relative;
             min-height: 75px;
@@ -3043,7 +3173,7 @@ table {
               width: 50px;
               height: 50px;
               border-radius: 50%;
-              background: #F7F7F7;
+              background: #f7f7f7;
               color: $PrimaryText;
               font-weight: 400;
               font-size: 1rem;
@@ -3063,34 +3193,34 @@ table {
                 content: "\2713";
                 font-weight: 400;
                 background: #fff;
-                color: #392A60;
+                color: #392a60;
               }
             }
             //Active
             &.progress__item--active {
               &:after {
                 background: #fff;
-                color: #392A60;
+                color: #392a60;
               }
             }
           }
-          
+
           .progress__title {
             padding: 0.4rem 0 0.5rem;
             margin: 0;
-            font-size: .9rem;
+            font-size: 0.9rem;
             color: $PrimaryText;
             font-family: "semibold";
           }
-          
+
           .progress__info {
-            font-size: .9rem;
+            font-size: 0.9rem;
             font-family: "medium";
             &.wrong_answer {
-              color: #E63232;
+              color: #e63232;
             }
             &.true_answer {
-              color: #11B905;
+              color: #11b905;
               margin-bottom: 0;
             }
           }
@@ -3122,11 +3252,11 @@ table {
               .name {
                 font-family: "semibold";
                 color: $PrimaryText;
-                margin-bottom: .5rem;
+                margin-bottom: 0.5rem;
               }
               .collage {
                 font-family: "medium";
-                color: #5F666F;
+                color: #5f666f;
                 margin-bottom: 1rem;
               }
               .phone {
