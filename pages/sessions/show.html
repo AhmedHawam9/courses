@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html id="langHtml" lang="ar">
+  <head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- ? Required meta tags -->
+
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../scss/style.min.css" />
+    <!-- ? Main CSS -->
+
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap-select.min.css" />
+    <link rel="stylesheet" href="../../css/video-js.min.css" />
+    <!-- ? Custom CSS -->
+
+    <!-- ? Main JavaScript -->
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/all.min.js"></script>
+    <script src="../../js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+
+    <!-- ? Custom JavaScript -->
+    <script src="../../js/bootstrap-select.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <!-- ? Title -->
+    <title>Courses</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="../../media/image/favicon.ico" type="image" />
+    <!-- ? Favicon -->
+
+    <script>
+      console.log(
+        "%c <== 7w7w++ ==>  ",
+        "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;"
+      );
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img
+              src="../../media/image/logo.png"
+              alt="logo_sidebar"
+              class="logo"
+            />
+          </div>
+          <li class="nav-item">
+            <a href="../home/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/home.png" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#submenulibrary"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="../../media/image/icon/courses.png" alt="icon" />
+              <span>الكورسات</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenulibrary"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <li>
+                <a href="/pages/courses/index.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>الكورسات</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>طلبات الانضمام</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              href="/pages/university/index.html"
+              class="nav-link align-middle"
+            >
+              <img src="../../media/image/icon/university.png" alt="icon" />
+              <span>الجامعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/collage/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/collage.png" alt="icon" />
+              <span>الكليات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/teachers/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/teachers.png" alt="icon" />
+              <span>المدرسين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="messages.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/subject.png" alt="icon" />
+              <span>المواد التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../halls/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/hall.png" alt="icon" />
+              <span>القاعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/exam/show.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/exams.png" alt="icon" />
+              <span>الامتحانات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/students.png" alt="icon" />
+              <span>الطلاب</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/intro/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/intro.png" alt="icon" />
+              <span>مكاتب INTRO</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/libraryVideo/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/video.png" alt="icon" />
+              <span>مكاتب فيدويوهات </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/lessons.png" alt="icon" />
+              <span>الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/question_bank/show.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/questions.png" alt="icon" />
+              <span>بنك الأسالة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/blogs.png" alt="icon" />
+              <span>المدونة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/financial.png" alt="icon" />
+              <span>المعاملات المالية</span>
+            </a>
+          </li>
+<li class="nav-item">
+            <a
+              href="#submenuWebsite"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="../../media/image/icon/courses.png" alt="icon" />
+              <span>الموقع</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuWebsite"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <li>
+                <a href="/pages/website/header.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>الهيدر</span></a
+                >
+              </li>
+              <li>
+                <a href="/pages/website/aboutus.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>عن الموقع</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/settings.png" alt="icon" />
+              <span>الاعدادات العامة</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <!-- ======= Main ======= -->
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="d-flex w-25">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="search"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Search…"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="changelocal d-inline-block">
+              <div class="dropdown lang">
+                <a
+                  class="btn dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- lang -->
+                  <i class="fa-solid fa-earth-americas px-2"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item">
+                      <img
+                        src="../../media/image/saudi-arabia.png"
+                        alt="saudi-arabia"
+                      />
+                      Arabic
+                    </a>
+                    <a class="dropdown-item">
+                      <img
+                        src="../../media/image/united-kingdom.png"
+                        alt="united-kingdom"
+                      />
+                      English
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown d-inline-block">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="../../media/image/7w7w.jpg"
+                  class="admin_img"
+                  alt="person"
+                />
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="reports.html">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="setting.html">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
+
+        <!-- ======= Start Content ======= -->
+        <section class="content">
+          <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+              <h4 class="title_section">تفاصيل الحصة</h4>
+              <div class="buttons d-flex align-items-center">
+                <a href="#" class="btn mx-1 SecondButton">تعديل البيانات</a>
+                <a href="#" class="btn mx-1 TransparentButton"
+                  >اضافة امتحان جديد</a
+                >
+                <a href="#" class="btn mx-1 PrimaryButton">إضافة فيديو جديد</a>
+              </div>
+            </div>
+            <div class="details_course">
+              <div class="row">
+                <div class="col-lg-4 col-12">
+                  <div class="info_head_course">
+                    <img src="../../media/image/7w7w.jpg" alt="course_image" />
+                    <h4 class="course_name">Princibles Of UI/UX Design</h4>
+                    <p class="teacher_name">د / اشرف عمران</p>
+                    <a href="#" class="btn edit_btn">تعديل البيانات</a>
+                    <div class="student_course">
+                      <div class="join_student_number">
+                        <i class="fa-solid fa-users"></i>
+                        <div class="data">
+                          <p class="title">عدد الطلاب المنضمين :</p>
+                          <p class="text">120 طالب</p>
+                        </div>
+                      </div>
+                      <div class="join_student_number">
+                        <i class="fa-regular fa-rectangle-list"></i>
+                        <div class="data">
+                          <p class="title">طلبات الانضمام :</p>
+                          <p class="text">120 طالب</p>
+                        </div>
+                      </div>
+                      <a href="#" class="btn BlueButton">إضافة فيديو جديدة</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-12">
+                  <div class="details">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link active"
+                          id="details-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#details-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="details-tab-pane"
+                          aria-selected="true"
+                        >
+                          التفاصيل العامة
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="files-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#files-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="files-tab-pane"
+                          aria-selected="false"
+                        >
+                          الملفات
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="exam-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#exam-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="exam-tab-pane"
+                          aria-selected="false"
+                        >
+                          الامتحانات
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="nav-link"
+                          id="students-tab"
+                          data-bs-toggle="tab"
+                          data-bs-target="#students-tab-pane"
+                          type="button"
+                          role="tab"
+                          aria-controls="students-tab-pane"
+                          aria-selected="false"
+                        >
+                          الطلاب المدرجين
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <!-- Start details course -->
+                      <div
+                        class="tab-pane fade show active"
+                        id="details-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="details-tab"
+                        tabindex="0"
+                      >
+                        
+                        <div class="d-flex justify-content-between align-items-center">
+                          <h6 class="title">تفاصيل الدرس</h6>
+                        </div>
+                        <div class="data">
+                          <p class="text w-75">
+                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس
+                            المساحة، لقد تم توليد هذا النص من مولد
+                            النص العربى، حيث يمكنك أن تولد مثل هذا
+                            النص أو العديد من النصوص الأخرى إضافة إلى
+                            زيادة عدد الحروف التى يولدها التطبيق.ذا
+                            كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك
+                            مولد
+                          </p>
+                          <!-- Start video -->
+                          <div class="video">
+                            <div class="row w-100 mx-auto">
+                              <video
+                                id="my-video"
+                                class="video-js mt-0"
+                                controls
+                                preload="auto"
+                                width="640"
+                                height="264"
+                                poster="../../media/image/video.jpg"
+                                data-setup="{}"
+                              >
+                                <source
+                                  src="../../media/video/video.mp4"
+                                  type="video/mp4"
+                                />
+                              </video>
+                            </div>
+                          </div>
+                          <!-- End video -->
+                        </div>
+                      </div>
+                      <!-- End details course -->
+
+                      <!-- Start Files course -->
+                      <div
+                        class="tab-pane fade"
+                        id="files-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="files-tab"
+                        tabindex="0"
+                      >
+                        
+                      <div class="d-flex justify-content-between align-items-center mt-3">
+                        <h4 class="title">كل الملفات ( 4 )</h4>
+                        <a href="#" class="btn PrimaryButton" data-bs-toggle="modal" data-bs-target="#pdfModal">إضافة ملف جديد</a>
+                      </div>
+
+                        <!-- For loop file card -->
+                        <div class="file_card">
+                          <i class="fa-regular fa-file-lines"></i>
+                          <div class="data">
+                            <h6 class="title">الملف الأول : في مقدمة مادة المحاسبة</h6>
+                            <p class="text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد  </p>
+                            <div class="date">
+                              <i class="fa-regular fa-calendar-days"></i>
+                              <p class="title">تاريخ نزول الملف : </p>
+                              <p class="text"> 22مارس - 8:30 م</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- For loop file card -->
+
+                        <!-- For loop file card -->
+                        <div class="file_card">
+                          <i class="fa-regular fa-file-lines"></i>
+                          <div class="data">
+                            <h6 class="title">الملف الأول : في مقدمة مادة المحاسبة</h6>
+                            <p class="text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد  </p>
+                            <div class="date">
+                              <i class="fa-regular fa-calendar-days"></i>
+                              <p class="title">تاريخ نزول الملف : </p>
+                              <p class="text"> 22مارس - 8:30 م</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- For loop file card -->
+
+                        <!-- For loop file card -->
+                        <div class="file_card">
+                          <i class="fa-regular fa-file-lines"></i>
+                          <div class="data">
+                            <h6 class="title">الملف الأول : في مقدمة مادة المحاسبة</h6>
+                            <p class="text">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد  </p>
+                            <div class="date">
+                              <i class="fa-regular fa-calendar-days"></i>
+                              <p class="title">تاريخ نزول الملف : </p>
+                              <p class="text"> 22مارس - 8:30 م</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- For loop file card -->
+
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="pdfModal" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-body">
+                                <div class="form-group">
+                                  <label for="">اسم المذكرة</label>
+                                  <input type="text" name="" id="" class="form-control" placeholder="اسم المذكرة">
+                                </div>
+                                <div class="form-group">
+                                  <label for="">لينك</label>
+                                  <input type="url" name="" id="" class="form-control" placeholder="لينك">
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Files course -->
+
+                      <!-- Start exam course -->
+                      <div
+                        class="tab-pane fade"
+                        id="exam-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="exam-tab"
+                        tabindex="0"
+                      >
+                        <div class="d-flex justify-content-between align-items-center mt-3">
+                          <h4 class="title">كل الامتحانات (3 )</h4>
+                          <a href="#" class="btn PrimaryButton">إضافة امتحان جديد</a>
+                        </div>
+                      </div>
+                      <!-- End exam course -->
+
+                      <!-- Start student course -->
+                      <div
+                        class="tab-pane students fade"
+                        id="students-tab-pane"
+                        role="tabpanel"
+                        aria-labelledby="students-tab"
+                        tabindex="0"
+                      >
+                        <div class="row mt-4">
+                          <div class="d-flex align-items-center justify-content-between mb-4">
+                            <h4 class="title">الطلاب المدرجين ( 12 )</h4>
+                            <button class="btn PrimaryButton" data-bs-toggle="modal" data-bs-target="#addStudentGroupModal">ادراج طالب جديد</button>
+                          </div>
+                          <!-- For loop student card -->
+                          <div class="col-lg-6 col-md-12 col-12">
+                            <div class="student_card">
+                              <img src="../../media/image/7w7w.jpg" alt="student">
+                              <div class="student_data">
+                                <p class="name">أحمد حمدي حوام</p>
+                                <p class="phone">010 2658 02251 </p>
+                                <div class="info">
+                                  <i class="fa-solid fa-users"></i>
+                                  <span class="title">المجموعة  الحالية: </span>
+                                  <span class="text"> المجموعة الثانية</span>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="../student/show.html">تفاصيل الطالب</a></li>
+                                  <li><a class="dropdown-item" href="#">عرض السيشنز</a></li>
+                                  <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#changeGroupModal">تغيير المجموعة</button></li>
+                                  <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#expulsionModal">طرد الطالب</button></li>
+                                </ul>
+                              </div>
+
+                              <!-- Modal change group -->
+                              <div class="modal fade" id="changeGroupModal" tabindex="-1" aria-labelledby="changeGroupModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <form class="modal-body">
+                                      <h4 class="title_section">اختر المجموعة التي تريد نقل الطالب اليها</h4>
+                                      <div class="form-group">
+                                        <label for="">اختر المجموعة</label>
+                                        <select name="" id="" class="form-control selectpicker" title="اختر">
+                                          <option value="">مجموعة 1</option>
+                                          <option value="">مجموعة 2</option>
+                                        </select>
+                                      </div>
+                                      <button type="submit" class="btn BlueButton">تأكيد</button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Modal change group -->
+
+
+                              <!-- Modal expulsion group -->
+                              <div class="modal fade" id="expulsionModal" tabindex="-1" aria-labelledby="expulsionModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <form class="modal-body">
+                                      <h4 class="title_section">برجاء ادخال السبب لطرد الطالب</h4>
+                                      <div class="form-group">
+                                        <label for="">اكتب السبب هنا</label>
+                                        <input type="text" name="" id="" class="form-control" placeholder="اكتب هنا">
+                                      </div>
+                                      <button type="submit" class="btn BlueButton">تأكيد</button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Modal expulsion group -->
+                            </div>
+                          </div>
+                          <!-- For loop student card -->
+
+                          <!-- Modal exit student -->
+                          <div class="modal fade" id="exitStudentModal" tabindex="-1" aria-labelledby="exitStudentModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-body p-4">
+                                  <h4 class="title_modal">استكمال خروج الطالب من الدرس</h4>
+                                  <div class="form-group">
+                                    <label for="">ادخل المبلغ المسترد للطالب </label>
+                                    <input type="text" name="" id="" class="form-control" placeholder="اكتب هنا ">
+                                  </div>
+                                  <button type="submit" class="btn BlueButton">تأكيد</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Modal exit student -->
+
+
+                           <!-- Modal add student to group -->
+                          <div class="modal modal_add_student fade" id="addStudentGroupModal" tabindex="-1" aria-labelledby="addStudentGroupModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-body">
+                                  <div class="d-flex justify-content-between align-items-start">
+                                    <div class="texts">
+                                      <h4 class="title">اضافة طلاب جديدة للكورس</h4>
+                                      <p class="text">يمكنك اضافة المزيد من الطلاب الى الكورس من الطلاب المسجلين لديك </p>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="table_data">
+                                    <div class="filter_table">
+                                      <div class="form-group">
+                                          <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم القاعة , المكان">
+                                          <i class="fa-solid fa-magnifying-glass"></i>
+                                      </div>
+                                    </div>
+                                    <table class="table">
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">أحمد إبراهيم محمد</th>
+                                          <td>كلية التجارة عربي</td>
+                                          <td>الفرقة الاولى</td>
+                                          <td>جامعة المنصورة</td>
+                                          <td>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">أحمد إبراهيم محمد</th>
+                                          <td>كلية التجارة عربي</td>
+                                          <td>الفرقة الاولى</td>
+                                          <td>جامعة المنصورة</td>
+                                          <td>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            </div>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">أحمد إبراهيم محمد</th>
+                                          <td>كلية التجارة عربي</td>
+                                          <td>الفرقة الاولى</td>
+                                          <td>جامعة المنصورة</td>
+                                          <td>
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            </div>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn PrimaryButton w-100" data-bs-toggle="modal" data-bs-target="#chooseGroupModal">تأكيد الانضمام</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Modal add student to group -->
+                        </div>
+                      </div>
+                      <!-- End student course -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ======= End Content ======= -->
+      </section>
+      <!-- ======= Main ======= -->
+    </div>
+    <!-- ? ======= footer =========== -->
+
+    <script src="../../js/main.js"></script>
+    <script src="../../js/video.min.js"></script>
+  </body>
+</html>

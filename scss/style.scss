@@ -2543,6 +2543,138 @@ table {
                 }
               }
             }
+            .file_card {
+              display: flex;
+              margin-bottom: 1.5rem;
+              svg {
+                &.fa-file-lines {
+                  background-color: #fff;
+                  color: $PrimaryText;
+                  width: 20px;
+                  height: 20px;
+                  padding: 1.7rem;
+                  border-radius: 50%;
+                  margin-inline-end: 1rem;
+                }
+              }
+              .data {
+                .title {
+                  margin: 0 0 0.5rem;
+                  font-family: "bold";
+                  color: $PrimaryText;
+                  font-size: 1.1rem;
+                }
+                .text {
+                  font-family: "regular";
+                  color: $SecondText;
+                  font-size: .9rem;
+                  width: 70%;
+                }
+                .date {
+                  display: flex;
+                  svg {
+                    color: $SecondColor;
+                    font-size: 1.1rem;
+                  }
+                  .title {
+                    font-family: "regular";
+                    color: $SecondText;
+                    font-size: .9rem;
+                    margin: 0 .25rem;
+                  }
+                  .text {
+                    font-family: "medium";
+                    color: $PrimaryText;
+                    font-size: .9rem;
+                  }
+                }
+              }
+            }
+            .modal_add_student {
+              .modal-dialog {
+                max-width: 60%;
+                .modal-body {
+                  padding: 2rem;
+                  .texts {
+                    text-align: start;
+                    .title {
+                      font-family: "semibold";
+                      color: $PrimaryText;
+                    }
+                    .text {
+                      font-family: "regular";
+                      color: $SecondText;
+                      font-size: 0.9rem;
+                    }
+                  }
+                  .table_data {
+                    margin-top: 0;
+                    padding: 0;
+                    background-color: transparent;
+                    height: 400px;
+                    overflow-y: auto;
+                    /* width */
+                    &::-webkit-scrollbar {
+                      width: 5px;
+                    }
+      
+                    /* Track */
+                    &::-webkit-scrollbar-track {
+                      background: #f1f1f1;
+                      border-radius: 20px;
+                    }
+      
+                    /* Handle */
+                    &::-webkit-scrollbar-thumb {
+                      background: #bdbdbd;
+                      border-radius: 20px;
+                    }
+      
+                    /* Handle on hover */
+                    &::-webkit-scrollbar-thumb:hover {
+                      background: #bdbdbd;
+                    }
+                    .filter_table {
+                      .form-group {
+                        width: 100%;
+                        .form-control {
+                          background-color: #f5f8fa;
+                        }
+                      }
+                    }
+                    table {
+                      font-size: 0.9rem;
+                      tbody {
+                        tr {
+                          &:nth-child(odd) {
+                            background-color: transparent;
+                          }
+                          &:nth-child(even) {
+                            background-color: transparent;
+                          }
+                          th {
+                            text-align: start;
+                            padding-inline-start: 0 !important;
+                          }
+                          td {
+                            text-align: start;
+                            padding-inline-start: 0 !important;
+                            .form-check-input {
+                              width: 1.2em;
+                              height: 1.2em;
+                              &:checked {
+                                background-color: $SecondColor;
+                                border-color: $SecondColor;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
 
