@@ -2960,18 +2960,31 @@ table {
           max-width: 60%;
           .modal-body {
             padding: 2rem;
-            .nav-pills  {
-              .nav-item {
+            .tab_student_year {
+              display: flex;
+              list-style: none;
+              li {
                 width: 18%;
                 margin-inline-end: 2%;
-                .nav-link {
+                .year_student {
+                  text-align: center;
+                  padding: 0;
+                  border-radius: 8px;
                   width: 100%;
-                  font-family: "semibold";
-                  background-color: #fff;
-                  box-shadow: 0px 6px 12px 6px rgba($color: #000000, $alpha: 0.05);
-                  color: $PrimaryColor;
-                  &.active {
-                    background-color: $PrimaryColor;
+                  display: inline-block;
+                  label {
+                    background-color: #f5f8fa;
+                    color: #535353;
+                    margin-bottom: 0;
+                    padding: 1rem;
+                    width: 100%;
+                    cursor: pointer;
+                    border-radius: 8px;
+                  }
+          
+                  input[type="radio"]:checked + label {
+                    background-color: rgba($color: $PrimaryColor, $alpha: 1);
+                    border: 1px solid $PrimaryColor;
                     color: #fff;
                   }
                 }
