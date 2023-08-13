@@ -4079,6 +4079,124 @@ table {
         }
       }
     }
+    .statistics {
+      margin-top: 2rem;
+      .card_statistic {
+        background-color: rgba($color: $PrimaryColor, $alpha: 0.08);
+        display: flex;
+        align-items: center;
+        padding: 2.5rem 1.5rem;
+        border-radius: 7px;
+        margin-top: 1.5rem;
+        svg {
+          background-color: #fff;
+          color: $SecondColor;
+          width: 20px;
+          height: 20px;
+          padding: 1.5rem;
+          border-radius: 50%;
+          margin-inline-end: 1rem;
+        }
+        .texts {
+          .title {
+            font-family: "regular";
+            color: #2E0C06;
+            margin-bottom: .8rem !important;
+          }
+          .text {
+            font-family: "bold";
+            color: #2E0C06;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .profit_rate {
+      margin: 2rem 0 3rem;
+      .title_section {
+        margin-bottom: 1.5rem;
+      }
+      .chart-container {
+        canvas {
+          height: 350px !important;
+        }
+      }
+    }
+    .weekly_statistics {
+      background-color: #FAFAFA;
+      padding: 1.5rem;
+      margin-bottom: 5rem;
+      .title_section {
+        margin-bottom: 1.5rem;
+      }
+    }
+    .statistics_course {
+      background-color: #FAFAFA;
+      padding: 1.5rem;
+      .title_section {
+        margin-bottom: 2.5rem;
+      }
+    }
+    .student_online {
+      height: 380px;
+      overflow-y: auto;
+      padding-inline-end: 1rem;
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track */
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #E7EAF1; 
+        border-radius: 10px;
+      }
+       
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #CBCDD4; 
+        border-radius: 10px;
+      }
+      
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #CBCDD4; 
+      }
+      .title_section {
+        margin-bottom: 1.5rem;
+      }
+      .student_online_card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        .description {
+          display: flex;
+          align-items: center;
+          img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-inline-end: 1rem;
+          }
+          .texts {
+            .title {
+              margin-bottom: .7rem;
+              font-family: "bold";
+              color: $PrimaryText;
+            }
+            .time {
+              margin-bottom: 0;
+              font-family: "regular";
+              color: $SecondText;
+              font-size: .7rem;
+            }
+          }
+        }
+        .BlueButton {
+          padding: .75rem 1.5rem;
+        }
+      }
+    }
   }
 }
 
