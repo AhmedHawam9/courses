@@ -75,6 +75,14 @@ button[type="submit"] {
     }
   }
 }
+.ms-auto {
+  margin-inline-start: auto !important;
+  margin-inline-end: unset !important;
+}
+.me-auto {
+  margin-inline-start: unset !important;
+  margin-inline-end: auto !important;
+}
 .w-15 {
   width: 15%;
 }
@@ -4194,6 +4202,95 @@ table {
         }
         .BlueButton {
           padding: .75rem 1.5rem;
+        }
+      }
+    }
+    .table_account {
+      border-radius: 5px;
+      margin-top: 2rem;
+      table {
+        thead {
+          tr {
+            th {
+              background-color: #ECEFF1;
+              color: #49505B;
+            }
+          }
+        }
+        tbody {
+          tr {
+            background-color: transparent;
+            th {
+              border-color: transparent;
+            }
+            td {
+              border-color: transparent;
+              .btn {
+                &:hover {
+                  border-color: transparent;
+                }
+                svg {
+                  font-size: 1.2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .filter_table_account {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      .form-group {
+        width: 85%;
+        position: relative;
+        .form-control {
+          font-family: "regular";
+          font-size: 0.9rem;
+          padding: 0.75rem;
+          padding-inline-start: 2rem;
+          border-color: transparent !important;
+          background-color: rgba($color: #8F92A1, $alpha: 0.05);
+          &:focus {
+            border-color: transparent !important;
+          }
+          &::placeholder {
+            color: #a1a1a1;
+          }
+        }
+        svg {
+          position: absolute;
+          top: 1rem;
+          right: 0.5rem;
+        }
+      }
+      .bootstrap-select {
+        width: 15% !important;
+        margin-inline-start: 0.75rem;
+        .dropdown-toggle {
+          background-color: rgba($color: #8F92A1, $alpha: 0.05);
+          padding: 0.8rem;
+          &:hover {
+            border-color: transparent !important;
+          }
+        }
+        .dropdown-menu {
+          li {
+            a {
+              text-align: start;
+              font-family: "regular";
+              font-size: 0.9rem;
+              color: #000;
+            }
+          }
+        }
+        .filter-option-inner-inner {
+          text-align: start;
+          font-family: "regular";
+          font-size: 0.8rem;
+          color: #a1a1a1;
         }
       }
     }
