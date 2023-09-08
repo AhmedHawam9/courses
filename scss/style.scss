@@ -33,7 +33,9 @@ $SecondText: #919191;
     font-size: 14px;
   }
 }
-
+.ML__virtual-keyboard-toggle {
+  left: 2rem !important;
+}
 body {
   &:lang(en) {
     direction: ltr;
@@ -467,6 +469,9 @@ table {
     .edit-modal-question {
       .modal-dialog {
         max-width: 45%;
+        .modal-content {
+          padding: 1.5rem;
+        }
         .modal-body {
           padding: 1.5rem;
         }
@@ -795,34 +800,6 @@ table {
         font-family: "regular";
         color: $SecondText;
       }
-      .questionBankModal {
-        .modal-dialog {
-          max-width: 80%;
-          .modal-body {
-            padding: 2rem;
-            .table_data {
-              background-color: transparent;
-              padding: 0;
-              .filter_table {
-                .form-group {
-                  width: 100%;
-                  margin-bottom: 0;
-                  .form-control {
-                    padding-inline-start: 2rem;
-                  }
-                }
-              }
-              .table {
-                tbody {
-                  tr {
-                    background-color: transparent;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
       .form-group {
         margin-bottom: 1.5rem;
         width: 47%;
@@ -940,6 +917,7 @@ table {
           svg {
             color: $SecondColor;
             font-size: 3.5rem;
+            position: unset;
           }
           p {
             font-family: "medium";
@@ -984,7 +962,7 @@ table {
           background-color: #f5f8fa;
           color: #a1a1a1;
           margin-bottom: 0;
-          padding: 3rem 1rem;
+          padding: 1rem;
           width: 100%;
           cursor: pointer;
           border-radius: 8px;
@@ -1015,6 +993,7 @@ table {
             color: #535353;
             font-size: 1.2rem;
             margin-inline-end: 0.5rem;
+            position: unset;
           }
         }
 
@@ -2575,7 +2554,7 @@ table {
                 .text {
                   font-family: "regular";
                   color: $SecondText;
-                  font-size: .9rem;
+                  font-size: 0.9rem;
                   width: 70%;
                 }
                 .date {
@@ -2587,13 +2566,13 @@ table {
                   .title {
                     font-family: "regular";
                     color: $SecondText;
-                    font-size: .9rem;
-                    margin: 0 .25rem;
+                    font-size: 0.9rem;
+                    margin: 0 0.25rem;
                   }
                   .text {
                     font-family: "medium";
                     color: $PrimaryText;
-                    font-size: .9rem;
+                    font-size: 0.9rem;
                   }
                 }
               }
@@ -2625,19 +2604,19 @@ table {
                     &::-webkit-scrollbar {
                       width: 5px;
                     }
-      
+
                     /* Track */
                     &::-webkit-scrollbar-track {
                       background: #f1f1f1;
                       border-radius: 20px;
                     }
-      
+
                     /* Handle */
                     &::-webkit-scrollbar-thumb {
                       background: #bdbdbd;
                       border-radius: 20px;
                     }
-      
+
                     /* Handle on hover */
                     &::-webkit-scrollbar-thumb:hover {
                       background: #bdbdbd;
@@ -2989,7 +2968,7 @@ table {
                     cursor: pointer;
                     border-radius: 8px;
                   }
-          
+
                   input[type="radio"]:checked + label {
                     background-color: rgba($color: $PrimaryColor, $alpha: 1);
                     border: 1px solid $PrimaryColor;
@@ -3638,6 +3617,14 @@ table {
             }
           }
         }
+        .form-switch {
+          .form-check-label {
+            background-color: transparent;
+            border: unset;
+            padding: 0;
+            padding-bottom: 1rem;
+          }
+        }
       }
       .wizard-fieldset.show {
         display: block;
@@ -3668,7 +3655,7 @@ table {
       }
       .form-group {
         position: relative;
-        margin: 25px 0;
+        margin: 25px 10px;
       }
       .wizard-form-text-label {
         position: absolute;
@@ -4087,6 +4074,7 @@ table {
         }
       }
     }
+
     .statistics {
       margin-top: 2rem;
       .card_statistic {
@@ -4108,12 +4096,12 @@ table {
         .texts {
           .title {
             font-family: "regular";
-            color: #2E0C06;
-            margin-bottom: .8rem !important;
+            color: #2e0c06;
+            margin-bottom: 0.8rem !important;
           }
           .text {
             font-family: "bold";
-            color: #2E0C06;
+            color: #2e0c06;
             margin-bottom: 0;
           }
         }
@@ -4131,7 +4119,7 @@ table {
       }
     }
     .weekly_statistics {
-      background-color: #FAFAFA;
+      background-color: #fafafa;
       padding: 1.5rem;
       margin-bottom: 5rem;
       .title_section {
@@ -4139,7 +4127,7 @@ table {
       }
     }
     .statistics_course {
-      background-color: #FAFAFA;
+      background-color: #fafafa;
       padding: 1.5rem;
       .title_section {
         margin-bottom: 2.5rem;
@@ -4152,22 +4140,22 @@ table {
       &::-webkit-scrollbar {
         width: 10px;
       }
-      
+
       /* Track */
       &::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px #E7EAF1; 
+        box-shadow: inset 0 0 5px #e7eaf1;
         border-radius: 10px;
       }
-       
+
       /* Handle */
       &::-webkit-scrollbar-thumb {
-        background: #CBCDD4; 
+        background: #cbcdd4;
         border-radius: 10px;
       }
-      
+
       /* Handle on hover */
       &::-webkit-scrollbar-thumb:hover {
-        background: #CBCDD4; 
+        background: #cbcdd4;
       }
       .title_section {
         margin-bottom: 1.5rem;
@@ -4188,7 +4176,7 @@ table {
           }
           .texts {
             .title {
-              margin-bottom: .7rem;
+              margin-bottom: 0.7rem;
               font-family: "bold";
               color: $PrimaryText;
             }
@@ -4196,15 +4184,16 @@ table {
               margin-bottom: 0;
               font-family: "regular";
               color: $SecondText;
-              font-size: .7rem;
+              font-size: 0.7rem;
             }
           }
         }
         .BlueButton {
-          padding: .75rem 1.5rem;
+          padding: 0.75rem 1.5rem;
         }
       }
     }
+
     .table_account {
       border-radius: 5px;
       margin-top: 2rem;
@@ -4212,8 +4201,8 @@ table {
         thead {
           tr {
             th {
-              background-color: #ECEFF1;
-              color: #49505B;
+              background-color: #eceff1;
+              color: #49505b;
             }
           }
         }
@@ -4252,7 +4241,7 @@ table {
           padding: 0.75rem;
           padding-inline-start: 2rem;
           border-color: transparent !important;
-          background-color: rgba($color: #8F92A1, $alpha: 0.05);
+          background-color: rgba($color: #8f92a1, $alpha: 0.05);
           &:focus {
             border-color: transparent !important;
           }
@@ -4270,7 +4259,7 @@ table {
         width: 15% !important;
         margin-inline-start: 0.75rem;
         .dropdown-toggle {
-          background-color: rgba($color: #8F92A1, $alpha: 0.05);
+          background-color: rgba($color: #8f92a1, $alpha: 0.05);
           padding: 0.8rem;
           &:hover {
             border-color: transparent !important;
@@ -4364,6 +4353,120 @@ table {
       }
     }
   }
+}
+
+.paymentStudentModal {
+  .modal-dialog {
+    .modal-body {
+      padding: 2rem;
+      .add_item {
+        border: unset;
+        padding: 0;
+        margin-bottom: 0;
+        .form-group {
+          width: 100%;
+          .check {
+            display: flex;
+            .form-check {
+              .form-check-input {
+                float: right;
+                margin-left: 0.5em;
+                &:checked {
+                  background-color: $SecondColor;
+                  border-color: $SecondColor;
+                }
+              }
+            }
+          }
+        }
+        .choose_mounth {
+          display: flex;
+          margin-bottom: 1.5rem;
+          .content_course {
+            width: 25%;
+            margin-inline-end: 0.5rem;
+            margin-bottom: 0;
+            label {
+              padding: 1rem .5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.questionBankModal {
+  .modal-dialog {
+    max-width: 80%;
+    .modal-body {
+      padding: 2rem;
+      .table_data {
+        background-color: transparent;
+        padding: 0;
+        .filter_table {
+          .form-group {
+            width: 100%;
+            margin-bottom: 0;
+            svg {
+              right: 1.2rem;
+            }
+            .form-control {
+              padding-inline-start: 2rem;
+            }
+          }
+        }
+        .table {
+          tbody {
+            tr {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  button[type="submit"] {
+    margin: 1rem 0;
+    width: fit-content;
+    margin-inline-start: auto;
+    margin-inline-end: 1rem;
+    padding: 1rem 5rem;
+  }
+}
+
+.pagination {
+  a {
+    background-color: $SecondColor;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin: 0 0.25rem;
+    transition: 0.7s ease-in-out;
+    &:hover {
+      background-color: transparent;
+      color: $SecondColor;
+      border: 1px solid $SecondColor;
+      transition: 0.7s ease-in-out;
+    }
+  }
+}
+
+.non_visiable {
+  visibility: hidden;
+}
+
+.show_image_answer {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: block;
+}
+.w-90 {
+  width: 90% !important;
+}
+.w-10 {
+  width: 10% !important;
 }
 
 @import "./_layout.scss";
