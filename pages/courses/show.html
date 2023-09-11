@@ -342,6 +342,7 @@
                         </div>
                       </div>
                       <button class="btn BlueButton" data-bs-toggle="modal" data-bs-target="#addStudentGroupModal">إضافة طلاب جديدة</button>
+                      <button class="btn BlueButton" data-bs-toggle="modal" data-bs-target="#addStudentGroupModal">إضافة طلاب جديدة</button>
 
                       <!-- Modal add student to group -->
                       <div class="modal modal_add_student fade" id="addStudentGroupModal" tabindex="-1" aria-labelledby="addStudentGroupModalLabel" aria-hidden="true">
@@ -1151,6 +1152,8 @@
                                 </button>
                                 <ul class="dropdown-menu">
                                   <li><a class="dropdown-item" href="../student/show.html">تفاصيل الطالب</a></li>
+                                  <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#paymentMonthStudentModal">مدفوعات الشهر</button></li>
+                                  <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#paymentStudentModal">مدفوعات الطالب</button></li>
                                   <li><a class="dropdown-item" href="#">عرض السيشنز</a></li>
                                   <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#changeGroupModal">تغيير المجموعة</button></li>
                                   <li><button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#expulsionModal">طرد الطالب</button></li>
@@ -1194,6 +1197,189 @@
                                 </div>
                               </div>
                               <!-- Modal expulsion group -->
+
+                              
+                              <!-- Modal payment month student group -->
+                              <div class="modal modal_add_student fade" id="paymentMonthStudentModal" tabindex="-1" aria-labelledby="paymentMonthStudentModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-body">
+                                      <div class="d-flex justify-content-between align-items-start">
+                                        <div class="texts">
+                                          <h4 class="title">مدفوعات الشهر</h4>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="table_data">
+                                        <div class="filter_table">
+                                          <div class="form-group">
+                                              <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم القاعة , المكان">
+                                              <i class="fa-solid fa-magnifying-glass"></i>
+                                          </div>
+                                        </div>
+                                        <table class="table">
+                                          <thead>
+                                            <tr>
+                                              <th>الشهر</th>
+                                              <th>اجمالى الطلاب قامو بالدفع</th>
+                                              <th>الطلاب لم يدفعو</th>
+                                              <th>اجمالى المبلغ</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <th scope="row">أحمد إبراهيم محمد</th>
+                                              <td>20</td>
+                                              <td>14</td>
+                                              <td>200</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">أحمد إبراهيم محمد</th>
+                                              <td>20</td>
+                                              <td>14</td>
+                                              <td>200</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">أحمد إبراهيم محمد</th>
+                                              <td>20</td>
+                                              <td>14</td>
+                                              <td>200</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Modal payment month student group -->
+
+
+                              <!-- Modal payment student group -->
+                              <div class="modal modal_add_student fade" id="paymentStudentModal" tabindex="-1" aria-labelledby="paymentStudentModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-body">
+                                      <div class="d-flex justify-content-between align-items-start">
+                                        <div class="texts">
+                                          <h4 class="title">مدفوعات الطالب</h4>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="table_data">
+                                        <div class="filter_table">
+                                          <div class="form-group">
+                                              <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم القاعة , المكان">
+                                              <i class="fa-solid fa-magnifying-glass"></i>
+                                          </div>
+                                        </div>
+                                        <table class="table">
+                                          <thead>
+                                            <tr>
+                                              <th>المدة</th>
+                                              <th>اجمالى المبلغ</th>
+                                              <th>المبلغ المدفوع</th>
+                                              <th>المبلغ المتبقي</th>
+                                              <th>تاريخ الاستحقاق</th>
+                                              <th></th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr class="ifPaid">
+                                              <td>يونيو</td>
+                                              <td>20</td>
+                                              <td>14</td>
+                                              <td>200</td>
+                                              <td>30-9-2023</td>
+                                              <td><button class="btn w-auto my-2 PrimaryButton">ادفع الآن</button></td>
+                                            </tr>
+                                            <tr>
+                                              <td>يونيو</td>
+                                              <td>20</td>
+                                              <td>14</td>
+                                              <td>200</td>
+                                              <td>30-9-2023</td>
+                                              <td><button class="btn w-auto my-2 BlueButton">استرداد</button></td>
+                                            </tr>
+                                            <tr class="notPaid">
+                                              <td>مايو</td>
+                                              <td>20</td>
+                                              <td>14</td>
+                                              <td>200</td>
+                                              <td>30-9-2023</td>
+                                              <td><button class="btn w-auto my-2 PrimaryButton">ادفع الآن</button></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Modal payment student group -->
+
+                              <!-- Modal payment course group -->
+                              <div class="modal modal_add_student fade" id="paymentCourseModal" tabindex="-1" aria-labelledby="paymentCourseModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                  <div class="modal-content">
+                                    <div class="modal-body">
+                                      <div class="d-flex justify-content-between align-items-start">
+                                        <div class="texts">
+                                          <h4 class="title">مدفوعات الطالب</h4>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="table_data">
+                                        <div class="filter_table">
+                                          <div class="form-group">
+                                              <input type="search" name="" id="" class="form-control" placeholder="ابحث بإسم القاعة , المكان">
+                                              <i class="fa-solid fa-magnifying-glass"></i>
+                                          </div>
+                                        </div>
+                                        <table class="table">
+                                          <thead>
+                                            <tr>
+                                              <th>المدة</th>
+                                              <th>اجمالى المبلغ</th>
+                                              <th>المبلغ المدفوع</th>
+                                              <th>المبلغ المتبقي</th>
+                                              <th>تاريخ الاستحقاق</th>
+                                              <th></th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr class="ifPaid">
+                                              <td>يونيو</td>
+                                              <td>20</td>
+                                              <td>14</td>
+                                              <td>200</td>
+                                              <td>30-9-2023</td>
+                                              <td><button class="btn w-auto my-2 PrimaryButton">ادفع الآن</button></td>
+                                            </tr>
+                                            <tr>
+                                              <td>يونيو</td>
+                                              <td>20</td>
+                                              <td>14</td>
+                                              <td>200</td>
+                                              <td>30-9-2023</td>
+                                              <td><button class="btn w-auto my-2 BlueButton">استرداد</button></td>
+                                            </tr>
+                                            <tr class="notPaid">
+                                              <td>مايو</td>
+                                              <td>20</td>
+                                              <td>14</td>
+                                              <td>200</td>
+                                              <td>30-9-2023</td>
+                                              <td><button class="btn w-auto my-2 PrimaryButton">ادفع الآن</button></td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Modal payment course group -->
                             </div>
                           </div>
                           <!-- For loop student card -->

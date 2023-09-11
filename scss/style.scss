@@ -4541,5 +4541,13 @@ table {
   border-radius: 5px;
 }
 
+.ifPaid td {
+  background-color: rgb(17 185 5 / 8%)
+}
+
+.notPaid td {
+  background-color: rgba(185, 5, 5, 0.08)
+}
+
 @import "./_layout.scss";
 @import "./_responsive.scss";
