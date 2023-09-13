@@ -522,7 +522,7 @@ function renderList() {
                     </fieldset>	
                     <fieldset class="wizard-fieldset">
                       <p class="text">أختر تفاصيل الدفع الخاصة بالكورس للاستمرار</p>
-                      <div class="form-check form-group">
+                      <div class="form-check form-group w-70">
                         <label class="form-check-label" for="flexRadioDefault1">
                           <div class="data">
                             <img src="../../media/image/icon/free.png" alt="free">
@@ -534,7 +534,7 @@ function renderList() {
                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                         </label>
                       </div>
-                      <div class="form-check form-group">
+                      <div class="form-check form-group w-70">
                         <label class="form-check-label" for="flexRadioDefault2">
                           <div class="data">
                             <img src="../../media/image/icon/paid.png" alt="paid">
@@ -544,14 +544,113 @@ function renderList() {
 
                               <div class="form-group">
                                 <label for="">تكلفة الكورس</label>
-                                <input type="text" name="" id="" class="form-control" placeholder="ادخل اسم الكورس">
+                                <input type="text" name="" id="" class="form-control" placeholder="تكلفة الكورس">
+                              </div>
+                              <div class="form-check d-flex align-items-center">
+                                <input class="form-check-input" type="checkbox" value="" id="checkDiscount">
+                                <label class="form-check-label p-0 mb-0 mx-2" for="checkDiscount">
+                                  إضافة خصم
+                                </label>
+                              </div>
+                              <div class="payment d-flex">
+                                <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input" type="radio" name="paymentRadio" id="monthPayment" checked>
+                                  <label class="form-check-label p-0 mb-0 mx-2" for="monthPayment">
+                                    الدفع شهري
+                                  </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input" type="radio" name="paymentRadio" id="dedicationPayment">
+                                  <label class="form-check-label p-0 mb-0 mx-2" for="dedicationPayment">
+                                    الدفع بالترم
+                                  </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input" type="radio" name="paymentRadio" id="haveDedicationPayment">
+                                  <label class="form-check-label p-0 mb-0 mx-2" for="haveDedicationPayment">
+                                    الدفع بنص ترم
+                                  </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input" type="radio" name="paymentRadio" id="classPayment">
+                                  <label class="form-check-label p-0 mb-0 mx-2" for="classPayment">
+                                    الدفع بالحصة
+                                  </label>
+                                </div>
+                                <div class="form-check d-flex align-items-center">
+                                  <input class="form-check-input" type="radio" name="paymentRadio" id="allPayment">
+                                  <label class="form-check-label p-0 mb-0 mx-2" for="allPayment">
+                                    الدفع كلي
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-4 col-md-12 col-12">
+                                  <div class="form-group w-100 my-3 mx-0">
+                                    <label for="" class="d-block">الدفع في</label>
+                                    <div class="form-group duration">
+                                      <input type="radio" name="Duration" class="wizard-required" id="startDuration" onclick="hideDateDuration()" required hidden>
+                                      <label for="startDuration"> بداية المدة</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-12">
+                                  <div class="form-group w-100 my-3 mx-0">
+                                    <label for="" class="d-block invisible">الدفع في</label>
+                                    <div class="form-group duration">
+                                      <input type="radio" name="Duration" class="wizard-required" id="endDuration" onclick="hideDateDuration()" required hidden>
+                                      <label for="endDuration"> نهاية المدة</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-4 col-md-12 col-12">
+                                  <div class="form-group w-100 my-3 mx-0">
+                                    <label for="" class="d-block invisible">الدفع في</label>
+                                    <div class="form-group duration">
+                                      <input type="radio" name="Duration" class="wizard-required" id="customDuration" onclick="showDateDuration()" required hidden>
+                                      <label for="customDuration"> تاريخ معين</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-12" id="dateDuration" style="display: none;">
+                                  <div class="form-group my-3">
+                                    <label for="">برجاء تحديد المدة</label>
+                                    <input type="date" name="" id="" class="form-control" placeholder="">
+                                  </div>
+                                </div>
+                                <script>
+                                  function hideDateDuration(){
+                                    document.getElementById('dateDuration').style.display ='none';
+                                  }
+                                  function showDateDuration(){
+                                    document.getElementById('dateDuration').style.display = 'block';
+                                  }
+                                </script>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                  <div class="form-group w-100 my-3 mx-0">
+                                    <label for="" class="d-block">عند تأخير الحصة لمدة معينة</label>
+                                    <div class="form-group duration">
+                                      <input type="radio" name="delay" class="wizard-required" id="delayPayment" required hidden>
+                                      <label for="delayPayment"> تأخير مدة الدفع</label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                  <div class="form-group w-100 my-3 mx-0">
+                                    <label for="" class="d-block invisible">عند تأخير الحصة لمدة معينة</label>
+                                    <div class="form-group duration">
+                                      <input type="radio" name="delay" class="wizard-required" id="notDelayPayment" required hidden>
+                                      <label for="notDelayPayment"> عدم التأخير</label>
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           </div>
                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                         </label>
                       </div>
-                      <div class="form-group d-flex clearfix">
+                      <div class="form-group d-flex clearfix w-70">
                         <a href="javascript:;" class="form-wizard-previous-btn btn PrimaryButton w-50 mx-1 float-right">Previous</a>
                         <a href="javascript:;" class="form-wizard-submit btn PrimaryButton w-50 mx-1 float-right">ارفع الكورس</a>
                       </div>
