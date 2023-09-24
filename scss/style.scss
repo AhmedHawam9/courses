@@ -450,7 +450,149 @@ table {
   background-color: $PrimaryColor;
   margin-inline-start: 2rem;
   .content {
-    margin-top: 5rem;
+    margin-top: 3rem;
+    .chat {
+      display: flex;
+      .tab_chat {
+        list-style: none;
+        width: 30%;
+        border: 1px solid #8C8C8C;
+        border-radius: 8px;
+        min-height: 80vh;
+        margin-bottom: 0;
+        input {
+          width: 90%;
+          margin: 1rem auto 2rem;
+        }
+        li {
+          display: flex;
+          margin-bottom: 1.5rem;
+          padding: 0.5rem 1.5rem;
+          transition: .7s ease-in-out;
+          cursor: pointer;
+          &:last-child {
+            margin-bottom: 0;
+          }
+          &:hover {
+            transition: .7s ease-in-out;
+            background-color: rgba($color: $PrimaryColor, $alpha: 0.05);
+          }
+          img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            margin-inline-end: 1rem;
+          }
+          .details {
+            width: 75%;
+            .title {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              font-family: "semibold";
+              color: $PrimaryText;
+              .time {
+                font-family: "regular";
+                font-size: .8rem;
+              }
+            }
+            .text {
+              font-size: .8rem;
+              font-family: "regular";
+              color: $PrimaryText;
+            }
+          }
+        }
+      }
+      .content_chat {
+        width: 68%;
+        margin-inline-start: 2%;
+        border: 1px solid #8C8C8C;
+        border-radius: 8px;
+        min-height: 80vh;
+        position: relative;
+        .head_chat {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #919191;
+          padding: 1rem;
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-inline-end: .5rem;
+          }
+          .title {
+            margin-bottom: 0;
+          }
+          .dropdown {
+            margin-inline-start: auto;
+          }
+        }
+        .content_data {
+          padding: 1rem;
+          .content_message {
+            display: flex;
+            width: 70%;
+            &.content_message_user {
+              img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-inline-end: 1rem;
+              }
+              .details {
+                width: 75%;
+                .name {
+                  font-family: "regular";
+                  color: $PrimaryColor;
+                  font-size: .9rem;
+                  margin-bottom: .5rem;
+                }
+                .message {
+                  width: 100%;
+                  background-color: #fff;
+                  border-radius: 8px;
+                  padding: 1.2rem;
+                }
+              }
+            }
+            &.content_message_me {
+              margin-inline-start: auto;
+              .message {
+                width: 80%;
+                background-color: $SecondColor;
+                color: #fff;
+                border-radius: 8px;
+                padding: 1.2rem;
+                margin-inline-start: auto;
+              }
+            }
+          }
+        }
+        .send_message {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          padding: 0 1rem;
+          margin-bottom: 1rem;
+          .form-group {
+            display: flex;
+            width: 100%;
+            .form-control {
+              border-radius: 40px;
+            }
+            .PrimaryButton {
+              padding: .75rem;
+              border-radius: 50%;
+              width: 50px;
+              height: 50px;
+              margin-inline-start: .75rem;
+            }
+          }
+        }
+      }
+    }
     .statistic_card {
       display: flex;
       align-items: center;
@@ -2799,6 +2941,50 @@ table {
                                 border-color: $SecondColor;
                               }
                             }
+                            &:last-child {
+                              display: flex;
+                              align-items: center;
+                              .TransparentButton {
+                                margin-inline-end: 0.5rem;
+                                padding: 0.5rem;
+                              }
+                              .BlueButton,
+                              .PrimaryButton {
+                                margin-inline-end: 0.5rem;
+                                padding: 0.5rem;
+                                svg {
+                                  color: #fff;
+                                  font-size: 0.8rem;
+                                }
+                              }
+                              .BlueButton {
+                                &:hover {
+                                  background-color: transparent;
+                                  border: 1px solid $PrimaryColor;
+                                  svg {
+                                    color: $PrimaryColor;
+                                  }
+                                }
+                              }
+                              .PrimaryButton {
+                                &:hover {
+                                  background-color: transparent;
+                                  border: 1px solid $SecondColor;
+                                  svg {
+                                    color: $SecondColor;
+                                  }
+                                }
+                              }
+                              .TransparentButton {
+                                &:hover {
+                                  background-color: transparent;
+                                  border: 1px solid $SecondColor;
+                                  svg {
+                                    color: $SecondColor;
+                                  }
+                                }
+                              }
+                            }
                           }
                         }
                       }
@@ -3616,7 +3802,8 @@ table {
       }
       .wizard-fieldset {
         display: none;
-        .form-check {
+        .form-check,
+        .note_pay {
           margin-bottom: 1.5rem;
           padding: 0;
           .form-check-label {
@@ -3632,6 +3819,54 @@ table {
             &:focus-within {
               border: 1px solid $SecondColor;
             }
+            .data {
+              display: flex;
+              align-items: start;
+              width: 90%;
+              img {
+                width: 40px;
+                height: 40px;
+                margin-inline-end: 1rem;
+              }
+              .info {
+                width: 90%;
+                .title {
+                  font-family: "semibold";
+                  color: $PrimaryText;
+                  margin-bottom: 0.5rem;
+                  font-size: 1rem;
+                }
+                .text {
+                  font-family: "regular";
+                  color: $SecondText;
+                  margin-bottom: 0;
+                  font-size: 0.8rem;
+                }
+                .payment {
+                  .form-check {
+                    width: 20%;
+                  }
+                }
+              }
+            }
+            .form-group {
+              width: 100%;
+              .form-control {
+                background-color: #fff;
+                width: 100%;
+              }
+            }
+          }
+          .notes_label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f5f8fa;
+            width: fit-content;
+            padding: 1.5rem;
+            border-radius: 8px;
+            width: 100%;
+            border: 1px solid #f5f8fa;
             .data {
               display: flex;
               align-items: start;
@@ -4014,6 +4249,9 @@ table {
         padding: 1.5rem;
         border-radius: 5px;
         margin-bottom: 1.5rem;
+        &.blocked {
+            background-color: rgba($color: $SecondColor, $alpha: 0.05);
+        }
         img {
           width: 70px;
           height: 70px;
@@ -4534,6 +4772,10 @@ table {
   width: 70% !important;
 }
 
+.w-30 {
+  width: 30% !important;
+}
+
 .setting_account {
   background-color: #fff;
   padding: 2.5rem;
@@ -4729,6 +4971,22 @@ table {
                     background-color: $SecondColor;
                     border-color: $SecondColor;
                   }
+                }
+              }
+            }
+          }
+        }
+        .modal {
+          background-color: rgba(0, 0, 0, 0.25);
+          .modal-dialog {
+            max-width: 35% !important;
+            .modal-content {
+              box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+              .modal-body {
+                padding: 1rem;
+                .btn-close {
+                  margin-inline-start: auto;
+                  display: block;
                 }
               }
             }
