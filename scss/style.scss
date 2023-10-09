@@ -1183,6 +1183,45 @@ table {
           color: #fff;
         }
       }
+      .roles {
+        .nav-tabs {
+            .nav-item {
+                width: 15%;
+                text-align: center;
+                .nav-link {
+                    border-radius: 0;
+                    padding: 0.75rem;
+                    border: 1px solid $PrimaryColor;
+                    margin-bottom: 0.5rem;
+                    margin-inline-end: 0.5rem;
+                    span {
+                        color: $PrimaryColor;
+                    }
+                    &.active {
+                        background-color: $PrimaryColor;
+                        color: #fff;
+                        span {
+                            color: #fff;
+                        }
+                    }
+                    &:hover {
+                        border: 1px solid #000;
+                    }
+                }
+            }
+        }
+        .tab-content {
+            .tab-pane {
+                .form-check-inline {
+                    width: 17%;
+                    margin-bottom: 0.5rem;
+                    .form-check-input {
+                        float: right;
+                    }
+                }
+            }
+        }
+      }
       .exam_type {
         text-align: center;
         padding: 0;
@@ -4419,15 +4458,30 @@ table {
       }
     }
     .weekly_statistics {
-      background-color: #fafafa;
+      background-color: #fff;
       padding: 1.5rem;
       margin-bottom: 5rem;
       .title_section {
         margin-bottom: 1.5rem;
       }
+      table {
+        thead {
+          background-color: #FAFAFA;
+          color: #5F666F;
+          margin-bottom: 0.5rem;
+        }
+        tbody {
+          tr {
+            background-color: #FAFAFA;
+            td {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
     }
     .statistics_course {
-      background-color: #fafafa;
+      background-color: #fff;
       padding: 1.5rem;
       .title_section {
         margin-bottom: 2.5rem;
@@ -4437,6 +4491,8 @@ table {
       height: 380px;
       overflow-y: auto;
       padding-inline-end: 1rem;
+      background-color: #fff;
+      padding: 1.5rem;
       &::-webkit-scrollbar {
         width: 10px;
       }
