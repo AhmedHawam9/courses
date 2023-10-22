@@ -4460,21 +4460,50 @@ table {
     .weekly_statistics {
       background-color: #fff;
       padding: 1.5rem;
-      margin-bottom: 5rem;
+      height: 300px;
+      margin-bottom: 2rem;
+      overflow-y: auto;
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #e7eaf1;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: #cbcdd4;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: #cbcdd4;
+      }
       .title_section {
         margin-bottom: 1.5rem;
       }
       table {
+        width: 100%;
         thead {
           background-color: #FAFAFA;
           color: #5F666F;
           margin-bottom: 0.5rem;
+          tr {
+            th {
+              padding-inline-start: .5rem !important;
+            }
+          }
         }
         tbody {
           tr {
             background-color: #FAFAFA;
             td {
               font-size: 0.9rem;
+              padding-inline-start: .5rem !important;
             }
           }
         }
@@ -4483,12 +4512,13 @@ table {
     .statistics_course {
       background-color: #fff;
       padding: 1.5rem;
+      height: 300px;
       .title_section {
         margin-bottom: 2.5rem;
       }
     }
     .student_online {
-      height: 380px;
+      height: 300px;
       overflow-y: auto;
       padding-inline-end: 1rem;
       background-color: #fff;
