@@ -543,6 +543,95 @@
                       <i class="fa-solid fa-circle-arrow-down"></i>
                     </a>
                   </div>
+                  <div class="comment">
+                    <div class="head_comment">
+                      <h4>التعليقات</h4>
+                      <button class="btn" onclick="toggle_div_fun('sectiontohide');">
+                        <i class="fa-solid fa-circle-chevron-up"></i>
+                      </button>
+                    </div>
+                    <div class="comment_card">
+                      <!-- Comment from Admin || client -->
+                      <div class="user_info">
+                        <img src="./media/image/belal/user.png" class="user_image" alt="user">
+                        <div class="user">
+                          <p class="name">احمد فتحي ابو زيد</p>
+                          <div class="hour">منذ ساعتين </div>
+                          <div class="comment_data">
+                            <p class="text">طيب حضرتك هلا ممكن اعرف الورق المطلوب بالظبط ؟</p>
+                            <img src="./media/image/belal/comment.png" alt="comment">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Comment from Admin || client -->
+
+                      <!-- Comment from Admin || client -->
+                      <div class="user_info">
+                        <img src="./media/image/7w7w.jpg" class="user_image" alt="user">
+                        <div class="user">
+                          <p class="name">أنت</p>
+                          <div class="hour">منذ ساعتين </div>
+                          <div class="comment_data">
+                            <p class="text">ان شاء الله هخلي حد من خدمة العملاء يتواصل مع حضرتك في اقرب وقت</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Comment from Admin || client -->
+
+                      <!-- Toggle Show all Comment -->
+                      <div id="sectiontohide" class="sectiontohide">
+                        <!-- Comment from Admin || client -->
+                        <div class="user_info">
+                          <img src="./media/image/belal/user.png" class="user_image" alt="user">
+                          <div class="user">
+                            <p class="name">احمد فتحي ابو زيد</p>
+                            <div class="hour">منذ ساعتين </div>
+                            <div class="comment_data">
+                              <p class="text">طيب حضرتك هلا ممكن اعرف الورق المطلوب بالظبط ؟</p>
+                              <img src="./media/image/belal/comment.png" alt="comment">
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Comment from Admin || client -->
+
+                        <!-- Comment from Admin || client -->
+                        <div class="user_info">
+                          <img src="./media/image/7w7w.jpg" class="user_image" alt="user">
+                          <div class="user">
+                            <p class="name">أنت</p>
+                            <div class="hour">منذ ساعتين </div>
+                            <div class="comment_data">
+                              <p class="text">ان شاء الله هخلي حد من خدمة العملاء يتواصل مع حضرتك في اقرب وقت</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Comment from Admin || client -->
+                      </div>
+                      
+                      <script>
+                        function toggle_div_fun(id) {
+                          var divelement = document.getElementById(id);
+                          if(divelement.style.display == 'block')
+                            divelement.style.display = 'none';
+                          else
+                            divelement.style.display = 'block';
+                        }
+                      </script>
+                      <!-- Toggle Show all Comment -->
+
+                      <!-- Add comment -->
+                      <div class="add_commment">
+                        <div class="form-group">
+                          <input type="text" name="" id="" class="form-control" placeholder="اضافة تعليق ....">
+                          <div class="comment_file">
+                            <label for="comment_file"><i class="fa-regular fa-image"></i></label>
+                            <input type="file" name="" id="comment_file" class="form-control" placeholder="">
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Add comment -->
+                    </div>
+                  </div>
                 </div>
                 <!-- For loop Card answer -->
               </div>
