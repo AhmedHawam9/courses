@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html id="langHtml" lang="ar">
+  <head>
+    <!-- ? Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- ? Required meta tags -->
+
+    <!-- ? Main CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../../scss/style.min.css" />
+    <link rel="stylesheet" href="../../scss/requests.min.css" />
+    <!-- ? Main CSS -->
+
+    <!-- ? Custom CSS -->
+    <link rel="stylesheet" href="../../css/bootstrap-select.min.css" />
+    <!-- ? Custom CSS -->
+
+    <!-- ? Main JavaScript -->
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/all.min.js"></script>
+    <script src="../../js/fontawesome.min.js"></script>
+    <!-- ? Main JavaScript -->
+
+    <!-- ? Custom JavaScript -->
+    <script src="../../js/bootstrap-select.min.js"></script>
+    <!-- ? Custom JavaScript -->
+
+    <!-- ? Title -->
+    <title>Courses</title>
+    <!-- ? Title -->
+
+    <!-- ? Favicon -->
+    <link rel="icon" href="../../media/image/favicon.ico" type="image" />
+    <!-- ? Favicon -->
+
+    <script>
+      console.log(
+        "%c <== 7w7w++ ==>  ",
+        "background: #FFD100; color: #3A3838; padding-left:10px; border-radius: 20px; font-weight: bold;"
+      );
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+    <div class="d-flex sidemobile p-0">
+      <!-- ======= Start Sidebar ======= -->
+      <section class="sidebar open">
+        <ul
+          class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+          id="menu"
+        >
+          <div class="image_logo">
+            <img src="../../media/image/logo.png" alt="logo_sidebar" class="logo" />
+          </div>
+          <li class="nav-item">
+            <a href="../home/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/home.png" alt="icon" />
+              <span>الرئيسية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              href="#submenulibrary"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="../../media/image/icon/courses.png" alt="icon" />
+              <span>الكورسات</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenulibrary"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <li>
+                <a href="/pages/courses/index.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>الكورسات</span></a
+                >
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>طلبات الانضمام</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/university/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/university.png" alt="icon" />
+              <span>الجامعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/collage/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/collage.png" alt="icon" />
+              <span>الكليات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/teachers/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/teachers.png" alt="icon" />
+              <span>المدرسين</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="messages.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/subject.png" alt="icon" />
+              <span>المواد التعليمية</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="../halls/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/hall.png" alt="icon" />
+              <span>القاعات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/exam/show.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/exams.png" alt="icon" />
+              <span>الامتحانات</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/students.png" alt="icon" />
+              <span>الطلاب</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/intro/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/intro.png" alt="icon" />
+              <span>مكاتب INTRO</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/libraryVideo/index.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/video.png" alt="icon" />
+              <span>مكاتب فيدويوهات </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/lessons.png" alt="icon" />
+              <span>الدروس</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/pages/question_bank/show.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/questions.png" alt="icon" />
+              <span>بنك الأسالة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/blogs.png" alt="icon" />
+              <span>المدونة</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/financial.png" alt="icon" />
+              <span>المعاملات المالية</span>
+            </a>
+          </li>
+<li class="nav-item">
+            <a
+              href="#submenuWebsite"
+              data-bs-toggle="collapse"
+              class="nav-link accordion-button align-middle collapsed"
+            >
+              <img src="../../media/image/icon/courses.png" alt="icon" />
+              <span>الموقع</span>
+              <i class="fa-solid fa-angle-up"></i>
+            </a>
+            <ul
+              class="collapse flex-column"
+              id="submenuWebsite"
+              data-bs-parent="#menu"
+            >
+              <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <li>
+                <a href="/pages/website/header.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>الهيدر</span></a
+                >
+              </li>
+              <li>
+                <a href="/pages/website/aboutus.html" class="nav-link">
+                  <i class="fa-solid fa-circle dot"></i>
+                  <span>عن الموقع</span></a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="setting.html" class="nav-link align-middle">
+              <img src="../../media/image/icon/settings.png" alt="icon" />
+              <span>الاعدادات العامة</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- ======= end Sidebar ======= -->
+
+      <!-- ======= Main ======= -->
+      <section class="index_cards">
+        <!-- ======= Start navbar ======= -->
+        <nav class="navbar">
+          <div class="d-flex w-25">
+            <div class="menu">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="search"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Search…"
+              />
+            </div>
+          </div>
+          <div>
+            <div class="changelocal d-inline-block">
+              <div class="dropdown lang">
+                <a
+                  class="btn dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- lang -->
+                  <i class="fa-solid fa-earth-americas px-2"></i>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li>
+                    <a class="dropdown-item">
+                      <img
+                        src="../../media/image/saudi-arabia.png"
+                        alt="saudi-arabia"
+                      />
+                      Arabic
+                    </a>
+                    <a class="dropdown-item">
+                      <img
+                        src="../../media/image/united-kingdom.png"
+                        alt="united-kingdom"
+                      />
+                      English
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="dropdown d-inline-block">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="../../media/image/7w7w.jpg"
+                  class="admin_img"
+                  alt="person"
+                />
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li>
+                  <a class="dropdown-item" href="reports.html">Reports</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="setting.html">Setting</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- ======= End navbar ======= -->
+
+        <!-- ======= Start Content ======= -->
+        <section class="content">
+          <div class="container">
+            <!-- Start header request from requester -->
+            <div class="header_request">
+              <!-- image person -->
+              <div class="image_person">
+                <img src="media/image/belal/user.png" alt="user">
+              </div>
+              <!-- image person -->
+
+              <!-- person data request -->
+              <ul class="person_data_request">
+                <li>
+                  <i class="fa-regular fa-user"></i>
+                  <p class="title">الاسم : </p>
+                  <p class="text">احمد محمد فتحي ابو زيد</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-user"></i>
+                  <p class="title">المدينة : </p>
+                  <p class="text">المحلة الكبري , دوران محب</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-user"></i>
+                  <p class="title">الوظيفة : </p>
+                  <p class="text">طبيب بشري</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-user"></i>
+                  <p class="title">نوع الطلب : </p>
+                  <p class="text">مواطن</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-user"></i>
+                  <p class="title">رقم الهاتف : </p>
+                  <p class="text">01264623221</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-user"></i>
+                  <p class="title">الرقم القومي : </p>
+                  <p class="text">2983737292983</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-user"></i>
+                  <p class="title">الجهة الوطنية : </p>
+                  <p class="text">وزارة الصحة</p>
+                </li>
+                <li>
+                  <i class="fa-regular fa-user"></i>
+                  <p class="title">عدد الطلبات : </p>
+                  <p class="text">2 طلب</p>
+                </li>
+              </ul>
+              <!-- person data request -->
+
+              <!-- actions -->
+              <ul class="action_request">
+                <li>#541512</li>
+                <li>وزارة الصحة</li>
+                <li>التكليف</li>
+              </ul>
+              <!-- actions -->
+            </div>
+            <!-- End header request from requester -->
+
+            <!-- Start Data request -->
+            <div class="data_request">
+              <!-- This Data from requester (Text Editor) -->
+              <div class="text_from_request">
+                <p>
+                  اذا كنت ترغب في إيقاف عملية تقديم الوثائق أو الأوراق لغرض معين، يمكنك اتباع الخطوات التالية:
+                  الاتصال بالجهة المستلمة: إذا كان يتعلق بوظيفة أو دراسة أو أي سياق آخر، اتصل بالجهة المستلمة للوثائق وأخبرهم برغبتك في إيقاف عملية التقديم.
+                  التحقق من السياق القانوني: تأكد من معرفة أي شروط أو إجراءات قانونية تتعلق بوقف عملية التقديم. في بعض الحالات، قد تكون هناك فترة زمنية محددة للتعديل أو الانسحاب.
+                  إرسال إشعار رسمي إن أمكن: في بعض الحالات، قد يتطلب الأمر إرسال إشعار رسمي يفيد برغبتك في إيقاف عملية التقديم. يمكنك الاتصال بالجهة المعنية لمعرفة كيفية تقديم هذا الإشعار.
+                  الاحتفاظ بنسخة من الوثائق: احتفظ بنسخة من جميع الوثائق التي قد قدمتها، وتأكد من الحفاظ على سجل للتواصل مع الجهة المستلمة.
+                  يرجى ملاحظة أن هذه الإرشادات قد تختلف حسب السياق والجهة المعنية. إذا كنت تواجه صعوبات، فقد يكون من المفيد استشارة محترف قانوني أو الاتصال بالجهة المستلمة مباشرةً للحصول على إرشادات دقيقة.
+                </p>
+              </div>
+              <!-- This Data from requester (Text Editor) -->
+
+              <!-- attachment -->
+              <div class="attachment_request">
+                <h6 class="title">المرفقات</h6>
+                <!-- Empty attachment -->
+                <!-- <div class="empty">
+                  <img src="./media/image/belal/empty.png" alt="empty">
+                  <h6 class="text">عذراً .. لا يوجد مرفقات مضافة </h6>
+                </div> -->
+                <!-- Empty attachment -->
+
+                <!-- Download attachment -->
+                <div class="download_attachment">
+                  <a href="#" target="_blank" class="pdf">
+                    <img src="./media/image/belal/pdf.png" alt="pdf">
+                    <i class="fa-solid fa-circle-arrow-down"></i>
+                  </a>
+                  <a href="#" target="_blank" class="pdf">
+                    <img src="./media/image/belal/pdf.png" alt="pdf">
+                    <i class="fa-solid fa-circle-arrow-down"></i>
+                  </a>
+                  <a href="#" target="_blank" class="pdf">
+                    <img src="./media/image/belal/pdf.png" alt="pdf">
+                    <i class="fa-solid fa-circle-arrow-down"></i>
+                  </a>
+                  <a href="#" target="_blank" class="pdf">
+                    <img src="./media/image/belal/pdf.png" alt="pdf">
+                    <i class="fa-solid fa-circle-arrow-down"></i>
+                  </a>
+                  <a href="#" target="_blank" class="pdf">
+                    <img src="./media/image/belal/pdf.png" alt="pdf">
+                    <i class="fa-solid fa-circle-arrow-down"></i>
+                  </a>
+                </div>
+                <!-- Download attachment -->
+              </div>
+              <!-- attachment -->
+            </div>
+            <!-- End Data request -->
+
+            <!-- Answers -->
+            <div class="answers">
+              <!-- <div class="empty">
+                <img src="./media/image/belal/empty_answer.png" alt="empty_answer">
+                <h5 class="text">عذراً .. لا يوجد اضافات حتي الان </h5>
+                <button class="btn BlueButton" data-bs-toggle="modal" data-bs-target="#actionsModal">اضافة اكشن</button>
+              </div> -->
+
+              <div class="head">
+                <h5 class="title">الردود ( 3 )</h5>
+                <div class="actions">
+                  <button class="btn whatsapp_button" data-bs-toggle="modal" data-bs-target="#whatsappModal"><i class="fa-brands fa-whatsapp"></i> واتساب</button>
+                  <button class="btn TransparentBlueButton" data-bs-toggle="modal" data-bs-target="#emailModal"><i class="fa-regular fa-envelope"></i> البريد الالكتروني</button>
+                  <button class="btn TransparentBlueButton" data-bs-toggle="modal" data-bs-target="#actionsModal">اضافة اكشن + </button>
+                </div>
+              </div>
+
+              <!-- Modal Whatsapp -->
+              <div class="modal modal_whatsapp fade" id="whatsappModal" tabindex="-1" aria-labelledby="whatsappModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="whatsappModalLabel">ارسال رسالة عبر الواتساب</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="">
+                        <div class="form-group">
+                          <label for="">تفاصيل الرسالة</label>
+                          <textarea name="" class="form-control" id="" cols="30" rows="5" placeholder="التفاصيل"></textarea>
+                        </div>
+                        <button type="submit" class="btn BlueButton">ارسال</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal Whatsapp -->
+
+              <!-- Modal Email -->
+              <div class="modal modal_whatsapp fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="emailModalLabel">ارسال رسالة عبر البريد الالكتروني</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="">
+                        <div class="form-group">
+                          <label for="">تفاصيل الرسالة</label>
+                          <textarea name="" class="form-control" id="" cols="30" rows="5" placeholder="التفاصيل"></textarea>
+                        </div>
+                        <button type="submit" class="btn BlueButton">ارسال</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Modal Email -->
+              
+
+              <!-- For loop Card answer -->
+              <div class="all_answers">
+                <div class="answer_card">
+                  <div class="answer_card_head">
+                    <div class="card-title">
+                      <h5 class="title my_answer">الرد الخاص بنا</h5>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">يمكن للعميل رؤية الرد</label>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fa-brands fa-whatsapp"></i> واتساب</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-regular fa-envelope"></i> البريد الالكتروني</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa-solid fa-trash-can"></i> حذف الرد</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <ul class="static">
+                    <li><i class="fa-solid fa-list"></i> #8547521</li>
+                    <li><i class="fa-solid fa-calendar-days"></i> الثلاثاء , 2024-01-12</li>
+                    <li><i class="fa-solid fa-building-columns"></i> وزارة الصحة</li>
+                    <li><i class="fa-solid fa-building"></i> تكليف</li>
+                    <li><i class="fa-solid fa-building-flag"></i> وزارة الإسكان والمرافق</li>
+                  </ul>
+                  <p class="first_response_through_us"><i class="fa-solid fa-inbox"></i> الرد الاول من خلالنا</p>
+                  <div class="client_answer">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <p>
+                      عزيزي العميل،
+                      نأسف للإزعاج الذي قد تسببت فيه المشكلة التي واجهتك، ونشكرك على توجيه استفسارك إلينا. نحن هنا لدعمك وحل أي مشكلة تواجهك.
+                      لفهم الوضع بشكل أفضل وتقديم الدعم اللازم، يرجى تقديم المزيد من التفاصيل حول المشكلة التي تواجهك في إنجاز الورق الخاص بك. يمكنك توضيح الخطوات التي اتبعتها، والمشكلات التي واجهتك أثناء العمل على الورق.
+                      نحن هنا للمساعدة وضمان حل المشكلة بأسرع وقت ممكن. يرجى تقديم المزيد من المعلومات حتى نتمكن من توفير إجابة دقيقة وفعّالة.
+                      شكرًا لتفهمك وتعاونك.
+                      مع خالص التحية،
+                      [د / احمد بلال ]
+                    </p>
+                  </div>
+                  <div class="download_attachment">
+                    <a href="#" target="_blank" class="pdf">
+                      <img src="./media/image/belal/pdf.png" alt="pdf">
+                      <i class="fa-solid fa-circle-arrow-down"></i>
+                    </a>
+                    <a href="#" target="_blank" class="pdf">
+                      <img src="./media/image/belal/pdf.png" alt="pdf">
+                      <i class="fa-solid fa-circle-arrow-down"></i>
+                    </a>
+                    <a href="#" target="_blank" class="pdf">
+                      <img src="./media/image/belal/pdf.png" alt="pdf">
+                      <i class="fa-solid fa-circle-arrow-down"></i>
+                    </a>
+                    <a href="#" target="_blank" class="pdf">
+                      <img src="./media/image/belal/pdf.png" alt="pdf">
+                      <i class="fa-solid fa-circle-arrow-down"></i>
+                    </a>
+                    <a href="#" target="_blank" class="pdf">
+                      <img src="./media/image/belal/pdf.png" alt="pdf">
+                      <i class="fa-solid fa-circle-arrow-down"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- For loop Card answer -->
+              </div>
+            </div>
+            <!-- Answers -->
+
+            <!-- Modal add actions -->
+            <div class="modal modal_actions fade" id="actionsModal" tabindex="-1" aria-labelledby="actionsModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="actionsModalLabel">
+                      <h5 class="title">تفاصيل الرد</h5>
+                      <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                        <label class="form-check-label" for="flexSwitchCheckChecked">يمكن للعميل رؤية الرد</label>
+                      </div>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="">
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                          <div class="form-group">
+                            <label for="">جهة الطلب الرئيسية</label>
+                            <select name="" id="" class="form-select selectpicker" title="جهة الطلب الرئيسية">
+                              <option value="">test</option>
+                              <option value="">test</option>
+                              <option value="">test</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                          <div class="form-group">
+                            <label for="">جهة الطلب الفرعية</label>
+                            <select name="" id="" class="form-select selectpicker" title="جهة الطلب الفرعية">
+                              <option value="">test</option>
+                              <option value="">test</option>
+                              <option value="">test</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-12">
+                          <div class="form-group">
+                            <label for="">الاداة الرقابية</label>
+                            <select name="" id="" class="form-select selectpicker" title="الاداة الرقابية">
+                              <option value="">test</option>
+                              <option value="">test</option>
+                              <option value="">test</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label for="">المسمي الرئيسي</label>
+                            <input type="text" name="" id="" class="form-control" placeholder="المسمي الرئيسي">
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label for="">التفاصيل</label>
+                            <textarea name="" id="" class="form-control" cols="30" rows="5" placeholder="التفاصيل"></textarea>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="avatar-upload">
+                            <div class="avatar-edit">
+                                <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+                                <label id="imageUploadLabel" for="imageUpload">
+                                  <img src="./media/image/belal/pdf.png" alt="pdf">
+                                  <span>قم بأرفاق صورة او ملف PDF لا تتجاوز عن 3.5 ميغا بايت</span>
+                                  <span>ارفاق صورة</span>
+                                </label>
+                            </div>
+                            <div class="avatar-preview">
+                                <div id="imagePreview" style="background-image: url('../../media/image/logo.png');">
+                                </div>
+                            </div>
+        
+                            <script>
+                                function readURL(input) {
+                                    if (input.files && input.files[0]) {
+                                        var reader = new FileReader();
+                                        reader.onload = function(e) {
+                                            $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+                                            $('#imageUploadLabel').css('opacity', 0);
+                                            $('#imagePreview').hide();
+                                            $('#imagePreview').fadeIn(650);
+                                        }
+                                        reader.readAsDataURL(input.files[0]);
+                                    }
+                                }
+                                $("#imageUpload").change(function() {
+                                    readURL(this);
+                                });
+                            </script>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn BlueButton">اضافة رد</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal add actions -->
+          </div>
+        </section>
+        <!-- ======= End Content ======= -->
+      </section>
+      <!-- ======= Main ======= -->
+    </div>
+    <!-- ? ======= footer =========== -->
+
+    <script src="../../js/main.js"></script>
+  </body>
+</html>
